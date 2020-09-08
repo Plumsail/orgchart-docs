@@ -14,8 +14,8 @@
     :titlesonly:
     
     getting-started/installation-index
-    License activation <https://ya.ru>
-    Quick configuration <https://ya.ru>
+    License activation <getting-started/license-activation>
+    Quick configuration <getting-started/quick-configuration>
 
   .. toctree::
     :caption: Configuration wizard
