@@ -67,4 +67,4 @@ Mapping defines the connection between Organization Chart field and List field. 
 
 You can change these settings later too as you want, but these settings are available for Full Control users only.
 
-Read Advanced Web Part configuration (link) for more information.
+Read `Advanced Web Part configuration <../configuration-wizard/run-configuration-wizard.html>`_ for more information.

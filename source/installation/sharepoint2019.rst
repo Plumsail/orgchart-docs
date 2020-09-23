@@ -16,7 +16,7 @@ Navigate to the page where you want to add an org chart.
 
 Pick *Plumsail Org Chart* web part from the menu to add it to your page:
 
-.. image:: /../_static/img/getting-started/installation/sharepoint2019/addWepartModern.png
+.. image:: /../_static/img/getting-started/installation-sharepoint2019/addWepartModern.png
     :alt: Add web part
 
 Once you added the web part you can `configure it <../getting-started/quick-configuration.html>`_ .

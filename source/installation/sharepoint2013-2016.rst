@@ -5,13 +5,13 @@ Installation for SharePoint 2013 / 2016
 
 Go to your application. Select Site Settings item in the root of the site collection in Site Actions menu. Choose Site collection features in Site Collection Administration section:
 
-.. image:: /../_static/img/getting-started/installation/sharepoint2013-2016/SiteCollectionSettingsInstuction.png
+.. image:: /../_static/img/getting-started/installation-sharepoint2013-2016/SiteCollectionSettingsInstuction.png
     :alt: Site Collection Settings Instuction
 
 
 Activate Plumsail Org Chart feature if it is not activated.
 
-.. image:: /../_static/img/getting-started/installation/sharepoint2013-2016/OrgChartFeature.png
+.. image:: /../_static/img/getting-started/installation-sharepoint2013-2016/OrgChartFeature.png
     :alt: OrgChart feature
 
 Adding Web Part to a page
@@ -21,17 +21,17 @@ Navigate to the page where you want to install your Web part.
 
 Click Edit at the SharePoint 2013 site ribbon.
 
-.. image:: /../_static/img/getting-started/installation/sharepoint2013-2016/InsertWebPart1.png
+.. image:: /../_static/img/getting-started/installation-sharepoint2013-2016/InsertWebPart1.png
     :alt: Insert web part
 
 Choose the place where you wish to add your web part and in the **Insert** tab click **Plumsail Org Chart**.
 
-.. image:: /../_static/img/getting-started/installation/sharepoint2013-2016/InsertWebPart3.png
+.. image:: /../_static/img/getting-started/installation-sharepoint2013-2016/InsertWebPart3.png
     :alt: Insert web part
 
 Click **Save** at the page ribbon. Message with link to configuration wizard will appear in Org Chart Web part:
 
-.. image:: /../_static/img/getting-started/installation/sharepoint2013-2016/NotConfiguredWebPart.png
+.. image:: /../_static/img/getting-started/installation-sharepoint2013-2016/NotConfiguredWebPart.png
     :alt: OrgChart web part
 
 Read `Quick Web Part configuration guide <../getting-started/quick-configuration.html>`_ .
