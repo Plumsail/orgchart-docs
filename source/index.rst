@@ -90,9 +90,9 @@
     :maxdepth: 1
     :titlesonly:
     
-    Printing organizational structure <https://ya.ru>
-    Generate multi-page PDF report <https://ya.ru>
-    Export to CSV and analyze in Excel <https://ya.ru>
+    Printing organizational structure <how-tos/printing-and-reports/printing-organizational-structure>
+    Generate multi-page PDF report <how-tos/printing-and-reports/generate-multi-page-pdf-report>
+    Export to CSV and analyze in Excel <how-tos/printing-and-reports/export-to-csv-and-analyze-in-excel>
     Custom styles for printed chart <https://ya.ru>
 
   .. toctree::
@@ -101,7 +101,7 @@
     :maxdepth: 1
     :titlesonly:
     
-    Add Org Chart to Teams tabs <https://ya.ru>
+    Add Org Chart to Teams tabs <how-tos/ms-teams/add-orgchart-to-teams-tabs>
 
   .. toctree::
     :caption: Display different types of employees
@@ -109,7 +109,7 @@
     :maxdepth: 1
     :titlesonly:
     
-    Display dotted-line managers <https://ya.ru>
+    Display dotted-line managers <how-tos/display-different-types-of-employees/display-dotted-line-managers>
     Display assistant in SharePoint Org Chart <https://ya.ru>
     Display vacancies <https://ya.ru>
 
