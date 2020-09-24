@@ -9,27 +9,27 @@ You have to be a SharePoint administrator to complete the installation. If you d
 
 Open Office 365 admin center:
 
-.. image:: /../_static/img/getting-started/installation/office365/OpenAdminCenter.png
+.. image:: /../_static/img/getting-started/installation-office365/OpenAdminCenter.png
     :alt: Admin center
 
 Navigate to SharePoint Admin Center:
 
-.. image:: /../_static/img/getting-started/installation/office365/OpenSharePointAdminCenter.png
+.. image:: /../_static/img/getting-started/installation-office365/OpenSharePointAdminCenter.png
     :alt: Admin center
 
 Go to *Apps* classic feature:
 
-.. image:: /../_static/img/getting-started/installation/office365/OpenAppCatalog1.png
+.. image:: /../_static/img/getting-started/installation-office365/OpenAppCatalog1.png
     :alt: App catalog
 
 Open *App catalog*:
 
-.. image:: /../_static/img/getting-started/installation/office365/OpenAppCatalog2.png
+.. image:: /../_static/img/getting-started/installation-office365/OpenAppCatalog2.png
     :alt: App catalog
 
 If you don’t have *App Catalog* yet, you will be able to create a new one:
 
-.. image:: /../_static/img/getting-started/installation/office365/CreateAppCatalog1.png
+.. image:: /../_static/img/getting-started/installation-office365/CreateAppCatalog1.png
     :alt: Create App catalog
 
 Just fill in **Title**, **Web Site Address**, **Administrator** and **Storage Quota** and click **OK**. For example:
@@ -40,17 +40,17 @@ Just fill in **Title**, **Web Site Address**, **Administrator** and **Storage Qu
 - Storage Quota – 10 GB
 
 
-.. image:: /../_static/img/getting-started/installation/office365/CreateAppCatalogSiteCollection.png
+.. image:: /../_static/img/getting-started/installation-office365/CreateAppCatalogSiteCollection.png
     :alt: Create App catalog site collection
 
 Navigate to *Apps for SharePoint* and upload Add-in package that you downloaded at the beginning of this instruction (you need to upload to the App Catalog the whole .sppkg file without unpacking it):
 
-.. image:: /../_static/img/getting-started/installation/office365/UploadAppToCatalog.png
+.. image:: /../_static/img/getting-started/installation-office365/UploadAppToCatalog.png
     :alt: Upload app to catalog
 
 You need to select “Make this solution available to all sites in the organization” in the dialog. Once you did this you can add a web part to a page.
 
-.. image:: /../_static/img/getting-started/installation/office365/orgchart-trust.png
+.. image:: /../_static/img/getting-started/installation-office365/orgchart-trust.png
     :alt: OrgChart trust
 
 If you don’t want to make this app availalbe on all sites, you will need to `add app to each site manually <install-add-site-want-add-org-chart.html>`_ .

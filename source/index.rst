@@ -22,17 +22,18 @@
     :name: toc-configuration-wizard
     :maxdepth: 1
     :titlesonly:
-        
-    Data source configuration <https://ya.ru>
-    Layout <https://ya.ru>  
-    Filtration <https://ya.ru>  
-    General settings <https://ya.ru>  
-    Box template <https://ya.ru>  
-    Tooltip template <https://ya.ru>  
-    Search result template <https://ya.ru>  
-    Custom JavaScript <https://ya.ru>  
-    Custom CSS <https://ya.ru>              
-    Resetting configuration <https://ya.ru> 
+
+    Run configuration wizard <configuration-wizard/run-configuration-wizard>   
+    Data source configuration <configuration-wizard/data-source-configuration>
+    Layout <configuration-wizard/layout>  
+    Filtration <configuration-wizard/filtration>  
+    General settings <configuration-wizard/general-settings>  
+    Box template <configuration-wizard/box-template>  
+    Tooltip template <configuration-wizard/tooltip-template>  
+    Search result template <configuration-wizard/search-result-template>  
+    Custom JavaScript <configuration-wizard/custom-javascript>  
+    Custom CSS <configuration-wizard/custom-css>              
+    Reset configuration <configuration-wizard/reset-configuration> 
 
   .. toctree::
     :caption: HTML templates 
@@ -79,9 +80,9 @@
     :maxdepth: 1
     :titlesonly:
     
-    Version history <https://ya.ru>   
-    Licensing details <https://ya.ru>
-    Data protection and security <https://ya.ru> 
+    Version history <general/version-history-index>   
+    Licensing details <general/licensing-details>
+    Data protection and security <general/data-protection-index> 
 
   .. toctree::
     :caption: Printing & Reports 
@@ -89,9 +90,9 @@
     :maxdepth: 1
     :titlesonly:
     
-    Printing organizational structure <https://ya.ru>
-    Generate multi-page PDF report <https://ya.ru>
-    Export to CSV and analyze in Excel <https://ya.ru>
+    Printing organizational structure <how-tos/printing-and-reports/printing-organizational-structure>
+    Generate multi-page PDF report <how-tos/printing-and-reports/generate-multi-page-pdf-report>
+    Export to CSV and analyze in Excel <how-tos/printing-and-reports/export-to-csv-and-analyze-in-excel>
     Custom styles for printed chart <https://ya.ru>
 
   .. toctree::
@@ -100,7 +101,7 @@
     :maxdepth: 1
     :titlesonly:
     
-    Add Org Chart to Teams tabs <https://ya.ru>
+    Add Org Chart to Teams tabs <how-tos/ms-teams/add-orgchart-to-teams-tabs>
 
   .. toctree::
     :caption: Display different types of employees
@@ -108,7 +109,7 @@
     :maxdepth: 1
     :titlesonly:
     
-    Display dotted-line managers <https://ya.ru>
+    Display dotted-line managers <how-tos/display-different-types-of-employees/display-dotted-line-managers>
     Display assistant in SharePoint Org Chart <https://ya.ru>
     Display vacancies <https://ya.ru>
 
