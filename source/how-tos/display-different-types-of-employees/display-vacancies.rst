@@ -1,70 +1,82 @@
-Add Org Chart to Teams tabs
-===========================
+Display vacancies in SharePoint Org Chart
+=========================================
+
+Did you know you can show vacancies beautifully inside your organization chart in SharePoint? 
+If it’s either SharePoint 2013, SharePoint 2016, SharePoint 2019 or SharePoint Online in Office 365, 
+you can do this easily with Plumsail Org Chart. 
+In this article, I want to show you how to display vacancies in SharePoint Org Chart. 
+It is very useful to organize vacancies inside of OrgChart and be able to visualize them within organization’s structure.
+
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-vacancies/01-vacancy-org-chart.jpg
+    :alt: OrgChart vacancy
+
+Vacancies are enabled inside of PlumsailOrgChart’s settings and use a data source different than the chart itself.Org Chart will use a different list to pull data from and show vacancies which needs to be filled with data regarding open positions through the company. 
+Let’s see how to do it step by step, inside our SharePoint page, just like the image above.
+
+Go to the page where you inserted OrgChart, Open the page in edit mode, open web part properties:
 
 
-Did you know that you can use the `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ in Teams? With an organizational chart in Teams, you can see who people you are communicating with report to and who reports to them. 
-You can also search for other people while you are there and see their position in the organization.
-
-There are two simple steps to add Plumsail Org Chart to a Teams tab:
-
-- First, add Org Chart to a page in the team’s site
-- Then, create a Teams tab with this page in it.
-
-Let’s see how to do it.
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-vacancies/02-org-chart-settings.png
+    :alt: OrgChart vacancy
 
 
-Adding Org Chart to the team’s site
------------------------------------
-
-Navigate to the team’s site:
-
-.. image:: /../../_static/img/how-tos/ms-teams/navigate-to-the-team-site.png
-    :alt: Team site
+- Open Configuration Wizard 
+- Go to General settings tab 
+- Check the Enable vacancies option to enable vacancies on your OrgChart:
 
 
-Go to the Site Pages:
-
-.. image:: /../../_static/img/how-tos/ms-teams/site-pages.png
-    :alt: Site pages
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-vacancies/VisualOptions-2.png
+    :alt: OrgChart vacancy
 
 
-Create a new page and pick Plumsail Org Chart web part from the menu to add it to your page:
-
-.. image:: /../../_static/img/how-tos/ms-teams/add-web-part.png
-    :alt: Add wen part
+Now, under that option, you’ll see a new text input, where you’ll have to write the URLof the list that OrgChart will use to pull data from. Note that this is a server relativeURLthat you’re going to use. 
+In this example I want OrgChart to use the list placed in “/Lists/Vacancies”. If Org Chart identifies that the list already exists it will use it, otherwise it is going to create it automatically to handle vacancies. 
 
 
-Follow the instruction to `configure </../../configuration-wizard/run-configuration-wizard.html>`_ Org Chart.
+- Click Finish to save your new settings.
 
-If you want Org Chart to occupy full screen by default, add the following code into the Custom JavaScript tab:
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-vacancies/04-org-chart-finish-button.jpg
+    :alt: OrgChart finish button
 
-.. code::
-
-   renderer.fullSizeToggle();
-
-
-.. image:: /../../_static/img/how-tos/ms-teams/full-size-toggle-1.png
-    :alt: Full site toggle
+From now on, whenever you click on the gear icon you’ll see a new option called “Manage vacancies”. 
+That is where you have to go whenever you want to change data about your vacancies. 
+Let’s go there and add some data to fill our OrgChart properly.
 
 
-Adding Org Chart to a Teams tab
--------------------------------
+- Click on the gear icon; 
+- Select “Manage vacancies”.
 
-Create a new tab, choose SharePoint option in the popup, and then pick the page with the Org Chart web part in it:
-
-.. image:: /../../_static/img/how-tos/ms-teams/create-tab.png
-    :alt: Create tab
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-vacancies/05-org-chart-manage-vacancies.png
+    :alt: OrgChart vacancies
 
 
-.. image:: /../../_static/img/how-tos/ms-teams/tab-type.png
-    :alt: Tab type
+The list will open in a new tab/window. This is where you add new vacancies.
 
 
-.. image:: /../../_static/img/how-tos/ms-teams/org-chart-page.png
-    :alt: OrgChart
+- Click New;
+
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-vacancies/06-org-chart-new-item.jpg
+    :alt: OrgChart vacancies
 
 
-That is it. Now, your Org Chart is displayed in the Teams tab:
+– Fill in the Title with the title of the position;
 
-.. image:: /../../_static/img/how-tos/ms-teams/teams-tab-compact.png
-    :alt: Team tab
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-vacancies/07-org-chart-title-vacancy.jpg
+    :alt: OrgChart vacancies
+
+
+- Write the correct information for Department and Manager according to your needs.
+
+Note that the Manager field needs to be filled with the Item ID of the corresponding Manager.The Item ID is mapped according to the data source your Org Chart is pulling information from and also depending on how you mapped this information. If you open Org Chart settings again you’ll see under the “Data source settings” tab that we have two options: SharePoint list and User profiles.
+
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-vacancies/08-org-chart-data-source.jpg
+    :alt: OrgChart data source
+
+In case you’re using User profiles as the data source, Org Chart will use one’s account name as the Item ID. In SharePoint Online account name will be its e-mail address but using OnPremises installation it usually looks like this: “domain\accountname”.
+
+Otherwise, if you’re using a SharePoint list as the data source for your Org Chart, you’ll have the option to choose which column from the list is going to work as Item ID. It can be anything like title, e-mail address, ID, etc. Please notice that you’ll also have to set up Item parent ID according to Item ID. So if you’re using an e-mail address as Item ID, you’ll have to use something like “Manager e-mail address” as Item parent ID so Org Chart is able to find the correct information.
+
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-vacancies/09-org-chart-mapping.jpg
+    :alt: OrgChart data source
+
+That’s it. Now you can display vacancies in SharePoint Org Chart and manage them regarding company’s scenario.

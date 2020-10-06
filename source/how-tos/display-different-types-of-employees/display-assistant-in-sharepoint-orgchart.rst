@@ -1,70 +1,121 @@
-Add Org Chart to Teams tabs
-===========================
+How to display assistants
+=========================
+
+This article describes how to display assistants with the help of `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ for SharePoint 2019 / 2016 / 2013 and SharePoint Online in Office 365.
+
+This is how assistants look in “Classic top to bottom” layout. They may be positioned in a different way in other `layouts </../../configuration-wizard/layout.html>`_ .
+
+Single assistant
+
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/org-chart-assistants.png
+    :alt: OrgChart assistants
 
 
-Did you know that you can use the `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ in Teams? With an organizational chart in Teams, you can see who people you are communicating with report to and who reports to them. 
-You can also search for other people while you are there and see their position in the organization.
+Multiple assistants
 
-There are two simple steps to add Plumsail Org Chart to a Teams tab:
-
-- First, add Org Chart to a page in the team’s site
-- Then, create a Teams tab with this page in it.
-
-Let’s see how to do it.
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/multiple-assistants.png
+    :alt: Multiple assistants
 
 
-Adding Org Chart to the team’s site
------------------------------------
-
-Navigate to the team’s site:
-
-.. image:: /../../_static/img/how-tos/ms-teams/navigate-to-the-team-site.png
-    :alt: Team site
+Org Chart supports two data sources: SharePoint list and User Profiles. Let’s see how to configure assistants for each data source.
 
 
-Go to the Site Pages:
+Display assistants for SharePoint user profiles data source
 
-.. image:: /../../_static/img/how-tos/ms-teams/site-pages.png
-    :alt: Site pages
-
-
-Create a new page and pick Plumsail Org Chart web part from the menu to add it to your page:
-
-.. image:: /../../_static/img/how-tos/ms-teams/add-web-part.png
-    :alt: Add wen part
+- :ref:`user-profiles-single-assistant`
+- :ref:`user-profiles-multiple-assistants`
 
 
-Follow the instruction to `configure </../../configuration-wizard/run-configuration-wizard.html>`_ Org Chart.
+Display assistants for SharePoint list data source
 
-If you want Org Chart to occupy full screen by default, add the following code into the Custom JavaScript tab:
-
-.. code::
-
-   renderer.fullSizeToggle();
+- :ref:`sharePoint-list-single-assistant`
+- :ref:`sharePoint-list-multiple-assistants`
 
 
-.. image:: /../../_static/img/how-tos/ms-teams/full-size-toggle-1.png
-    :alt: Full site toggle
+Display assistants for SharePoint user profiles data source
+-----------------------------------------------------------
+
+.. _user-profiles-single-assistant:
+
+Single assistant
+----------------
+
+Assistants are enabled by default and you can see that “Assistant” user profile mapping is specified:
+
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/org-chart-enable-assistants.jpg
+    :alt: Enable assistants
 
 
-Adding Org Chart to a Teams tab
--------------------------------
+Org Chart uses the standard SharePoint “Assistant” user profile property to get information about the assistant of an employee. If you store information about assistants in a separate property, you can change this mapping here.
 
-Create a new tab, choose SharePoint option in the popup, and then pick the page with the Org Chart web part in it:
-
-.. image:: /../../_static/img/how-tos/ms-teams/create-tab.png
-    :alt: Create tab
+If you want to disable assistants, just pick “None” in the “Assistant” mapping on this step.
 
 
-.. image:: /../../_static/img/how-tos/ms-teams/tab-type.png
-    :alt: Tab type
+.. _user-profiles-multiple-assistants:
+
+Multiple assistants
+-------------------
 
 
-.. image:: /../../_static/img/how-tos/ms-teams/org-chart-page.png
-    :alt: OrgChart
+By default, Org Chart uses standard “Assistant” property from SharePoint user profiles. 
+It allows you to specify only one assistant per employee. 
+If you want to specify multiple assistants per employee, 
+you need to create `a new custom user profile property <https://docs.microsoft.com/en-us/sharepoint/administration/add-edit-or-delete-custom-properties-for-a-user-profile>`_ and specify it in the Org Chart mapping.
 
 
-That is it. Now, your Org Chart is displayed in the Teams tab:
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/assistants-up-property.png
+    :alt: User profiles properties
 
-.. image:: /../../_static/img/how-tos/ms-teams/teams-tab-compact.png
-    :alt: Team tab
+
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/chart-mapping.png
+    :alt: Chart mapping
+
+
+Once you have a new property for assistants, you can fill it with **semicolon separated** list of assistants. 
+Also, you may need to clear Org Chart cache (link) to load fresh data.
+
+Example: assist1@contoso.com; assist2@contoso.com; assist3@contoso.com
+
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/field-values.png
+    :alt: Field values
+
+
+Display assistants for SharePoint user profiles data source
+-----------------------------------------------------------
+
+.. _sharePoint-list-single-assistant:
+
+Single assistant
+----------------
+
+First of all, you need to create a column in your SharePoint list that will store the ID of an assistant. 
+Type of this column has to be the same as `an employee id </../../configuration-wizard/filtration.html>`_ . 
+Then you need to `configure mappings </../../configuration-wizard/data-source-configuration.html>`_ of Org Chart fields to columns in your list:
+
+.. image:: /../../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/org-chart-list-assistant-mapping.jpg
+    :alt: Field values
+
+
+.. _sharePoint-list-multiple-assistants:
+
+Multiple assistants
+-------------------
+
+If you want to add support for multiple assistants per an employee you have two options:
+
+1. Create a multivalue lookup instead of regular lookup. This will allow you to pick multiple assistants using lookup filed.
+2. Or create a regular “Single line of text” list column. This will allow you to specify a semicolon separated list of assistants.
+
+Examples:
+
+- 1; 2; 14; 18 if you use numbers as employee IDs.
+
+- assist1@contoso.com; assist2@contoso.com; assist3@contoso.com if you use email addresses (account names) as employee IDs.
+
+3. Map Assistant ID in OrgChart settings to the newly created column.
+4. Clear Org Chart cache (link) to load fresh data.
+
+Conclusion
+----------
+
+That is all! Now you know how to display structure with single and multiple asistants in SharePoint Org Chart.

@@ -110,8 +110,8 @@
     :titlesonly:
     
     Display dotted-line managers <how-tos/display-different-types-of-employees/display-dotted-line-managers>
-    Display assistant in SharePoint Org Chart <https://ya.ru>
-    Display vacancies <https://ya.ru>
+    Display assistant in SharePoint Org Chart <how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart>
+    Display vacancies <how-tos/display-different-types-of-employees/display-vacancies>
 
   .. toctree::
     :caption: Filter and order boxes
@@ -119,8 +119,8 @@
     :maxdepth: 1
     :titlesonly:
     
-    Filter Org Chart by Department <https://ya.ru>
-    Order employees boxes using a custom field <https://ya.ru>
+    Filter Org Chart by Department <how-tos/filter-and-order-boxes/filter-orgchart-by-department>
+    Order employees boxes using a custom field <how-tos/filter-and-order-boxes/order-employees-boxes-using-a-custom-field>
 
   .. toctree::
     :caption: Customize boxes and styles
@@ -128,12 +128,22 @@
     :maxdepth: 1
     :titlesonly:
     
-    Customize box HTML template and CSS styles <https://ya.ru>
-    Display awards and conditionally format Org Chart <https://ya.ru>
-    Display Skype for Business (Lync) presence <https://ya.ru>
-    Create an org chart with two root managers <https://ya.ru>
-    Change Org Chart skin <https://ya.ru>
-    Localize Org Chart <https://ya.ru>
+    Customize box HTML template and CSS styles <how-tos/customize-boxes-and-styles/customize-box-html-template-and-css-styles>
+    Display awards and conditionally format Org Chart <how-tos/customize-boxes-and-styles/display-awards-and-conditionally-format-orgchart>
+    Display Skype for Business (Lync) presence <how-tos/customize-boxes-and-styles/display-skype-for-business-lync-presence>
+    Create an org chart with two root managers <how-tos/customize-boxes-and-styles/create-an-orgchart-with-two-root-managers>
+    Change Org Chart skin <how-tos/customize-boxes-and-styles/change-orgchart-skin>
+    Localize Org Chart <how-tos/customize-boxes-and-styles/localize-orgchart>
+
+  .. toctree::
+    :caption: Show specific user on load
+    :name: toc-customize-boxes
+    :maxdepth: 1
+    :titlesonly:
+    
+    Drill down to specific box using URL parameter <how-tos/show-specific-user-on-load/drill-down-to-specific-box-using-url-parameter>
+    Drill down to current user by default <how-tos/show-specific-user-on-load/drill-down-to-current-user-by-default>
+    Drill down to manager of user from URL by default <how-tos/show-specific-user-on-load/drill-down-to-manager-of-user-from-url-by-default>
 
   .. toctree::
     :caption: Manage web part size and scale
@@ -141,6 +151,6 @@
     :maxdepth: 1
     :titlesonly:
     
-    Open Org Chart in full-screen mode on load <https://ya.ru>
-    Resize web part dynamically to fit a page <https://ya.ru>
-    Automatically scale boxes to fit visible area <https://ya.ru>    
+    Open Org Chart in full-screen mode on load <how-tos/manage-web-part-size-and-scale/open-orgchart-in-full-screen-mode-on-load>
+    Resize web part dynamically to fit a page <how-tos/manage-web-part-size-and-scale/resize-web-part-dynamically-to-fit-a-page>
+    Automatically scale boxes to fit visible area <how-tos/manage-web-part-size-and-scale/automatically-scale-boxes-to-fit-visible-area>    
