@@ -154,3 +154,16 @@
     Open Org Chart in full-screen mode on load <how-tos/manage-web-part-size-and-scale/open-orgchart-in-full-screen-mode-on-load>
     Resize web part dynamically to fit a page <how-tos/manage-web-part-size-and-scale/resize-web-part-dynamically-to-fit-a-page>
     Automatically scale boxes to fit visible area <how-tos/manage-web-part-size-and-scale/automatically-scale-boxes-to-fit-visible-area>    
+
+  .. toctree::
+    :caption: Other examples
+    :name: toc-manage-size-scale
+    :maxdepth: 1
+    :titlesonly:
+    
+    Printing organization structure <how-tos/printing-and-reports/printing-organizational-structure>
+    Use advanced Org Chart navigation <how-tos/other-examples/use-advanced-orgchart-navigation>
+    Hide assistant from subordinates <how-tos/other-examples/hide-assistant-from-subordinates>    
+    Include and use fields from an additional list <how-tos/other-examples/include-and-use-fields-from-an-additional-list>
+    Show Org Chart based on a list data source for anonymous users <how-tos/other-examples/show-orgchart-based-on-a-list-data-source-for-anonymous-users>
+    Support of search in a list with more than 5000 items <how-tos/other-examples/support-of-search-in-a-list-with-more-than-5k-items>    

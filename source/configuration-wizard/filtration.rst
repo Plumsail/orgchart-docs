@@ -1,6 +1,16 @@
 Filtration
 ===========
 
+1. :ref:`filtration-settings`
+2. :ref:`filtration-syntax`
+3. :ref:`root-employee`
+
+
+.. _filtration-settings:
+
+Filtration settings
+-------------------
+
 You can use filters to exclude people from the chart or show just specific departments or employees. 
 You may filter by department, name, or by any other field.
 
@@ -47,6 +57,8 @@ You can include or exclude items from the Org Chart using the filtration rule. F
      }
 
 
+.. _filtration-syntax:
+
 Filtration syntax
 -----------------
 
@@ -82,6 +94,8 @@ In this case, the function to display employees from Marketing department looks 
 
      }
 
+
+.. _root-employee:
 
 What is Item ID (Root employee)
 -------------------------------
