@@ -63,14 +63,14 @@
       :maxdepth: 1
       :titlesonly:
       
-      Video: Quick introduction to Org Chart <https://ya.ru>
-      Article: Quick introduction to Org Chart <https://ya.ru>
-      Data caching <https://ya.ru>
-      How Org Chart pulls data from AD On-Premises <https://ya.ru>
-      Exclude disabled users in On-Premises <https://ya.ru>
-      Make sure that SharePoint has enough data <https://ya.ru>
-      Configuring profiles sync in On-Premises <https://ya.ru>
-      Exporting properties to a directory service <https://ya.ru>
+      Video: Quick introduction to Org Chart <https://www.youtube.com/watch?v=wkdevVPESE0&feature=emb_logo>
+      Article: Quick introduction to Org Chart <https://medium.com/plumsail/org-chart-for-sharepoint-online-in-office-365-and-on-premises-e2f241cae59b>
+      Data caching <how-tos/additional-resources/data-caching>
+      How Org Chart pulls data from AD On-Premises <how-tos/additional-resources/how-orgchart-pulls-data-from-ad-on-premises>
+      Exclude disabled users in On-Premises <http://www.harbar.net/archive/2011/02/22/323.aspx>
+      Make sure that SharePoint has enough data <how-tos/additional-resources/make-sure-that-sharepoint-has-enough-data>
+      Configuring profiles sync in On-Premises <http://technet.microsoft.com/en-us/library/ff382639.aspx>
+      Exporting properties to a directory service <http://technet.microsoft.com/en-us/library/ee721049.aspx#Phase4>
 
 .. container:: pl-right-column
 
