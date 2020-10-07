@@ -41,11 +41,12 @@
     :maxdepth: 1
     :titlesonly:
     
-    Example of template <https://ya.ru>
-    If block helper <https://ya.ru>
-    Unless block helper <https://ya.ru>
-    Additional block helpers <https://ya.ru>
-    Structure of the context object <https://ya.ru>
+    Example of template <html-templates/example-of-template>
+    If block helper <html-templates/if-block-helper>
+    Unless block helper <html-templates/unless-block-helper>
+    Displaying of raw HTML content <html-templates/displaying-of-raw-html-content>
+    Additional block helpers <html-templates/additional-block-helpers>
+    Structure of the context object <html-templates/structure-of-the-context-object>
 
   .. toctree::
     :caption: JavaScript framework
