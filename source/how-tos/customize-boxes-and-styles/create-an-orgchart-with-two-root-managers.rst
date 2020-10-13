@@ -20,7 +20,7 @@ To do that you need to add a fake manager at the top of your chart and then hide
 
 Add the following script to the Custom JavaScipt tab to hide the fake manager:
 
-.. code::
+.. code:: javascript
 
     renderer.onBoxRendered(function(event, box, itemData){
     if (itemData["Title"].contains("David Navarro")) {
@@ -43,7 +43,7 @@ Then, add the following styles to the Custom CSS tab for covering the lines left
 
 .. rubric:: Top to bottom (any)
 
-.. code::
+.. code:: css
 
    .hiddenElements {
     overflow: hidden;
@@ -63,7 +63,7 @@ Then, add the following styles to the Custom CSS tab for covering the lines left
 
 .. rubric:: Left to right
 
-.. code::
+.. code:: css
 
    .hiddenElements {
    overflow: hidden;
@@ -83,7 +83,7 @@ Then, add the following styles to the Custom CSS tab for covering the lines left
 
 .. rubric:: Bottom to top
 
-.. code::
+.. code:: css
 
    .hiddenElements {
    overflow: hidden;

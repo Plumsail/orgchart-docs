@@ -16,7 +16,7 @@ I will show how to hide assistant from subordinates and display it as assistant 
 This is my filtration rule
 
 
-.. code::
+.. code:: javascript
 
    function(itemData, context){ 
  

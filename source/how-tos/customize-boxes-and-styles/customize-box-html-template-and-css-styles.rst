@@ -48,7 +48,7 @@ The Org Chart will convert template from visual editor to HTML template and you 
 
 I added two ‘div’ tags with images. The first one contains image of Santa’s cap:
 
-.. code::
+.. code:: 
     <div class="santa-cap">
       <img src="../PublishingImages/santa-cap.png"/>
     </div> 
@@ -120,7 +120,7 @@ As you can see I used multiple transition styles to ensure that it will work in 
 
 You can find complete CSS style below. It contains multiple comments which will help you to understand how it works:
 
-.. code::
+.. code:: css
 
    /*Change box background*/
    .pl-item-template {

@@ -22,7 +22,7 @@ As you can see some of the boxes are outside of visible area. I will show how to
 Just open the configuration wizard by clicking gears at the top right corner of the web part. Then click “Settings”. Switch to “Custom JavaScript” step and put the code below into code editor:
 
 
-.. code::
+.. code:: JavaScript
 
    renderer.onInitialLoadingFinished(function(){ 
  

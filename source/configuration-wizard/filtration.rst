@@ -23,7 +23,7 @@ For example, using this filter you can show employees from Marketing department 
 
 And with this filter, you can exclude all employees whose name contains Smith:
 
-.. code::
+.. code:: javascript
 
 1. return !itemData["PreferredName"].contains("Smith");
 
@@ -47,7 +47,7 @@ You can leave starting employee field empty. In this case the following logic wi
 
 You can include or exclude items from the Org Chart using the filtration rule. For example this rule will only include employees from the Marketing department:
 
-.. code::
+.. code:: javascript
 
     function(itemData){
 
@@ -68,7 +68,7 @@ If "true", then box with such data will be displayed.
 
 Below you can see the snippet for filtration function:
 
-.. code::
+.. code:: javascript
 
     function(itemData, context){
 
@@ -86,7 +86,7 @@ Use typical JavaScript `conditions <http://www.w3schools.com/js/js_if_else.asp>`
 For example, you may need to include to org chart only employees from the specific department. 
 In this case, the function to display employees from Marketing department looks like this:
 
-.. code::
+.. code:: javascript
 
     function(itemData){
 

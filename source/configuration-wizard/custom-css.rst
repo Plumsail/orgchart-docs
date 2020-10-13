@@ -6,7 +6,7 @@ If you are familiar with `CSS <http://www.w3schools.com/css/>`_ , you can adjust
 
 For example you can change the background of the person’s box to black using such CSS:
 
-.. code::
+.. code:: css
 
     .poch-web-part .pl-item .pl-item-template{
      background-color: black;
@@ -16,7 +16,7 @@ For example you can change the background of the person’s box to black using s
 And this is another example which resizes Org Chart boxes to smaller size. 
 Thus, more boxes can be displayed in the single screen.
 
-.. code::
+.. code:: css
 
    /*Width of the box*/
    .poch-web-part .poch-control .pl-item {
@@ -66,7 +66,7 @@ This way, you can handle styles in the “Custom CSS” tab that will be applied
 
 To enlarge font-size for printing, the code used was:
 
-.. code::
+.. code:: css
 
     .pl-print-mode .pl-item-card .field-container {
     font-size: 16px;
@@ -74,7 +74,7 @@ To enlarge font-size for printing, the code used was:
 
 And to modify the background color of boxes the following code was added:
 
-.. code::
+.. code:: css
 
     .pl-print-mode .pl-item .pl-item-template {
     background-color: #e6f4ff !important;

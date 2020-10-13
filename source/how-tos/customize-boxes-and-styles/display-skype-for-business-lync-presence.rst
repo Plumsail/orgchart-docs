@@ -74,7 +74,7 @@ You can find the snippet which I provided earlier inside this template. This sni
 
 You may also need to add this code to “Custom CSS” step of the configuration wizard:
 
-.. code::
+.. code:: css
 
   .ms-hide{
     display: none!important;

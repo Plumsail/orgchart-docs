@@ -62,7 +62,7 @@ As stated before, you can use other properties and values to filter the items to
 You can also combine conditions using || and && operators. For example:
 
 
-.. code::
+.. code:: JavaScript
 
    function(itemData){
    return !(itemData["AccountName"].contains("gmail") || itemData["Department"].contains("Marketing"));

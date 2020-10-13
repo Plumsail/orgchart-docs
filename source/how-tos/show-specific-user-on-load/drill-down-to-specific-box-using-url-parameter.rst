@@ -34,7 +34,7 @@ Thus, boxID is just identificator of employee.
 
 Open the configuration wizard of Org Chart, navigate to ‘Custom JavaScript’ step and paste this code into code editor:
 
-.. code::
+.. code:: JavaScript
 
    var boxId = GetUrlKeyValue("boxID");
  

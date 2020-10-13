@@ -94,7 +94,7 @@ but to keep code readable I would recommend to move CSS outside from JavaScript 
 
 That is why I created CSS class for box. You can see the CSS style for gold medal box below:
 
-.. code::
+.. code:: css
 
    /*set background color for box with gold medal*/
    .pl-item-template.gold-box {
@@ -103,7 +103,7 @@ That is why I created CSS class for box. You can see the CSS style for gold meda
 
 To apply CSS style I switched to ‘General settings’ and copied style to ‘Custom CSS’ property. Then switched back to JavaScript and changed it to following:
 
-.. code::
+.. code:: javascript
 
     renderer.onBoxRendered(function(event, box, itemData){  
     //If employee has gold award show medal and add CSS classes
@@ -126,7 +126,7 @@ In this step I will show how to use JavaScript to modify org chart boxes dynamic
 
 You can see the JavaScript code I used below:
 
-.. code::
+.. code:: javascript
 
     renderer.onBoxRendered(function(event, box, itemData){  
     //If employee has gold award show medal and add CSS classes
@@ -142,7 +142,7 @@ I added ‘medal’ and ‘gold-medal’ CSS classes to the span.
 I used ‘medal’ class to configure position and size for all medals and ‘gold-medal’ class to set background image for gold medal. 
 You can see CSS style below:
 
-.. code::
+.. code:: css
 
    /*set position for all medals*/
    .medal {
@@ -188,7 +188,7 @@ Switch to ‘General settings’ wizard step and choose ‘Light gray’ skin.
 
 Copy CSS style and paste it to ‘Custom CSS’ property:
 
-.. code::
+.. code:: css
 
    /*set position for all medals*/
    .medal {
@@ -236,7 +236,7 @@ Switch to ‘Custom JavaScript’ wizard step and add ‘Awards’ field to fiel
 Then copy JavaScript code and paste it to the code editor:
 
 
-.. code::
+.. code:: javascript
 
    //subscribe for box rendering event
    renderer.onBoxRendered(function(event, box, itemData){

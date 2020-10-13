@@ -16,7 +16,7 @@ The picture below will help you to understand the structure of the localization 
 You need to open the configuration wizard and navigate to the `Custom JavaScript <../../configuration-wizard/custom-javascript.html>`_ step. 
 Then you can override strings like this:
 
-.. code::
+.. code:: javascript
 
    Plumsail.OrgChart.LocalizationStrings.SearchInputWatermark = "Suche";
    Plumsail.OrgChart.LocalizationStrings.Settings.PrintOrgChart.Title = "Drucken"
@@ -34,7 +34,7 @@ Then you can override strings like this:
 
 This is the structure of the localization object. Read through the comments in the object to understand the purpose of each property.
 
-.. code::
+.. code:: javascript
 
    {
    SearchInputWatermark: "Search",              //This message appears inside search box

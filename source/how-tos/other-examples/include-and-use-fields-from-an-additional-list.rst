@@ -17,7 +17,7 @@ For that you need to open the configuration wizard and switch to “Custom JavaS
 
 And add the simple code into code editor:
 
-.. code::
+.. code:: javascript
 
    renderer.config.additionalList.listServerRelativeUrl = "/sites/kovalev/Lists/AddList";
    renderer.config.additionalList.queryFunc = function (itemData){
@@ -49,7 +49,7 @@ After these steps I will see the average value inside an employee box. And all I
 
 For that, I changed .onBoxTemplate event on “Custom JavaScript” step like this:
 
-.. code::
+.. code:: javascript
 
    renderer.onBoxRendered(function(event, box, itemData){
    //Box rendered event

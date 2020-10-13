@@ -44,7 +44,7 @@ We need to do just one more thing before the users will see Org Chart in anonymo
 
 For that you need to execute the following PowerShell commands on your SharePoint server:
 
-.. code::
+.. code:: javascript
 
     $webApplication = Get-SPWebApplication -Identity "<YourWebApplicationAddress:port>"
     $webApplication.ClientCallableSettings.AnonymousRestrictedTypes.Remove( [Microsoft.SharePoint.SPList],"GetItems")
