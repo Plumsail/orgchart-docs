@@ -38,15 +38,16 @@
   .. toctree::
     :caption: HTML templates 
     :name: toc-html-templates
-    :maxdepth: 1
+    :maxdepth: 2
     :titlesonly:
     
-    Example of template <html-templates/example-of-template>
-    If block helper <html-templates/if-block-helper>
-    Unless block helper <html-templates/unless-block-helper>
-    Displaying of raw HTML content <html-templates/displaying-of-raw-html-content>
-    Additional block helpers <html-templates/additional-block-helpers>
-    Structure of the context object <html-templates/structure-of-the-context-object>
+    Example of template <../../html-templates/templating-syntax.html#example-of-template>
+    If block helper <html-templates#if-block-helper>
+    Unless block helper <html-templates#unless-block-helper>
+    Displaying of raw HTML content <html-templates#displaying-of-raw-html-content>
+    Additional block helpers <html-templates#additional-block-helpers>
+    Structure of the context object <html-templates#structure-of-the-context-object>
+    
 
   .. toctree::
     :caption: JavaScript framework
@@ -54,9 +55,10 @@
     :maxdepth: 1
     :titlesonly:
     
-    Methods <https://ya.ru>
-    Properties <https://ya.ru>
-    Events <https://ya.ru>   
+    Introduction <javascript-framework/introduction>
+    Events <javascript-framework/events>  
+    Methods <javascript-framework/methods>
+    Configuration <javascript-framework/configuration> 
 
   .. toctree::
       :caption: Additional resources
