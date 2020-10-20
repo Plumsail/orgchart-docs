@@ -9,7 +9,7 @@ You can use all power of `jQuery <https://jquery.com/>`_ to customize Org Chart.
 
 Code editor in the configuration wizard looks like this:
 
-.. image:: /../../_static/img/javascript-framework/introduction/NewCustomJavaScriptWizardStep.png
+.. image:: /../_static/img/javascript-framework/introduction/NewCustomJavaScriptWizardStep.png
     :alt: JavaScript
 
 

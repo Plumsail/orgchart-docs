@@ -61,7 +61,7 @@ Then I switched to the ‘Custom JavaScript’ wizard step:
     :alt: Custom javascript
 
 As you can see on the picture above, there is ready to use JavaScript handler with three functions, which allow to subscribe for box, tooltip or search result rendering event. In this article I used only box and search result rendering events to highlight boxes and search results with color. 
-You can find description of JavaScript framework in the documentation (link) .
+You can find description of JavaScript framework in `the documentation <../../javascript-framework/introduction.html>`_.
 
 It is possible to use such code to highlight boxes with ‘Gold medal’ field values:
 

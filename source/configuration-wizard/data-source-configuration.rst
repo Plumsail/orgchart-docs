@@ -9,9 +9,9 @@ You can choose between two data sources:
 2. User profiles
 
 If you choose ‘User profiles’ as a data source, no additional configuration of data source is needed, just go through the wizard until the end. 
-Unless you want to configure dotted-line managers (link) or configure assistants (link).
+Unless you want to configure `dotted-line managers <../how-tos/display-different-types-of-employees/display-dotted-line-managers.html>`_ or configure `assistants <../how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart.html>`_.
 
-To understand how Org Chart communicates with User profiles service, read blog article (link).
+To understand how Org Chart communicates with User profiles service, read `the blog article <../how-tos/additional-resources/how-orgchart-pulls-data-from-ad-on-premises.html>`_.
 
 If you choose *SharePoint list* as a data source, it will be configured to create a new list with demo data by default. 
 You only need to fill *List name*.
@@ -57,17 +57,17 @@ For example you will see ‘Display text’ in the breadcrumb.
         - Display text is displayed in the breadcrumbs of the Org Chart.
    
     *   - Assistant ID
-        - This mapping defines where information about assistant is stored for current item. This is optional mapping. Please read this instruction (link) to learn how to configure assistants.
+        - This mapping defines where information about assistant is stored for current item. This is optional mapping. Please read `this instruction <../how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart.html>`_ to learn how to configure assistants.
    
     *   - Dotted manager ID
-        - This is unique ID of dotted-line manager. For example, it could be ID of manager or login of manager. Type of this field should be the same as type of “Manager ID”. Please read this instruction (link) to learn how to configure dotted-line managers.
+        - This is unique ID of dotted-line manager. For example, it could be ID of manager or login of manager. Type of this field should be the same as type of “Manager ID”. Please read `this instruction <../how-tos/display-different-types-of-employees/display-dotted-line-managers.html>`_ to learn how to configure dotted-line managers.
 
     
 .. rubric:: Support of search in a list with more than 5000 items
 
 SharePoint has a standard restriction on SharePoint list item queries in 5000 items. 
 To be able to use search in such list you need to index the columns on the list level and also enable option *Search only in indexed list columns* in OrgChart settings. 
-You can find more information about it in this article (link).
+You can find more information about it in `this article <../how-tos/other-examples/support-of-search-in-a-list-with-more-than-5k-items.html>`_.
 
 
 .. Note:: Go to the next step of the advanced configuration wizard `Filtration <../configuration-wizard/filtration.html>`_ .

@@ -9,7 +9,7 @@ Before we dive in, here’s where we are in my Org Chart series:
 1. `Plumsail Org Chart for SharePoint 2013 <https://medium.com/plumsail/org-chart-for-sharepoint-online-in-office-365-and-on-premises-e2f241cae59b>`_
 2. How Org Chart communicates with SharePoint User Profile service [this article]
 3. `Org Chart Skins with touch support <../customize-boxes-and-styles/change-orgchart-skin.html>`_
-4. Advanced navigation for SharePoint organizational chart (link).
+4. `Advanced navigation for SharePoint organizational chart <../other-examples/use-advanced-orgchart-navigation.html>`_.
 
 
 Org Chart displays data directly from User Profile service, but if there are no user profiles, 

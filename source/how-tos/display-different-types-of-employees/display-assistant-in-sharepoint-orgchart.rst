@@ -72,7 +72,7 @@ you need to create `a new custom user profile property <https://docs.microsoft.c
 
 
 Once you have a new property for assistants, you can fill it with **semicolon separated** list of assistants. 
-Also, you may need to clear Org Chart cache (link) to load fresh data.
+Also, you may need to `clear Org Chart cache <../additional-resources/data-caching.html>`_ to load fresh data.
 
 Example: assist1@contoso.com; assist2@contoso.com; assist3@contoso.com
 
@@ -113,7 +113,7 @@ Examples:
 - assist1@contoso.com; assist2@contoso.com; assist3@contoso.com if you use email addresses (account names) as employee IDs.
 
 3. Map Assistant ID in OrgChart settings to the newly created column.
-4. Clear Org Chart cache (link) to load fresh data.
+4. `Clear Org Chart cache <../additional-resources/data-caching.html>`_ to load fresh data.
 
 Conclusion
 ----------

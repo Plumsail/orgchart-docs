@@ -89,7 +89,7 @@ Vacancies
 
 **Currently, vacancies are not supported in SharePoint 2010 version.**
 
-.. Note:: If vacancies don’t appear in your web part try to clear cache (link).
+.. Note:: If vacancies don’t appear in your web part try to `clear cache <../how-tos/additional-resources/data-caching.html>`_ .
 
 Vacancies are stored in a separate SharePoint list. A list will be created automatically at specified *Vacancies list URL*. 
 Once you enabled vacancies *Manage vacancies* menu item will appear:

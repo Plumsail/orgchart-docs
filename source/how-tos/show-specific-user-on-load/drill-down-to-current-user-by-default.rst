@@ -19,7 +19,7 @@ I will show how to implement drill down to current user for both.
 Drill down to current user on Org Chart load for User Profiles
 --------------------------------------------------------------
 
-If you have SharePoint Online (Office 365) or SharePoint 2019, 2016, 2013 it is quite simple to implement such drill down for User Profiles data source using JavaScript framework (link). 
+If you have SharePoint Online (Office 365) or SharePoint 2019, 2016, 2013 it is quite simple to implement such drill down for User Profiles data source using `JavaScript framework <../../javascript-framework/introduction.html>`_ . 
 Just open the configuration wizard and paste the code below to JavaScript editor on “Custom JavaScript” step.
 
 .. code:: javascript
@@ -87,7 +87,7 @@ First of all we have to ensure that we have field with account name of user in o
 In my case I created list field called “AccountName”. 
 Then I used `JSOM <https://msdn.microsoft.com/en-us/library/office/hh185007(v=office.14).aspx>`_ to find list item by account name of current user. 
 I used CAML query to do this. 
-Once I have list item for current user I can read ID of for this item and drill down to it using JavaScript framework (link). 
+Once I have list item for current user I can read ID of for this item and drill down to it using `JavaScript framework <../../javascript-framework/introduction.html>`_. 
 Actually you can just copy and paste the code below to JavaScript editor on “Custom JavaScript” step of the configuration wizard. 
 The only thing you may need to replace is internal name of field where account name of user is stored in SharePoint list. 
 Just replace “AccountName” with your field internal name:

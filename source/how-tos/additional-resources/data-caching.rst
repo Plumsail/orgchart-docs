@@ -14,6 +14,6 @@ Once you open the web part for the first time and navigate over boxes, they are 
 It is actual for vacancies and dotted line managers as well as for employee properties.
 
 
-You can change default caching period using JavaScript framework (link). 
+You can change default caching period using `JavaScript framework <../javascript-framework/configuration.html>`_. 
 Pay attention to clientSideCachingLifeDays property. 
 You can put custom JavaScript code into the code editor of the `configuration wizard <../configuration-wizard/run-configuration-wizard.html>`_.

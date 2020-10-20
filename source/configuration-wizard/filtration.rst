@@ -28,7 +28,7 @@ And with this filter, you can exclude all employees whose name contains Smith:
 1. return !itemData["PreferredName"].contains("Smith");
 
 
-You may check this article (link) for more information.
+You may check `this article <../how-tos/filter-and-order-boxes/filter-orgchart-by-department.html>`_ for more information.
 
 .. image:: /../_static/img/advanced-web-part-configuration/filtration/OrgChart-Configuration-Wizard-3.png
     :alt: Filtration

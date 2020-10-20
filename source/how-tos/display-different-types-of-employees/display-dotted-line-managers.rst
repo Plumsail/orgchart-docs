@@ -26,8 +26,11 @@ If a solid line employee has a dotted-line manager, there will be displayed a sm
 
 This article has two parts:
 
-- Dotted-line managers for User Profiles data source (link)
-- Dotted-line managers for SharePoint List data source (link
+- :ref:`dotted-line-managers-for-user-profiles`
+- :ref:`dotted-line-managers-for-sharepoint-list`
+
+
+.. _dotted-line-managers-for-user-profiles:
 
 
 Dotted-line managers for User Profiles data source
@@ -88,7 +91,10 @@ Be patient, SharePoint search takes time to crawl data and update configuration.
 It may take a few hours or even more before your new managed property is working.
 
 
-Once your managed property is configured, you may need to clear Org Chart cache (link) to load fresh data.
+Once your managed property is configured, you may need to `clear Org Chart cache <../additional-resources/data-caching.html>`_ to load fresh data.
+
+
+.. _dotted-line-managers-for-sharepoint-list:
 
 
 Dotted-line managers for SharePoint List data source

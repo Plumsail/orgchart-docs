@@ -1,7 +1,7 @@
 Quick configuration
 ===================
 
-.. note:: If after configuration of the web part you did some changes and they don’t appear in the web part try to clear cache (link).
+.. note:: If after configuration of the web part you did some changes and they don’t appear in the web part try to `clear cache <../how-tos/additional-resources/data-caching.html>`_.
 
 Once you added the web part to your page, you can see the message asking you to configure the web part.
 
@@ -47,7 +47,7 @@ You can choose between two data sources:
 1. SharePoint list.
 2. User profiles.
 
-If you choose *User profiles* as a data source, no additional configuration is needed, just go through the wizard until the end. To understand how Org Chart communicates with User profiles service, read this blog article (link).
+If you choose *User profiles* as a data source, no additional configuration is needed, just go through the wizard until the end. To understand how Org Chart communicates with User profiles service, read `this blog article <../how-tos/additional-resources/how-orgchart-pulls-data-from-ad-on-premises.html>`_.
 
 If you choose *SharePoint list* as a data source, it will be configured to create a new list with demo data by default. You only need to fill *List name*.
 
