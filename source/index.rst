@@ -85,7 +85,11 @@
     
     Version history <general/version-history-index>   
     Licensing details <general/licensing-details>
-    Data protection and security <general/data-protection-index> 
+    Data protection and security <general/data-protection-index>
+    How to upgrade or renew maintenance\subscription  <https://plumsail.com/how-to-renew-maintenance-or-subscription/>
+    Support Plans <https://plumsail.com/support-plans/>
+    Community forum <https://community.plumsail.com/c/org-chart?_ga=2.158628218.1170455527.1603085329-375523067.1540322577>
+    Blog <https://medium.com/plumsail>
 
   .. toctree::
     :caption: Printing & Reports 
