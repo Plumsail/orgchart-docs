@@ -35,19 +35,15 @@
     Custom CSS <configuration-wizard/custom-css>              
     Reset configuration <configuration-wizard/reset-configuration> 
 
-  .. toctree::
-    :caption: HTML templates 
-    :name: toc-html-templates
-    :maxdepth: 2
-    :titlesonly:
-    
-    Example of template <../../html-templates/templating-syntax.html#example-of-template>
-    If block helper <html-templates#if-block-helper>
-    Unless block helper <html-templates#unless-block-helper>
-    Displaying of raw HTML content <html-templates#displaying-of-raw-html-content>
-    Additional block helpers <html-templates#additional-block-helpers>
-    Structure of the context object <html-templates#structure-of-the-context-object>
-    
+
+  .. rst-class:: single-page-nav
+
+    .. toctree::
+      :caption: HTML templates 
+      :name: toc-html-templates
+      :maxdepth: 3    
+      
+      HTML templates <html-templates/templating-syntax>          
 
   .. toctree::
     :caption: JavaScript framework
@@ -85,11 +81,7 @@
     
     Version history <general/version-history-index>   
     Licensing details <general/licensing-details>
-    Data protection and security <general/data-protection-index>
-    How to upgrade or renew maintenance\subscription  <https://plumsail.com/how-to-renew-maintenance-or-subscription/>
-    Support Plans <https://plumsail.com/support-plans/>
-    Community forum <https://community.plumsail.com/c/org-chart?_ga=2.158628218.1170455527.1603085329-375523067.1540322577>
-    Blog <https://medium.com/plumsail>
+    Data protection and security <general/data-protection-index>    
 
   .. toctree::
     :caption: Printing & Reports 
@@ -167,10 +159,8 @@
     :name: toc-manage-size-scale
     :maxdepth: 1
     :titlesonly:
-    
-    Printing organization structure <how-tos/printing-and-reports/printing-organizational-structure>
-    Use advanced Org Chart navigation <how-tos/other-examples/use-advanced-orgchart-navigation>
-    Hide assistant from subordinates <how-tos/other-examples/hide-assistant-from-subordinates>    
+        
+    Use advanced Org Chart navigation <how-tos/other-examples/use-advanced-orgchart-navigation>    
     Include and use fields from an additional list <how-tos/other-examples/include-and-use-fields-from-an-additional-list>
-    Show Org Chart based on a list data source for anonymous users <how-tos/other-examples/show-orgchart-based-on-a-list-data-source-for-anonymous-users>
+    Org Chart based on a list data source for anonymous users <how-tos/other-examples/show-orgchart-based-on-a-list-data-source-for-anonymous-users>
     Support of search in a list with more than 5000 items <how-tos/other-examples/support-of-search-in-a-list-with-more-than-5k-items>    

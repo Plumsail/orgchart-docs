@@ -1,7 +1,14 @@
 Events
 =======
 
-Most rendering events receive **itemData** object as input parameter. The object represents the business object from the data source. It is a set of fields with values. 
+.. contents:: Contents
+   :local:
+   :depth: 1
+
+ItemData object
+---------------
+
+Most rendering events receive :code:`itemData` object as input parameter. The object represents the business object from the data source. It is a set of fields with values. 
 Each field has the same name as internal name of the field in the data source.
 
 The object has structure like this:
@@ -15,82 +22,71 @@ The object has structure like this:
      FieldInternalNameN: "FieldValueN",
    }
 
-
-
-List of events
----------------
-
-- :ref:`onBoxRendered`
-- :ref:`onTooltipRendered`
-- :ref:`onSearchResultRendered`
-- :ref:`onInitialLoadingFinished`
-- :ref:`onLoadingStarted`
-- :ref:`onLoadingFinished`
-
-
 .. _onBoxRendered:
 
-onBoxRendered(handler)
-----------------------
+onBoxRendered(handler) event
+----------------------------
 
-Adds handler on box rendered event. The handler has three input parameters:
+Adds handler on box rendered event. The :code:`handler` function has three input parameters:
 
-- **event** – the object of event.
-- **box** – the object of rendered box. You can change this box, for example change background.
-- **itemData** – the business object from the data source. See description at the beginning of ‘Events’ section.
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
 
-The ‘box’ object has following properties:
+    *  -  Parameter
+       -  Description       
+    *  -  **event**
+       -  It is the object of event    
+    *  -  **box**
+       -  It is the object of rendered box. You can change this box, for example change background.
 
-- **$elem** – The property stores jQuery object of the box element. 
-You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
+          The ‘box’ object has following properties:
 
-- **elem** – The DOM element of the box.
+          - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
+          - **elem** – The DOM element of the box.
+          - **$elemContainer** – The property stores jQuery object of the box container element. 
+          You can use this object to set width and height of the box.
+          - **elemContainer** – The DOM element of the box container.
 
-- **$elemContainer** – The property stores jQuery object of the box container element. 
-You can use this object to set width and height of the box.
+          The ‘box’ object also provides “getInnerContent” function. It gets jQuery object for the inner content of current box.
+    *  -  **itemData**
+       -  It is the business object from the data source. See description at the beginning of ‘Events’ section.
 
-- **elemContainer** – The DOM element of the box container.
-
-The ‘box’ object also provides “getInnerContent” function. It gets jQuery object for the inner content of current box.
-
-Example:
-
-.. code:: javascript
-
-   //Changes background of boxes for all employees
-   //from marketing department
-   renderer.onBoxRendered(function(event, box, itemData){
-       if(itemData["Department"].contains('Marketing')){
-           box.$elem.css({
-               'background-color': 'red',
-               'border-color': 'red'
-           });
-       }
-   });
-
-
-.. note:: In this example ‘Department’ is an internal name of the field, you can get value from the business object using such syntax:
-
-..code:: javascript
-
-   itemData.Department
-
-
-But if the internal name of your field contains ‘−‘ like ‘SPS–Responsibility’ you need to use different syntax:
+.. rubric:: Example
 
 .. code:: javascript
 
-   itemData["SPS-Responsibility"]
+  //Changes background of boxes for all employees
+  //from marketing department
+  renderer.onBoxRendered(function(event, box, itemData){
+      if(itemData["Department"].contains('Marketing')){
+          box.$elem.css({
+              'background-color': 'red',
+              'border-color': 'red'
+          });
+      }
+  });
+
+In this example :code:`Department` is an internal name of the field, you can get value from the business object using such syntax:
+
+.. code:: javascript
+
+  itemData.Department  
 
 
+But if the internal name of your field contains :code:`−` like :code:`SPS–Responsibility` you need to use different syntax:
 
-The ‘−‘ symbol is forbidden in JavaScript, that is why you need to get value of the field using string key.
+.. code:: javascript
+
+  itemData["SPS-Responsibility"]
+
+The :code:`−` symbol is forbidden in JavaScript, that is why you need to get value of the field using string key.
 
 
 .. _onTooltipRendered:
 
-onTooltipRendered(handler)
---------------------------
+onTooltipRendered(handler) event
+--------------------------------
 
 Adds handler on tooltip rendered event. The handler has three input parameters:
 
@@ -122,8 +118,8 @@ Example:
 
 .. _onSearchResultRendered:
 
-onSearchResultRendered(handler)
--------------------------------
+onSearchResultRendered(handler) event
+-------------------------------------
 
 Adds handler on quick search result rendered event. The handler has three input parameters:
 
@@ -156,8 +152,8 @@ Example:
 
 .. _onInitialLoadingFinished:
 
-onInitialLoadingFinished(handler)
----------------------------------
+onInitialLoadingFinished(handler) event
+---------------------------------------
 
 Adds handler on org chart initial loading finished event. It is triggered when org chart is loaded for the first time.
 
@@ -174,8 +170,8 @@ Example:
 
 .. _onLoadingStarted:
 
-onLoadingStarted(handler)
--------------------------
+onLoadingStarted(handler) event
+-------------------------------
 
 Adds handler on org chart loading started event. It is triggered when progress indicator is showed.
 
@@ -192,8 +188,8 @@ Example:
 
 .. _onLoadingFinished:
 
-onLoadingFinished(handler)
--------------------------
+onLoadingFinished(handler) event
+--------------------------------
 
 
 Adds handler on org chart loading finished event. It is triggered when progress indicator is hidden.
@@ -207,3 +203,5 @@ Example:
          console.log('Loading is finished');
      }
    );
+
+.. note:: Next review `Methods <methods.html>`_.

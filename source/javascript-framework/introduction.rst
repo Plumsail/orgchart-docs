@@ -12,4 +12,6 @@ Code editor in the configuration wizard looks like this:
 .. image:: /../_static/img/javascript-framework/introduction/NewCustomJavaScriptWizardStep.png
     :alt: JavaScript
 
+.. note:: Next review `Events <events.html>`_.
+
 

@@ -1,9 +1,11 @@
 Licensing details
 ===============
 
+.. contents:: Contents
+   :local:
+   :depth: 1
 
-
-Licensing for SharePoint Online in Office 365
+SharePoint Online in Office 365
 ---------------------------------------------
 
 By purchasing Org Chart for Office 365 you get a subscription. 
@@ -12,7 +14,7 @@ The subscription is linked to a SharePoint Online domain (yourdomain.sharepoint.
 You can use the product for any number of users, on any number of sites and site collections within your SharePoint Online domain. 
 The subscription includes updates and `Standard Support Plan <https://plumsail.com/support-plans/>`_ .
 
-Licensing for SharePoint 2019/2016/2013/2010
+SharePoint 2019/2016/2013/2010
 --------------------------------------------
 
 By purchasing Org Chart for SharePoint 2019/2016/2013/2010 you get a perpetual license. 
@@ -27,6 +29,15 @@ You can purchase renewal from `your shopper account <https://plumsail.com/how-to
 
 The same applies to Development license, except it can be installed to development or testing servers only and you don’t need to renew maintenance.
 
+Support plans
+-------------
+
+Please review `description of our support plans <https://plumsail.com/support-plans/>`_. 
+
+How to upgrade or renew maintenance\subscription
+------------------------------------------------
+
+Please follow `the instruction <https://plumsail.com/how-to-renew-maintenance-or-subscription/>`_.
 
 End-user license agreement
 --------------------------

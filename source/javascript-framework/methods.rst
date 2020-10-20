@@ -1,26 +1,11 @@
 Methods
 =========
 
-- :ref:`zoom(value)`
-- :ref:`drillDown`
-- :ref:`adjustCenterScroll()`
-- :ref:`render()`
-- :ref:`fixConnectionLines()`
-- :ref:`initTooltipBasedOnConfig`
-- :ref:`expandNodeLevels`
-- :ref:`expandNodeLevelsConditionally`
-- :ref:`collapseAllNodes`
-- :ref:`prerenderAction`
-- :ref:`showLoadingPanel`
-- :ref:`hideLoadingPanel`
-- :ref:`enableDisableFullScreen`
-- :ref:`dataProvider.getBoxGroupItemDataById`
-- :ref:`dataProvider.getCurrentUserAccountName`
-- :ref:`dataProvider.clearCache`
-- :ref:`scrollToBox`
-- :ref:`customFunctions.getNumberOfColumns`
+You can use methods inside events or directly in the JavaScript editor. If you put a method call directly in the editor it is executed when Org Chart web part is loaded. 
 
-
+.. contents:: Contents
+   :local:
+   :depth: 1
 
 .. _zoom(value):
 
@@ -29,7 +14,18 @@ zoom(value)
 
 Sets scale for entire Org Chart.
 
-value – numeric value, for example 0.5.
+.. rubric:: Input parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
+
+    *  -  Parameter
+       -  Description       
+    *  -  **value**
+       -  numeric value, for example :code:`0.5`. 
+
+.. rubric:: Example
 
 The example below shows how to set 50% scale for Org Chart:
 
@@ -358,3 +354,5 @@ Example:
 	   }
 	   return defaultColumnsNumber;
    }
+
+.. note:: Next review `Configuration <configuration.html>`_.

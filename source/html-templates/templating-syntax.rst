@@ -1,6 +1,15 @@
 HTML templating syntax description
 ==================================
 
+.. _example-of-template:
+
+.. contents:: Contents
+   :local:
+   :depth: 1
+
+Introduction
+------------
+
 We use `Handlebars <http://handlebarsjs.com/>`_ templating engine to render boxes, tooltips and search results. 
 You can specify custom HTML templates using Handlebars syntax to change look and feel of the Org Chart.
 
@@ -19,14 +28,6 @@ Handlebars template look like regular HTML, with embedded handlebars expressions
 
 A handlebars expression is a {{, some contents, followed by a }}. In the example above you see *{{Department}}* expression. 
 It allows rendering of the value of the field with internal name ‘Department’.
-
-
-- :ref:`example-of-template`
-- :ref:`if-block-helper`
-- :ref:`unless-block-helper`
-- :ref:`displaying-of-raw-html-content`
-- :ref:`additional-block-helpers`
-- :ref:`structure-of-the-context-object`
 
 
 .. _example-of-template:
