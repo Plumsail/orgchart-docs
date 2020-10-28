@@ -90,17 +90,24 @@ onTooltipRendered(handler) event
 
 Adds handler on tooltip rendered event. The handler has three input parameters:
 
-- **event** – the object of event.
-- **tooltip** – the object of rendered details tooltip. You can change this tooltip, for example change background.
-- **itemData** – the business object from the data source. See description at the beginning of ‘Events’ section.
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
 
+    *  -  Parameter
+       -  Description       
+    *  -  **event**
+       -  the object of event.    
+    *  -  **tooltip**
+       -  the object of rendered details tooltip. You can change this tooltip, for example change background.
 
-The ‘tooltip’ object has following properties:
+          The ‘tooltip’ object has following properties:
 
-- **$elem** – The property stores jQuery object of the box element. 
-You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
+          - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
+          - **elem** – The DOM element of the details tooltip.
 
-- **elem** – The DOM element of the box.
+    *  -  **itemData**
+       -  the business object from the data source. See description at the beginning of ‘Events’ section.
 
 
 Example:
@@ -123,17 +130,24 @@ onSearchResultRendered(handler) event
 
 Adds handler on quick search result rendered event. The handler has three input parameters:
 
-- **event** – the object of event.
-- **searchResult** – the object of rendered search result. You can change this search result, for example change background.
-- **itemData** – the business object from the data source. See description at the beginning of ‘Events’ section.
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
 
+    *  -  Parameter
+       -  Description       
+    *  -  **event**
+       -  the object of event.    
+    *  -  **tooltip**
+       -  the object of rendered details tooltip. You can change this tooltip, for example change background.
 
-The ‘searchResult’ object has following properties::
+          The ‘searchResult’ object has following properties:
 
-- **$elem** – The property stores jQuery object of the box element. 
-You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
+          - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
+          - **elem** – The DOM element of the search result.
 
-- **elem** – The DOM element of the box.
+    *  -  **itemData**
+       -  the business object from the data source. See description at the beginning of ‘Events’ section.
 
 Example:
 
