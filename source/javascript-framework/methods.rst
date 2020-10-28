@@ -41,9 +41,20 @@ drillDown(itemId, completed)
 
 Drills down Org Chart to specified box.
 
-- *itemId* – id of item in a data source. For example it is an account name for user profiles or it can be a list item ID for SharePoint list. Mapping for ID field can be configured on the first step of the configuration wizard for SharePoint list data source.
+.. rubric:: Input parameters
 
-- *completed* – callback function which is executed after drill down.
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
+
+    *  -  Parameter
+       -  Description       
+    *  -  **itemId**
+       -  Id of item in a data source. For example it is an account name for user profiles or it can be a list item ID for SharePoint list. Mapping for ID field can be configured on the first step of the configuration wizard for SharePoint list data source.
+     
+    *  -  **completed**
+       -  callback function which is executed after drill down.
+
 
 The example below shows how to drill down to box of employee with ID equals 3.
 
@@ -103,9 +114,19 @@ initTooltipBasedOnConfig(link, itemData)
 
 Initializes tooltips for specified link. If you have custom rendering logic you can use this method to initialize tooltip links. This method will show a tooltip with data from ‘itemData’ when somebody clicks on the ‘link’.
 
-- *link* – jQuery element for the link. Click on the link will show the tooltip.
+.. rubric:: Input parameters
 
-- *itemData* – the object with properties from a data source. You can receive it from rendering events. Please find the description below at the beginning of the ‘Events’ section.
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
+
+    *  -  Parameter
+       -  Description       
+    *  -  **link**
+       -  jQuery element for the link. Click on the link will show the tooltip.
+     
+    *  -  **itemData**
+       -  The object with properties from a data source. You can receive it from rendering events. Please find the description below at the beginning of the ‘Events’ section.
 
 
 .. _expandNodeLevels:
@@ -113,11 +134,21 @@ Initializes tooltips for specified link. If you have custom rendering logic you 
 expandNodeLevels(numberOfLevels, completed)
 -------------------------------------------
 
-Expands specified number of levels of Org Chart. 
+Expands specified number of levels of Org Chart.
 
-- *numberOfLevels* – number of levels to expand
+.. rubric:: Input parameters
 
-- *completed* – callback function which is executed when all levels are expanded.
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
+
+    *  -  Parameter
+       -  Description       
+    *  -  **numberOfLevels**
+       -  Number of levels to expand.
+     
+    *  -  **completed**
+       -  callback function which is executed when all levels are expanded.
 
 You can use it together with ‘showLoadingPanel’ and ‘hideLoadingPanel’ functions. Show loading panel before calling this method and hide it inside completed callback.
 
@@ -135,13 +166,25 @@ Example:
 expandNodeLevelsConditionally(maxNumberOfLevels, conditionFunction, completed)
 ------------------------------------------------------------------------------
 
-Conditionally expands specified number of levels of Org Chart. 
+Conditionally expands specified number of levels of Org Chart.
 
-- *maxNumberOfLevels* – maximum number of levels to expand
+.. rubric:: Input parameters
 
-- *conditionFunction* – function that receives “itemData” object with all box properties. You can use this object in your conditions. The funciton has to return boolean value. If “true” is returned, current box will be expanded.
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
 
-- *completed* – callback function which is executed when all levels are expanded.
+    *  -  Parameter
+       -  Description       
+    *  -  **maxNumberOfLevels**
+       -  Number of levels to expand.
+     
+    *  -  **conditionFunction**
+       -  Function that receives “itemData” object with all box properties. You can use this object in your conditions. The funciton has to return boolean value. If “true” is returned, current box will be expanded.
+
+    *  -  **completed**
+       -  callback function which is executed when all levels are expanded.
+
 
 You can use it together with ‘showLoadingPanel’ and ‘hideLoadingPanel’ functions. Show loading panel before calling this method and hide it inside completed callback.
 
@@ -174,9 +217,19 @@ The example below shows how to use this function together with “onInitialLoadi
 collapseAllNodes(completed)
 ---------------------------
 
-Collapse all levels of Org Chart. 
+Collapse all levels of Org Chart.
 
-- *completed* – callback function which is executed when all levels are collapsed.
+.. rubric:: Input parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
+
+    *  -  Parameter
+       -  Description       
+    *  -  **completed**
+       -  callback function which is executed when all levels are expanded.
+
 
 You can show loading panel before calling this method and hide it inside completed callback with ‘showLoadingPanel’ and ‘hideLoadingPanel’ functions.
 
@@ -203,6 +256,18 @@ prerenderAction(completed)
 ---------------------------
 
 You can use this method to preform some actions before Org Chart rendering. For example if you need to load some data or some scripts you can hold Org Chart loading and continue it once everything is ready.
+
+.. rubric:: Input parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
+
+    *  -  Parameter
+       -  Description       
+    *  -  **completed**
+       -  callback function which is executed when all levels are expanded.
+
 
 Be careful with this method because if you don’t call “completed” function, Org Chart is never rendered. We recommend you to wrap your code with “try – catch – finally” to guarantee that “completed” function is called.
 
@@ -333,11 +398,22 @@ Example:
 customFunctions.getNumberOfColumns(rootItemData, defaultColumnsNumber)
 -----------------------------------------------------------------------
 
-
 You may use this method to perform some custom logic for setting the number of columns for the root item in the compact layout dynamically. For example, if you need to change the default value from the “Layout” step of the configuration wizard for one of the users. 
 
-- *rootItemData* – the business object from the data source. See description at the beginning of ‘Events’ section.
-- *defaultColumnsNumber* – the default value from the configuration wizard.
+.. rubric:: Input parameters
+
+.. list-table::
+    :header-rows: 1
+    :widths: 30 70
+
+    *  -  Parameter
+       -  Description       
+    *  -  **rootItemData**
+       -  The business object from the data source. See description at the beginning of ‘Events’ section.
+     
+    *  -  **defaultColumnsNumber**
+       -  The default value from the configuration wizard.
+
 
 .. note:: This method must return a number value. The default value will be taken otherwise.
 
