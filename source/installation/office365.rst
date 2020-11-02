@@ -1,6 +1,15 @@
 Installation for Office 365
 ===========================
 
+.. contents:: Contents
+   :local:
+   :depth: 1
+
+
+Installation
+------------
+
+
 `Download the add-in <https://plumsail.com/sharepoint-orgchart/download/>`_  from our website.
 
 Org Chart is `a SharePoint Framework <https://dev.office.com/sharepoint/docs/spfx/sharepoint-framework-overview>`_ add-in that allows you to visualize organization structure on both classic and modern SharePoint pages. Unfortunately, SharePoint Store doesn’t support the installation of SharePoint Framework add-ins. That is why you need to install add-in manually.
@@ -55,9 +64,17 @@ You need to select “Make this solution available to all sites in the organizat
 
 If you don’t want to make this app availalbe on all sites, you will need to `add app to each site manually <install-add-site-want-add-org-chart.html>`_ .
 
-Adding web part to a page
--------------------------
+.. rubric:: Adding web part to a page
 
 Navigate to the page where you want to add an org chart.
 
 .. note:: If you use “Classic” SharePoint pages follow this  `instruction <add-org-chart-to-classic-page.html>`_  to add web part to a page.
+
+
+Update
+------
+
+1. `Download <https://plumsail.com/sharepoint-orgchart/download/>`_ the new package of Org Chart for SPO.
+2. Go to your SharePoint app catalogue (apps for SharePoint).
+3. Delete the existing package.
+4. Upload the new package and make the solution available to all sites when deploying it.
