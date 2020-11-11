@@ -19,7 +19,7 @@ SharePoint 2019/2016/2013/2010
 
 By purchasing Org Chart for SharePoint 2019/2016/2013/2010 you get a perpetual license. 
 One license allows installation to two Web Front End servers (WFE). You need to purchase separate license for each two WFE servers you have. 
-Find more information about WFE servers `in this article <https://plumsail.com/what-is-sharepont-web-front-end-server-wfe/>`_ . 
+Find more information about WFE servers `in this article <what-is-wfe-server.html>`_. 
 The license includes one year of updates and `Standard Support Plan <https://plumsail.com/support-plans/>`_ . 
 The license is perpetual, but you can renew it to get one more year of Standard Support Plan and updates.
 
