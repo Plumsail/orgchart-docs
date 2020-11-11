@@ -18,7 +18,7 @@ This property defines the field which will be used to get photo URLs for boxes. 
 You can leave this property empty if you don’t have photos.
 
 Under photo URL field property you can see area with list of fields. 
-You can choose field from the combo box and click *Add field* button. 
+You can choose field from the combo box and click **Add field** button. 
 Added field will be included in the box template.
 
 Once you added a new field you can drag it up and down to change order of fields in the box. See the picture below:
@@ -26,14 +26,14 @@ Once you added a new field you can drag it up and down to change order of fields
 .. image:: /../_static/img/advanced-web-part-configuration/box-template/OrgChart-Configuration-Wizard-7.png
     :alt: Design mode
 
-Each field has *Display as* property. You can use it to change behavior of the field. There are four display types:
+Each field has **Display as** property. You can use it to change behavior of the field. There are four display types:
 
 - **Tooltip link** – if you apply this type to the field, it will be displayed as a link. This link will show the details tooltip for the current box on click.
 - **Text** – if you apply this type to the field, it will be displayed as a plain text.
-- **E-mail** – if you apply this type to the field, it will be displayed as a *mailto* link.
+- **E-mail** – if you apply this type to the field, it will be displayed as a **mailto** link.
 - **Link** – if you apply this type to the field it will be displayed as a link.
 
-Once you choose the *Link* as a display type you can see the tooltip. This tooltip allows to choose other field, which will be used as a URL for the link. 
+Once you choose the **Link** as a display type you can see the tooltip. This tooltip allows to choose other field, which will be used as a URL for the link. 
 You also can specify the URL manually:
 
 .. image:: /../_static/img/advanced-web-part-configuration/box-template/OrgChart-Configuration-Wizard-8.png

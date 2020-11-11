@@ -6,7 +6,7 @@ The object contains all fields specified in the templates of box, tooltip and se
 
 You can use jQuery to customize rendered element. Read `description of JavaScript framework <https://plumsail.com/sharepoint-orgchart/docs/javascript-framework/>`_ for more information.
 
-On the picture below you can see example of JavaScript which changes the background of boxes to red for all employees from the *Marketing* Department.
+On the picture below you can see example of JavaScript which changes the background of boxes to red for all employees from the **Marketing** Department.
 
 .. image:: /../_static/img/advanced-web-part-configuration/custom-javascript/OrgChart-Configuration-Wizard-10.png
     :alt: Custom JavaScript

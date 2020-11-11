@@ -29,12 +29,12 @@ The interface for mapping looks like this.
 
 
 Mapping defines the connection between Organization Chart field and List field. Data from the corresponding list field 
-will be used by the Organization Chart, for example you can specify mapping between *Item ID* and list item ID.
+will be used by the Organization Chart, for example you can specify mapping between **Item ID** and list item ID.
 
-*Item ID*, *Manager ID* and *Display text* mappings are required, you can leave other mappings empty. 
+**Item ID**, **Manager ID** and **Display text** mappings are required, you can leave other mappings empty. 
 Once you configured it, you can go through the wizard and click the finish button.
 
-*Item ID* and *Manager ID* are used to build hierarchy. *Display text* is used as display text for entities in the org chart. 
+**Item ID** and **Manager ID** are used to build hierarchy. **Display text** is used as display text for entities in the org chart. 
 For example you will see ‘Display text’ in the breadcrumb.
 
 
@@ -66,7 +66,7 @@ For example you will see ‘Display text’ in the breadcrumb.
 .. rubric:: Support of search in a list with more than 5000 items
 
 SharePoint has a standard restriction on SharePoint list item queries in 5000 items. 
-To be able to use search in such list you need to index the columns on the list level and also enable option *Search only in indexed list columns* in OrgChart settings. 
+To be able to use search in such list you need to index the columns on the list level and also enable option **Search only in indexed list columns** in OrgChart settings. 
 You can find more information about it in `this article <../how-tos/other-examples/support-of-search-in-a-list-with-more-than-5k-items.html>`_.
 
 

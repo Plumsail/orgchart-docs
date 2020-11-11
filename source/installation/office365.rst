@@ -26,17 +26,17 @@ Navigate to SharePoint Admin Center:
 .. image:: /../_static/img/getting-started/installation-office365/OpenSharePointAdminCenter.png
     :alt: Admin center
 
-Go to *Apps* classic feature:
+Go to **Apps** classic feature:
 
 .. image:: /../_static/img/getting-started/installation-office365/OpenAppCatalog1.png
     :alt: App catalog
 
-Open *App catalog*:
+Open **App catalog**:
 
 .. image:: /../_static/img/getting-started/installation-office365/OpenAppCatalog2.png
     :alt: App catalog
 
-If you don’t have *App Catalog* yet, you will be able to create a new one:
+If you don’t have **App Catalog** yet, you will be able to create a new one:
 
 .. image:: /../_static/img/getting-started/installation-office365/CreateAppCatalog1.png
     :alt: Create App catalog
@@ -52,7 +52,7 @@ Just fill in **Title**, **Web Site Address**, **Administrator** and **Storage Qu
 .. image:: /../_static/img/getting-started/installation-office365/CreateAppCatalogSiteCollection.png
     :alt: Create App catalog site collection
 
-Navigate to *Apps for SharePoint* and upload Add-in package that you downloaded at the beginning of this instruction (you need to upload to the App Catalog the whole .sppkg file without unpacking it):
+Navigate to **Apps for SharePoint** and upload Add-in package that you downloaded at the beginning of this instruction (you need to upload to the App Catalog the whole .sppkg file without unpacking it):
 
 .. image:: /../_static/img/getting-started/installation-office365/UploadAppToCatalog.png
     :alt: Upload app to catalog

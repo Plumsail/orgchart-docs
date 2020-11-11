@@ -70,7 +70,7 @@ You can use mouse wheel to zoom in and zoom out in the Org Chart web part. To di
 
 .. rubric:: Display level number
 
-Also, you can display the level number in your hierarchy tree for each user by checking *Display level number*.
+Also, you can display the level number in your hierarchy tree for each user by checking **Display level number**.
 
 
 .. rubric:: Display number of solid line reports
@@ -91,15 +91,15 @@ Vacancies
 
 .. Note:: If vacancies don’t appear in your web part try to `clear cache <../how-tos/data-caching.html>`_ .
 
-Vacancies are stored in a separate SharePoint list. A list will be created automatically at specified *Vacancies list URL*. 
-Once you enabled vacancies *Manage vacancies* menu item will appear:
+Vacancies are stored in a separate SharePoint list. A list will be created automatically at specified **Vacancies list URL**. 
+Once you enabled vacancies **Manage vacancies** menu item will appear:
 
 .. image:: /../_static/img/advanced-web-part-configuration/general-settings/ManageVacanciesMenu-1.png
     :alt: Manage vacancies menu
 
 
-This menu item redirects user to vacancies list. To create new vacancies, create new list item and specify *Manager*. 
-It can be account name for *User Profiles* data source and list item ID for ‘SharePoint list’ data source:
+This menu item redirects user to vacancies list. To create new vacancies, create new list item and specify **Manager**. 
+It can be account name for **User Profiles** data source and list item ID for ‘SharePoint list’ data source:
 
 .. image:: /../_static/img/advanced-web-part-configuration/general-settings/CreateVacancy.png
     :alt: Create vacancy

@@ -11,7 +11,7 @@ This is how you can use it:
    {{safeImage PictureURL}}
 
 
-Where *PictureURL* is an internal name of a field with URL.
+Where **PictureURL** is an internal name of a field with URL.
 
 
 The **detailsTooltipLink** block allows wrapping of some HTML content with **a** tag which will show details tooltip once you click on it. 

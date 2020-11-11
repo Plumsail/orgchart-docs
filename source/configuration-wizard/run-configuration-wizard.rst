@@ -12,12 +12,12 @@ If you need to change settings of an already configured Web Part, you need to pe
 
 
 1. Open your page in edit mode.
-2. Click *pencil* icon at the left side of your web part. It will open property pane.
+2. Click **pencil** icon at the left side of your web part. It will open property pane.
 
 .. image:: /../_static/img/advanced-web-part-configuration/run-configuration-wizard/pencil-icon.png
     :alt: Open configuration wizard
 
-3. Click *Open Config Wizard* in the property pane.
+3. Click **Open Config Wizard** in the property pane.
 
 
 .. rubric:: Org Chart for Office 365 or for SharePoint 2019 and classic SharePoint pages
@@ -29,8 +29,8 @@ If you need to change settings of an already configured Web Part, you need to pe
 .. image:: /../_static/img/advanced-web-part-configuration/run-configuration-wizard/EditClassicWebPart.png
     :alt: Edit classic web part
 
-3. Click *Configure*
-4. Click *Open Config Wizard*
+3. Click **Configure**
+4. Click **Open Config Wizard**
 5. Don’t forget to click *Ok* to apply changes after completing configuration.
 
 
