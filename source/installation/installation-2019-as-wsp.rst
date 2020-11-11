@@ -6,7 +6,7 @@ The installation process consists of two parts:
 - Install services – web part will pull data from them.
 - Install SharePoint Framework add-in – it is a web part itself.
 
-`Download wsp-package <https://plumsail.com/sharepoint-orgchart/download/>`_ and extract it from the downloaded zip archive. The archive contains wsp-package (Plumsail.OrgChart.2019.wsp) and SharePoint Framework package (plumsail-orgchart-sp-2019.sppkg). Place those files to one of the servers in your Sharepoint 2019 farm.
+`Download wsp-package <https://plumsail.com/sharepoint-orgchart/download/>`_ and extract it from the downloaded zip archive. The archive contains wsp-package (:code:`Plumsail.OrgChart.2019.wsp`) and SharePoint Framework package (:code:`plumsail-orgchart-sp-2019.sppkg`). Place those files to one of the servers in your Sharepoint 2019 farm.
 
 Install services
 ----------------
@@ -19,12 +19,12 @@ Run Sharepoint 2019 Management Shell as administrator:
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/WspInstallation2.png
     :alt: WSP installation
 
-Print *Add-SPSolution [path to wsp-package]* :
+Print  :code:`Add-SPSolution [path to wsp-package]` :
 
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/WspInstallation2.png
     :alt: WSP installation
 
-Open Central Administration as administrator and navigate to *System Settings* → *Manage farm solutions*. Select plumsail.orgchart.2019.wsp and press *Deploy Solution* link:
+Open Central Administration as administrator and navigate to **System Settings** → **Manage farm solutions**. Select :code:`plumsail.orgchart.2019.wsp` and press **Deploy Solution** link:
 
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/SolutionProperties.png
     :alt: Solution properties

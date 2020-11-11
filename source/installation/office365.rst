@@ -52,7 +52,7 @@ Just fill in **Title**, **Web Site Address**, **Administrator** and **Storage Qu
 .. image:: /../_static/img/getting-started/installation-office365/CreateAppCatalogSiteCollection.png
     :alt: Create App catalog site collection
 
-Navigate to **Apps for SharePoint** and upload Add-in package that you downloaded at the beginning of this instruction (you need to upload to the App Catalog the whole .sppkg file without unpacking it):
+Navigate to **Apps for SharePoint** and upload Add-in package that you downloaded at the beginning of this instruction (you need to upload to the App Catalog the whole :code:`.sppkg` file without unpacking it):
 
 .. image:: /../_static/img/getting-started/installation-office365/UploadAppToCatalog.png
     :alt: Upload app to catalog
