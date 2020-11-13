@@ -110,7 +110,7 @@ Adds handler on tooltip rendered event. The handler has three input parameters:
        -  the business object from the data source. See description at the beginning of "Events" section.
 
 
-Example:
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -149,7 +149,7 @@ Adds handler on quick search result rendered event. The handler has three input 
     *  -  **itemData**
        -  the business object from the data source. See description at the beginning of "Events" section.
 
-Example:
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -171,7 +171,7 @@ onInitialLoadingFinished(handler) event
 
 Adds handler on org chart initial loading finished event. It is triggered when org chart is loaded for the first time.
 
-Example: 
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -189,7 +189,7 @@ onLoadingStarted(handler) event
 
 Adds handler on org chart loading started event. It is triggered when progress indicator is showed.
 
-Example: 
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -208,7 +208,7 @@ onLoadingFinished(handler) event
 
 Adds handler on org chart loading finished event. It is triggered when progress indicator is hidden.
 
-Example: 
+.. rubric:: Example
 
 .. code-block:: javascript
 

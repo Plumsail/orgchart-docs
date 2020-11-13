@@ -55,6 +55,7 @@ Drills down Org Chart to specified box.
     *  -  **completed**
        -  callback function which is executed after drill down.
 
+.. rubric:: Example
 
 The example below shows how to drill down to box of employee with ID equals 3.
 
@@ -72,6 +73,8 @@ adjustCenterScroll()
 
 Displays center of of structure in the middle of the web part.
 
+.. rubric:: Example
+
 The example below shows how to call this method:
 
 .. code-block:: javascript
@@ -86,6 +89,8 @@ render()
 
 Rerenders Org Chart from scratch.
 
+.. rubric:: Example
+
 The example below shows how to call it
 
 .. code-block:: javascript
@@ -99,6 +104,8 @@ fixConnectionLines()
 --------------------
 
 Sometime if you add content to Org Chart boxes dynamically by JavaScript, connection lines can appear not in correct place. You can use this method to adjust connection lines to newly added content.
+
+.. rubric:: Example
 
 The example below shows how to use this method:
 
@@ -152,7 +159,7 @@ Expands specified number of levels of Org Chart.
 
 You can use it together with :code:`showLoadingPanel` and :code:`hideLoadingPanel` functions. Show loading panel before calling this method and hide it inside completed callback.
 
-Example:
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -187,6 +194,8 @@ Conditionally expands specified number of levels of Org Chart.
 
 
 You can use it together with :code:`showLoadingPanel` and :code:`hideLoadingPanel` functions. Show loading panel before calling this method and hide it inside completed callback.
+
+.. rubric:: Example
 
 The example below shows how to use this function together with :code:`onInitialLoadingFinished` event and :code:`showLoadingPanel` method. It waits untill the web part is loaded in :code:`onInitialLoadingFinished` event. Then it shows loading panel by calling :code:`showLoadingPanel`. Then it validates condition for each box in :code:`conditionFunction`. Once all levels are expanded, it hides loading panel by calling :code:`hideLoadingPanel` method.
 
@@ -233,6 +242,8 @@ Collapse all levels of Org Chart.
 
 You can show loading panel before calling this method and hide it inside completed callback with :code:`showLoadingPanel` and :code:`hideLoadingPanel` functions.
 
+.. rubric:: Example
+
 The example below shows how to use this function together with :code:`onInitialLoadingFinished` event and :code:`showLoadingPanel` method. It waits untill the web part is loaded in :code:`onInitialLoadingFinished` event. Once all levels are collapsed, it hides loading panel by calling :code:`hideLoadingPanel` method.
 
 .. code-block:: javascript
@@ -272,21 +283,21 @@ You can use this method to preform some actions before Org Chart rendering. For 
 
 Be careful with this method because if you don’t call :code:`completed` function, Org Chart is never rendered. We recommend you to wrap your code with :code:`try – catch – finally` to guarantee that :code:`completed` function is called.
 
-Example:
+.. rubric:: Example
 
 .. code-block:: javascript
 
   renderer.prerenderAction = function(completed){
-  try {
-    //Do some initialization staff  }
-  catch(err) {
-    //handle errors  } 
-  finally {
-    //Org chart will not start rendering
-    //until you call 'completed' function
-    completed();
+    try {
+      //Do some initialization staff  }
+    catch(err) {
+      //handle errors  } 
+    finally {
+      //Org chart will not start rendering
+      //until you call 'completed' function
+      completed();
+    }
   }
-}
 
 
 .. _showLoadingPanel:
@@ -296,7 +307,7 @@ showLoadingPanel()
 
 It shows loading screen for the Org Chart web part.
 
-Example:
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -309,7 +320,7 @@ hideLoadingPanel()
 
 It hides loading screen for the Org Chart web part.
 
-Example:
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -322,6 +333,8 @@ enableDisableFullScreen()
 -------------------------
 
 It toggles full screen mode for the Org Chart web part.
+
+.. rubric:: Example
 
 In the example below I check if there is the URL parameter :code:`IsFullScreen` and show Org Chart enable full scheen if it is there.
 
@@ -341,7 +354,7 @@ dataProvider.getBoxGroupItemDataById(id, completed, error)
 
 Get org chart data item by id (usually account name or list id). 
 
-Example: 
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -357,7 +370,7 @@ dataProvider.getCurrentUserAccountName(completed, error)
 
 Get account name of a current logged in user. 
 
-Example: 
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -371,7 +384,9 @@ Example:
 dataProvider.clearCache()
 --------------------------
 
-Clears client side cache for current browser. Example:
+Clears client side cache for current browser. 
+
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -385,7 +400,7 @@ scrollToBox(id)
 
 Scroll org chart to item by id (usually account name or list id). 
 
-Example: 
+.. rubric:: Example
 
 .. code-block:: javascript
 
@@ -414,7 +429,7 @@ You may use this method to perform some custom logic for setting the number of c
        -  The default value from the configuration wizard.
 
 
-Example: 
+.. rubric:: Example
 
 .. code-block:: JavaScript
 
