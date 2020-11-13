@@ -36,19 +36,19 @@ This article has two parts:
 Dotted-line managers for User Profiles data source
 --------------------------------------------------
 
-Dotted-line managers are enabled for User Profiles data source by default. If you open the configuration wizard on the “Data source settings” step and see that “Dotted manager” mapping is specified, it means that dotted-managers are enabled and Org Chart will try to get data from this user profile property:
+Dotted-line managers are enabled for User Profiles data source by default. If you open the configuration wizard on the **Data source settings** step and see that **Dotted manager** mapping is specified, it means that dotted-managers are enabled and Org Chart will try to get data from this user profile property:
 
 .. image:: /../_static/img/how-tos/display-different-types-of-employees/display-dotted-line-managers/DottedManagersGeneralSettings.png 
     :alt: Settings
 
 
-If you want to disable dotted line managers, just select “None” for the “Dotted line” manager mapping on the “Data source settings” step.
+If you want to disable dotted line managers, just select **None** for the **Dotted line** manager mapping on the **Data source settings** step.
 
 
 How to add support for multiple dotted-line managers for User Profiles data source
 ----------------------------------------------------------------------------------
 
-By default, Org Chart uses standard “Dotted-line Manager” property from SharePoint user profiles. 
+By default, Org Chart uses standard "Dotted-line Manager" property from SharePoint user profiles. 
 It allows you to specify only one dotted line manager per employee. 
 If you want to specify multiple dotted-line managers per employee, 
 you need to create `a new custom user profile property <https://docs.microsoft.com/en-us/sharepoint/administration/add-edit-or-delete-custom-properties-for-a-user-profile>`_ and specify it in the Org Chart mapping.
@@ -80,12 +80,12 @@ Configuration for SharePoint Online in Office 365
 
 If you use Org Chart for Office 365, additional configuration of SharePoint search service is required. Otherwise, Org Chart will not be able to find subordinates for dotted line managers.
 
-You need to add a managed search property for the user profile property that contains information about dotted-line managers for the user profile. By default, Org Chart uses “Dotted-line Manager” property. It doesn’t have own managed search property. If you have another user profile property, you need to create a managed property for it.
+You need to add a managed search property for the user profile property that contains information about dotted-line managers for the user profile. By default, Org Chart uses "Dotted-line Manager" property. It doesn’t have own managed search property. If you have another user profile property, you need to create a managed property for it.
 
 **Important**: The name for the search metadata property has to be **DottedLineManager**.
 
 We prepared an article for you `describing how to create a new search metadata property <https://medium.com/plumsail/how-to-create-managed-search-property-for-user-profiles-in-office-365-as-fast-as-possible-ac4a95cd7afb>`_ . 
-Please follow it step by step and create a new property called “DottedLineManager”. 
+Please follow it step by step and create a new property called "DottedLineManager". 
 If you specify another name, Org Chart will not be able to find dotted-line subordinates. 
 Be patient, SharePoint search takes time to crawl data and update configuration. 
 It may take a few hours or even more before your new managed property is working.
@@ -127,7 +127,7 @@ If you want to add support for multiple dotted-line managers per an employee you
 
 1. Create a multivalue lookup instead of regular lookup. This will allow you to pick multiple dotted-line managers using lookup filed.
 
-2. Or create a regular “Single line of text” list column. This will allow you to specify a semicolon separated list of dotted-line managers.
+2. Or create a regular "Single line of text" list column. This will allow you to specify a semicolon separated list of dotted-line managers.
 
 Examples:
 

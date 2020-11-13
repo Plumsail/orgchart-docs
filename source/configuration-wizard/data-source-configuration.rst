@@ -60,7 +60,7 @@ For example you will see ‘Display text’ in the breadcrumb.
         - This mapping defines where information about assistant is stored for current item. This is optional mapping. Please read `this instruction <../how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart.html>`_ to learn how to configure assistants.
    
     *   - Dotted manager ID
-        - This is unique ID of dotted-line manager. For example, it could be ID of manager or login of manager. Type of this field should be the same as type of “Manager ID”. Please read `this instruction <../how-tos/display-different-types-of-employees/display-dotted-line-managers.html>`_ to learn how to configure dotted-line managers.
+        - This is unique ID of dotted-line manager. For example, it could be ID of manager or login of manager. Type of this field should be the same as type of **Manager ID**. Please read `this instruction <../how-tos/display-different-types-of-employees/display-dotted-line-managers.html>`_ to learn how to configure dotted-line managers.
 
     
 .. rubric:: Support of search in a list with more than 5000 items

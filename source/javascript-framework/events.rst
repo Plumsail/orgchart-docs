@@ -48,7 +48,7 @@ Adds handler on box rendered event. The :code:`handler` function has three input
           You can use this object to set width and height of the box.
           - **elemContainer** – The DOM element of the box container.
 
-          The ‘box’ object also provides “getInnerContent” function. It gets jQuery object for the inner content of current box.
+          The ‘box’ object also provides :code:`getInnerContent` function. It gets jQuery object for the inner content of current box.
     *  -  **itemData**
        -  It is the business object from the data source. See description at the beginning of ‘Events’ section.
 

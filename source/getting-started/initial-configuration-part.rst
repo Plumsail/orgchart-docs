@@ -5,7 +5,7 @@ You can choose between two data sources:
 1. SharePoint list.
 2. User profiles.
 
-If you choose **User profiles** as a data source, no additional configuration is needed, just go through the wizard until the end. To understand how Org Chart communicates with User profiles service, read `this blog article <../how-tos/additional-resources/how-orgchart-pulls-data-from-ad-on-premises.html>`_.
+If you choose **User profiles** as a data source, no additional configuration is needed, just go through the wizard until the end.
 
 If you choose **SharePoint list** as a data source, it will be configured to create a new list with demo data by default. You only need to fill **List name**.
 

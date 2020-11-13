@@ -24,7 +24,7 @@ Printing to **PDF** provides some options: you can specify page size and orienta
     :alt: Print PDF
 
 
-Besides standard **paper formats**, you can select an “Auto” option that will fit the page size to the current Org Chart view.
+Besides standard **paper formats**, you can select an **Auto** option that will fit the page size to the current Org Chart view.
 
 .. image:: /../_static/img/how-tos/printing-and-reports/printing-organizational-structure/print_pdf_paper.png
     :alt: Print PDF paper
@@ -39,14 +39,14 @@ Org Chart export to a **PNG** file has no available options. The chart will be s
 Known Issues
 ------------
 
-If you open an exported PDF file with Acrobat Reader and try to “Save As,” most likely you will encounter the following error:
+If you open an exported PDF file with Acrobat Reader and try to **Save As**, most likely you will encounter the following error:
 
 .. image:: /../_static/img/how-tos/printing-and-reports/printing-organizational-structure/acrobat_error23.png
     :alt: Acrobat error
 
 
-To solve this issue, open an “Edit” menu of Acrobat Reader and choose “Preferences.” 
-There, go to a “Documents” category and uncheck “Save As optimizes for Fast Web View” option.
+To solve this issue, open an **Edit** menu of Acrobat Reader and choose **Preferences**. 
+There, go to a **Documents** category and uncheck **Save As optimizes for Fast Web View** option.
 
 .. image:: /../_static/img/how-tos/printing-and-reports/printing-organizational-structure/acrobat_preferences.png
     :alt: Acrobat preferences

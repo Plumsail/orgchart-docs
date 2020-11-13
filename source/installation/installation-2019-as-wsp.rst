@@ -47,7 +47,7 @@ Navigate to ‘Apps for SharePoint’ and upload Add-in package that you downloa
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/UploadAppToCatalog2019.png
     :alt: Upload app to catalog 2019
 
-You need to select “Make this solution available to all sites in the organization” in the dialog. Once you did this you can add a web part to a page.
+You need to select "Make this solution available to all sites in the organization" in the dialog. Once you did this you can add a web part to a page.
 
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/orgchart2019-trust.png
     :alt: OrgChart 2019 trust
@@ -57,7 +57,7 @@ If you don’t want to make this app availalbe on all sites, you will need to `a
 Adding web part to a page
 -------------------------
 
-.. note:: If you use “Classic” SharePoint pages follow this `instruction <add-org-chart-to-classic-page.html>`_ to add web part to a page.
+.. note:: If you use "Classic" SharePoint pages follow this `instruction <add-org-chart-to-classic-page.html>`_ to add web part to a page.
 
 Navigate to the page where you want to add an org chart.
 
@@ -66,4 +66,4 @@ Pick **Plumsail Org Chart** web part from the menu to add it to your page:
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/addWepartModern.png
     :alt: Add web part
 
-Once you added the web part you can `configure it <../getting-started/quick-configuration.html>`_ .
+Once you added the web part you can `configure it <../getting-started/quick-configuration.html>`_.

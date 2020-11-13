@@ -1,6 +1,13 @@
 Installation for SharePoint 2010
 ================================
 
+.. contents:: Contents
+   :local:
+   :depth: 1
+
+Installation
+------------
+
 `Download setup file <https://plumsail.com/sharepoint-orgchart/download/>`_ and run it on one of the servers in your SharePoint 2019 farm as Farm Administrator. Follow the wizard steps.
 
 Go to your application. Select Site Settings item in the root of the site collection in Site Actions menu. Choose Site collection features in Site Collection Administration section:
@@ -16,7 +23,7 @@ Activate Plumsail Org Chart feature if it is not activated.
     :alt: OrgChart feature 2010
 
 
-Adding Web Part to a page
+Adding web part to a page
 -------------------------
 
 Navigate to the page where you want to install your Web part.

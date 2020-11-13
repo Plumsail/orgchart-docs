@@ -72,7 +72,7 @@ You can use this code snippet even in box template. The article below describes 
 
 You can find the snippet which I provided earlier inside this template. This snippet renders presence indicator and name of employee with link to user profile.
 
-You may also need to add this code to “Custom CSS” step of the configuration wizard:
+You may also need to add this code to **Custom CSS** step of the configuration wizard:
 
 .. code:: css
 

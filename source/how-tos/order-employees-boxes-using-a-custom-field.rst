@@ -17,7 +17,7 @@ To define the sorting rules, please, add a code like this to the Custom JavaScri
    2. renderer.config.nodesSortFieldName = "SortingFieldName";
 
 
-- **nodesSortOrder** – a sorting order, for example, “ASC” or “DESC”.
+- **nodesSortOrder** – a sorting order, for example, :code:`ASC` or :code:`DESC`.
 
 
 - **nodesSortFieldName** – the internal name of a list field or a property from the User Profile service.

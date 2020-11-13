@@ -8,7 +8,7 @@ The best way to achieve this is to have an orderly sequential list of members in
 How to export to CSV
 --------------------
 
-Open a page where with an Org Chart web part. In the up-right corner, there is a **settings** wheel icon—click it and choose the **“Export to CSV”** option.
+Open a page where with an Org Chart web part. In the up-right corner, there is a **settings** wheel icon—click it and choose the **Export to CSV** option.
 
 .. image:: /../_static/img/how-tos/printing-and-reports/export-to-csv-and-analyze-in-excel/export_to_csv_button-e1587542299353.png
     :alt: Export to CSV
@@ -21,7 +21,7 @@ You will see the following menu:
 
 You can specify the following to achieve a better result:
 
-- **Start from this person** to pick a manager that you want “on top” of the export data. The resulting CSV will contain this manager and all the employees below. If you live this field blank, the `root employee <../configuration-wizard/filtration.html>`_  you’ve picked up in the Configuration wizard will be selected by default. 
+- **Start from this person** to pick a manager that you want "on top" of the export data. The resulting CSV will contain this manager and all the employees below. If you live this field blank, the `root employee <../configuration-wizard/filtration.html>`_  you’ve picked up in the Configuration wizard will be selected by default. 
 Just start typing a name to get a list of suggestions:
 
 .. image:: /../_static/img/how-tos/printing-and-reports/export-to-csv-and-analyze-in-excel/export-to-csv-start-typing.png

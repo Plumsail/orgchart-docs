@@ -180,7 +180,7 @@ Conditionally expands specified number of levels of Org Chart.
        -  Number of levels to expand.
      
     *  -  **conditionFunction**
-       -  Function that receives “itemData” object with all box properties. You can use this object in your conditions. The funciton has to return boolean value. If “true” is returned, current box will be expanded.
+       -  Function that receives :code:`itemData` object with all box properties. You can use this object in your conditions. The funciton has to return boolean value. If :code:`true` is returned, current box will be expanded.
 
     *  -  **completed**
        -  callback function which is executed when all levels are expanded.
@@ -188,7 +188,7 @@ Conditionally expands specified number of levels of Org Chart.
 
 You can use it together with ‘showLoadingPanel’ and ‘hideLoadingPanel’ functions. Show loading panel before calling this method and hide it inside completed callback.
 
-The example below shows how to use this function together with “onInitialLoadingFinished” event and “showLoadingPanel” method. It waits untill the web part is loaded in “onInitialLoadingFinished” event. Then it shows loading panel by calling “showLoadingPanel”. Then it validates condition for each box in “conditionFunction”. Once all levels are expanded, it hides loading panel by calling “hideLoadingPanel” method.
+The example below shows how to use this function together with :code:`onInitialLoadingFinished` event and :code:`showLoadingPanel` method. It waits untill the web part is loaded in :code:`onInitialLoadingFinished` event. Then it shows loading panel by calling :code:`showLoadingPanel`. Then it validates condition for each box in :code:`conditionFunction`. Once all levels are expanded, it hides loading panel by calling :code:`hideLoadingPanel` method.
 
 
 .. code:: javascript
@@ -231,9 +231,9 @@ Collapse all levels of Org Chart.
        -  callback function which is executed when all levels are expanded.
 
 
-You can show loading panel before calling this method and hide it inside completed callback with ‘showLoadingPanel’ and ‘hideLoadingPanel’ functions.
+You can show loading panel before calling this method and hide it inside completed callback with :code:`showLoadingPanel` and ‘hideLoadingPanel’ functions.
 
-The example below shows how to use this function together with “onInitialLoadingFinished” event and “showLoadingPanel” method. It waits untill the web part is loaded in “onInitialLoadingFinished” event. Once all levels are collapsed, it hides loading panel by calling “hideLoadingPanel” method.
+The example below shows how to use this function together with :code:`onInitialLoadingFinished` event and :code:`showLoadingPanel` method. It waits untill the web part is loaded in :code:`onInitialLoadingFinished` event. Once all levels are collapsed, it hides loading panel by calling :code:`hideLoadingPanel` method.
 
 .. code:: javascript
 
@@ -269,30 +269,29 @@ You can use this method to preform some actions before Org Chart rendering. For 
        -  callback function which is executed when all levels are expanded.
 
 
-Be careful with this method because if you don’t call “completed” function, Org Chart is never rendered. We recommend you to wrap your code with “try – catch – finally” to guarantee that “completed” function is called.
+Be careful with this method because if you don’t call :code:`completed` function, Org Chart is never rendered. We recommend you to wrap your code with :code:`try – catch – finally` to guarantee that :code:`completed` function is called.
 
 Example:
 
 .. code::
 
-   renderer.prerenderAction = function(completed){
-    try {
-        //Do some initialization staff  }
-    catch(err) {
-        //handle errors  } 
-    finally {
-        //Org chart will not start rendering
-        //until you call 'completed' function
-        completed();
-    }
+  renderer.prerenderAction = function(completed){
+  try {
+    //Do some initialization staff  }
+  catch(err) {
+    //handle errors  } 
+  finally {
+    //Org chart will not start rendering
+    //until you call 'completed' function
+    completed();
   }
+}
 
 
 .. _showLoadingPanel:
 
 showLoadingPanel()
---------------------
-
+------------------
 
 It shows loading screen for the Org Chart web part.
 
@@ -300,8 +299,7 @@ Example:
 
 .. code:: javascript
 
-   renderer.showLoadingPanel();
-
+  renderer.showLoadingPanel();
 
 .. _hideLoadingPanel:
 
@@ -314,7 +312,7 @@ Example:
 
 .. code:: javascript
 
-   renderer.hideLoadingPanel();
+  renderer.hideLoadingPanel();
 
 
 .. _enableDisableFullScreen:
@@ -324,15 +322,15 @@ enableDisableFullScreen()
 
 It toggles full screen mode for the Org Chart web part.
 
-In the example below I check if there is the URL parameter “IsFullScreen” and show Org Chart enable full scheen if it is there.
+In the example below I check if there is the URL parameter :code:`IsFullScreen` and show Org Chart enable full scheen if it is there.
 
 .. code::
 
-   var isFullScreen = GetUrlKeyValue("IsFullScreen");
-                        
-   if(isFullScreen === "true"){
-     renderer.enableDisableFullScreen();
-   }
+  var isFullScreen = GetUrlKeyValue("IsFullScreen");
+                      
+  if(isFullScreen === "true"){
+    renderer.enableDisableFullScreen();
+  }
 
 
 .. _dataProvider.getBoxGroupItemDataById:
@@ -346,9 +344,9 @@ Example:
 
 .. code:: javascript
 
-   renderer.dataProvider.getBoxGroupItemDataById("3", function(dataItem){
-       console.log(dataItem)
-   });
+  renderer.dataProvider.getBoxGroupItemDataById("3", function(dataItem){
+    console.log(dataItem)
+  });
 
 
 .. _dataProvider.getCurrentUserAccountName:
@@ -362,9 +360,9 @@ Example:
 
 .. code::
 
-   renderer.dataProvider.getCurrentUserAccountName(function(accountName){
+  renderer.dataProvider.getCurrentUserAccountName(function(accountName){
     console.log(accountName);
-   });
+  });
 
 
 .. _dataProvider.clearCache:
@@ -376,7 +374,7 @@ Clears client side cache for current browser. Example:
 
 .. code:: javascript
 
-   renderer.dataProvider.clearCache();
+  renderer.dataProvider.clearCache();
 
 
 .. _scrollToBox:
@@ -390,7 +388,7 @@ Example:
 
 .. code::
 
-   renderer.scrollToBox("domain\\username");
+  renderer.scrollToBox("domain\\username");
 
 
 .. _customFunctions.getNumberOfColumns:
@@ -398,7 +396,7 @@ Example:
 customFunctions.getNumberOfColumns(rootItemData, defaultColumnsNumber)
 -----------------------------------------------------------------------
 
-You may use this method to perform some custom logic for setting the number of columns for the root item in the compact layout dynamically. For example, if you need to change the default value from the “Layout” step of the configuration wizard for one of the users. 
+You may use this method to perform some custom logic for setting the number of columns for the root item in the compact layout dynamically. For example, if you need to change the default value from the **Layout** step of the configuration wizard for one of the users. 
 
 .. rubric:: Input parameters
 
@@ -409,8 +407,7 @@ You may use this method to perform some custom logic for setting the number of c
     *  -  Parameter
        -  Description       
     *  -  **rootItemData**
-       -  The business object from the data source. See description at the beginning of ‘Events’ section.
-     
+       -  The business object from the data source. See description at the beginning of ‘Events’ section.     
     *  -  **defaultColumnsNumber**
        -  The default value from the configuration wizard.
 
@@ -421,14 +418,14 @@ You may use this method to perform some custom logic for setting the number of c
 Example: 
 
 
-.. code::
+.. code-block:: JavaScript
 
-   renderer.customFunctions.getNumberOfColumns = 
-     function(rootItemData, defaultColumnsNumber){
-	   if(rootItemData["Title"] === "David Navarro"){
-		   return 2;
-	   }
-	   return defaultColumnsNumber;
-   }
+  renderer.customFunctions.getNumberOfColumns = 
+    function(rootItemData, defaultColumnsNumber){
+    if(rootItemData["Title"] === "David Navarro"){
+      return 2;
+    }
+    return defaultColumnsNumber;
+  }
 
 .. note:: Next review `Configuration <configuration.html>`_.

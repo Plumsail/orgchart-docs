@@ -19,7 +19,7 @@ As you can see some of the boxes are outside of visible area. I will show how to
     :alt: Boxes fit web part
 
 
-Just open the configuration wizard by clicking gears at the top right corner of the web part. Then click “Settings”. Switch to “Custom JavaScript” step and put the code below into code editor:
+Just open the configuration wizard by clicking gears at the top right corner of the web part. Then click **Settings**. Switch to **Custom JavaScript** step and put the code below into code editor:
 
 
 .. code:: JavaScript

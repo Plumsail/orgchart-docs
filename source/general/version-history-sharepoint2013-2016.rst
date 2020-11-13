@@ -65,7 +65,7 @@ Migration of new features from Office 365 version:
 
 .. rubric:: 3.2.15
 
-- Changed logic of boxes sorting for “Top to bottom compact” layout.
+- Changed logic of boxes sorting for "Top to bottom compact" layout.
 - Bug fix for displaying assistants in some specific cases.
 
 
@@ -91,12 +91,12 @@ Migration of new features from Office 365 version:
 - Migration of functionality from Office 365 version to On-Premises version.
 - Support of A3 format in PDF export.
 - Ability to expand up to 200 nodes automatically while printing.
-- New JavaScript method “renderer.expandNodeLevelsConditionally” for conditional boxes expanding.
+- New JavaScript method :code:`renderer.expandNodeLevelsConditionally` for conditional boxes expanding.
 
 
 .. rubric:: 3.2.9
 
-- JavaScript settings “renderer.config.nodesSortOrder” and “renderer.config.nodesSortOrder” are applied to assistants now.
+- JavaScript settings :code:`renderer.config.nodesSortOrder` and :code:`renderer.config.nodesSortOrder` are applied to assistants now.
 - Bug fixes for assistant boxes lines rendering.
 
 
@@ -109,13 +109,13 @@ Migration of new features from Office 365 version:
 
 .. rubric:: 3.2.7
 
-- Fixed the bug with drawing connection lines for “Top to bottom compact” layout.
+- Fixed the bug with drawing connection lines for "Top to bottom compact" layout.
 - Minor bug fixes.
 
 
 .. rubric:: 3.2.6
 
-- Support of “Person or Group” column in search for SharePoint list data source.
+- Support of "Person or Group" column in search for SharePoint list data source.
 - Minor bug fixes.
 
 
@@ -146,7 +146,7 @@ Migration of new features from Office 365 version:
 .. rubric:: 3.2.1
 
 - Bug fix for displaying assistants and dotted-line subordinates.
-- Ability to display fields with “TaxonomyFieldTypeMulti” type in templates.
+- Ability to display fields with "TaxonomyFieldTypeMulti" type in templates.
 - Improvements in connections lines rendering logic.
 - Ability to hide connections lines for Org Chart loading improvements.
 - Minor bug fixes.
@@ -189,7 +189,7 @@ Migration of new features from Office 365 version:
 
 - renderer.DrillDown JavaScript framework method has been migrated from version 2
 - Bug fix for zoom in Firefox
-- Bug fix for full-screen mode after recent Microsoft update in “Modern UI”
+- Bug fix for full-screen mode after recent Microsoft update in "Modern UI"
 
 
 .. rubric:: 3.1.35
@@ -206,7 +206,7 @@ Migration of new features from Office 365 version:
 
 .. rubric:: 3.1.20
 
-- New “top to bottom” compact layout
+- New "top to bottom" compact layout
 
 
 .. rubric:: 3.1.11
@@ -226,7 +226,7 @@ New features:
 
 - Improvements for printing performance.
 - Ability to search in Lookup columns for SharePoint list.
-- Bug fix of getting a vacancies list if the user doesn’t have “Full control” permissions.
+- Bug fix of getting a vacancies list if the user doesn’t have "Full control" permissions.
 - Bug fix for the bug when a search doesn’t work for large lists even with indexed columns.
 - Minor bug fixes.
 
@@ -309,7 +309,7 @@ New features:
 - iPad touch bug fixes.
 - Minor bug fixes.
 
-Update note: You may need to reactivate “Plumsail Org Chart” feature at site collection level.
+Update note: You may need to reactivate "Plumsail Org Chart" feature at site collection level.
 
 
 .. rubric:: 2.2.33

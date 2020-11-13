@@ -109,7 +109,7 @@
     :titlesonly:
     
     Display dotted-line managers <how-tos/display-dotted-line-managers>
-    Display assistant in SharePoint Org Chart <how-tos/display-assistant-in-sharepoint-orgchart>
+    Display assistant<how-tos/display-assistant-in-sharepoint-orgchart>
     Display vacancies <how-tos/display-vacancies>
 
   .. toctree::
@@ -130,7 +130,7 @@
     Customize box HTML template and CSS styles <how-tos/customize-box-html-template-and-css-styles>
     Display awards and conditionally format Org Chart <how-tos/display-awards-and-conditionally-format-orgchart>
     Display Skype for Business (Lync) presence <how-tos/display-skype-for-business-lync-presence>
-    Create an org chart with two root managers <how-tos/create-an-orgchart-with-two-root-managers>
+    Create an Org Chart with two root managers <how-tos/create-an-orgchart-with-two-root-managers>
     Change Org Chart skin <how-tos/change-orgchart-skin>
     Localize Org Chart <how-tos/localize-orgchart>
 

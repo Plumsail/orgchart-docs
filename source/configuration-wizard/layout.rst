@@ -20,7 +20,7 @@ Layout Descriptions
 
 .. rubric:: Top to bottom compact
 
-This layout is perfect if you want to keep “top to bottom” layout and fit wide structures in a smaller area. 
+This layout is perfect if you want to keep "top to bottom" layout and fit wide structures in a smaller area. 
 You can set the maximum number of columns you want your Org Chart to fit. 
 If the number of boxes on the second level exceeds the maximum, the boxes will be stacked. 
 The boxes on the third and subsequent levels are always stacked under the corresponding boxes on the second level to keep the fixed width of the structure.
@@ -56,7 +56,7 @@ You can drill down to any box by clicking on the down-arrow icon that appears on
 
 .. rubric:: Top to bottom with grouping of leaf boxes
 
-This is a modification of a classic “top to bottom” layout. The only difference is that all leaf boxes (employees without subordinates) are joined into a two column group on the right-hand side.
+This is a modification of a classic "top to bottom" layout. The only difference is that all leaf boxes (employees without subordinates) are joined into a two column group on the right-hand side.
 
 
 .. image:: /../_static/img/advanced-web-part-configuration/layout/example-group-leaf-nodes.png

@@ -9,10 +9,9 @@ Installation for Office 365
 Installation
 ------------
 
-
 `Download the add-in <https://plumsail.com/sharepoint-orgchart/download/>`_  from our website.
 
-Org Chart is `a SharePoint Framework <https://dev.office.com/sharepoint/docs/spfx/sharepoint-framework-overview>`_ add-in that allows you to visualize organization structure on both classic and modern SharePoint pages. Unfortunately, SharePoint Store doesn’t support the installation of SharePoint Framework add-ins. That is why you need to install add-in manually.
+Org Chart is a `SharePoint Framework <https://docs.microsoft.com/en-us/sharepoint/dev/spfx/sharepoint-framework-overview>`_ add-in that allows you to visualize organization structure on both classic and modern SharePoint pages. Unfortunately, SharePoint Store doesn’t support the installation of SharePoint Framework add-ins. That is why you need to install add-in manually.
 
 You have to be a SharePoint administrator to complete the installation. If you don’t see some menus from the instruction below, most likely you are not a SharePoint administrator. Please contact your administrator to assist with the installation.
 
@@ -57,18 +56,26 @@ Navigate to **Apps for SharePoint** and upload Add-in package that you downloade
 .. image:: /../_static/img/getting-started/installation-office365/UploadAppToCatalog.png
     :alt: Upload app to catalog
 
-You need to select “Make this solution available to all sites in the organization” in the dialog. Once you did this you can add a web part to a page.
+You need to select "Make this solution available to all sites in the organization" in the dialog. Once you did this you can add a web part to a page.
 
 .. image:: /../_static/img/getting-started/installation-office365/orgchart-trust.png
     :alt: OrgChart trust
 
 If you don’t want to make this app availalbe on all sites, you will need to `add app to each site manually <install-add-site-want-add-org-chart.html>`_ .
 
-.. rubric:: Adding web part to a page
+Adding web part to a page
+-------------------------
 
 Navigate to the page where you want to add an org chart.
 
-.. note:: If you use “Classic” SharePoint pages follow this  `instruction <add-org-chart-to-classic-page.html>`_  to add web part to a page.
+.. note:: If you use "Classic" SharePoint pages follow this  `instruction <add-org-chart-to-classic-page.html>`_  to add web part to a page.
+
+Pick **Plumsail Org Chart** web part from the menu to add it to your page:
+
+.. image:: /../_static/img/getting-started/installation-office365/addWepartModern.png
+    :alt: Add web part
+
+Once you added the web part you can `configure it <../getting-started/quick-configuration.html>`_.
 
 
 Update

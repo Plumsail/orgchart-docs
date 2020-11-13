@@ -6,9 +6,9 @@ Below are the prerequisites for the installation of Org Chart:
 Permissions on the root site collection on the web application
 --------------------------------------------------------------
 
-Start SharePoint 2019 Central Administration as administrator on your server. On the SharePoint Central Administration website navigate to “Application Management” and click on “Change site collection administrators” in “Site Collections” section.
+Start SharePoint 2019 Central Administration as administrator on your server. On the SharePoint Central Administration website navigate to **Application Management** and click on **Change site collection administrators** in **Site Collections** section.
 
-Click on the link with site collection address and press “Change Site Collection”:
+Click on the link with site collection address and press **Change Site Collection**:
 
 
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/ChangeSiteCollection.png
@@ -21,7 +21,7 @@ Choose the root site collection for the web application that you need to install
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/SelectSiteCollection.png
     :alt: Select site collection
 
-After selection press “OK”.
+After selection press **OK**.
 
 Please make sure that you are one of the administrators:
 
@@ -56,9 +56,9 @@ Just fill in ‘Title’, ‘Web Site Address’, ‘Primary Site Collection Adm
 Permissions on the app catalog for the web application
 ------------------------------------------------------
 
-Start SharePoint 2019 Central Administration on your server. On the SharePoint Central Administration website navigate to “Application Management” and click on “Change site collection administrators” in “Site Collections” section.
+Start SharePoint 2019 Central Administration on your server. On the SharePoint Central Administration website navigate to **Application Management** and click on **Change site collection administrators** in **Site Collections** section.
 
-Click on the link with site collection address and press “Change Site Collection”:
+Click on the link with site collection address and press **Change Site Collection**:
 
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/ChangeSiteCollection.png
     :alt: Change site collection
@@ -70,7 +70,7 @@ Choose the app catalog site collection for the web application that you need to 
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/SelectAppCatalogSiteCollection.png
     :alt: Change site collection
 
-After selection press “OK”.
+After selection press **OK**.
 
 Please make sure that you are one of the administrators:
 

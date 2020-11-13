@@ -11,8 +11,8 @@ Many Plumsail products are licensed per Web Front End server.
 You may need to calculate number of WFE servers in your SharePoint farm to purchase correct number of licenses.
 
 
-SharePoint WFE server usually has “Microsoft SharePoint Foundation Web Application” service started. 
-You can check it in SharePoint Central Administration: :code:`Central Administration > System Settings > Manage services on server.`  
+SharePoint WFE server usually has "Microsoft SharePoint Foundation Web Application" service started. 
+You can check it in SharePoint Central Administration: **Central Administration** > **System Settings** > **Manage services on server**.  
 In the :code:`Services on server` page, select server and check if the service is started. 
 If it’s started, the selected server is acting as a web front-end server.
 

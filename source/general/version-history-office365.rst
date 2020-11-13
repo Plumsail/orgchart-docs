@@ -70,7 +70,7 @@ Version history – Office 365
 
 .. rubric:: 3.2.22
 
-- New JavaScript method getNumberOfColumns for dynamically controlling number of columns based on current manager. It works only for “Top to bottom compact” layout.
+- New JavaScript method getNumberOfColumns for dynamically controlling number of columns based on current manager. It works only for "Top to bottom compact" layout.
 - Bugfix for full screen mode. It didn’t work properly after recent Microsoft update.
 - Bugfix for lines drawing.
 
@@ -86,7 +86,7 @@ Version history – Office 365
 - Added support of full-width web part mode on Modern pages.
 - Improved license information caching.
 - Fixed dotted lines manager connection lines and drill down button.
-- Added support for zoom in for all layouts except “Left to right”.
+- Added support for zoom in for all layouts except "Left to right".
 - Minor bugfixes.
 
 
@@ -98,7 +98,7 @@ Version history – Office 365
 
 .. rubric:: 3.2.15
 
-- Changed logic of boxes sorting for “Top to bottom compact” layout.
+- Changed logic of boxes sorting for "Top to bottom compact" layout.
 - Bugfix for displaying assistants in some specific cases.
 
 
@@ -124,12 +124,12 @@ Version history – Office 365
 - Migration of functionality from Office 365 version to On-Premises version.
 - Support of A3 format in PDF export.
 - Ability to expand up to 200 nodes automatically while printing.
-- New JavaScript method “renderer.expandNodeLevelsConditionally” for conditional boxes expanding.
+- New JavaScript method "renderer.expandNodeLevelsConditionally" for conditional boxes expanding.
 
 
 .. rubric:: 3.2.9
 
-- JavaScript settings “renderer.config.nodesSortOrder” and “renderer.config.nodesSortOrder” are applied to assistants now.
+- JavaScript settings :code:`renderer.config.nodesSortOrder` and :code:`renderer.config.nodesSortOrder` are applied to assistants now.
 - Bugfixes for assistant boxes lines rendering.
 
 
@@ -142,13 +142,13 @@ Version history – Office 365
 
 .. rubric:: 3.2.7
 
-- Fixed the bug with drawing connection lines for “Top to bottom compact” layout.
+- Fixed the bug with drawing connection lines for "Top to bottom compact" layout.
 - Minor bugfixes.
 
 
 .. rubric:: 3.2.6
 
-- Support of “Person or Group” column in search for SharePoint list data source.
+- Support of "Person or Group" column in search for SharePoint list data source.
 - Minor bugfixes.
 
 
@@ -179,7 +179,7 @@ Version history – Office 365
 .. rubric:: 3.2.1
 
 - Bugfix for displaying assistants and dotted-line subordinates.
-- Ability to display fields with “TaxonomyFieldTypeMulti” type in templates.
+- Ability to display fields with "TaxonomyFieldTypeMulti" type in templates.
 - Improvements in connections lines rendering logic.
 - Ability to hide connections lines for Org Chart loading improvements.
 - Minor bugfixes.
@@ -222,7 +222,7 @@ Version history – Office 365
 
 - renderer.DrillDown JavaScript framework method has been migrated from version 2
 - Bugfix for zoom in Firefox
-- Bugfix for full-screen mode after recent Microsoft update in “Modern UI”
+- Bugfix for full-screen mode after recent Microsoft update in "Modern UI"
 
 
 .. rubric:: 3.1.35
@@ -239,7 +239,7 @@ Version history – Office 365
 
 .. rubric:: 3.1.20
 
-- New “top to bottom” compact layout
+- New "top to bottom" compact layout
 
 
 .. rubric:: 3.1.11
@@ -312,7 +312,7 @@ Version history – Office 365
 
 - iPad touch bugfixes.
 - Minor bugfixes.
-- Update note: You may need to reactivate “Plumsail Org Chart” feature at site collection level.
+- Update note: You may need to reactivate "Plumsail Org Chart" feature at site collection level.
 
 
 .. rubric:: 2.2.33

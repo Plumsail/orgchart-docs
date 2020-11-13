@@ -62,7 +62,7 @@ Similarly, you can also change background color of boxes:
     :alt: Printing
 
 Org Chart will add the class "pl-print-mode" to elements before printing out the chart. 
-This way, you can handle styles in the “Custom CSS” tab that will be applied only when printing the chart.
+This way, you can handle styles in the **Custom CSS** tab that will be applied only when printing the chart.
 
 To enlarge font-size for printing, the code used was:
 
