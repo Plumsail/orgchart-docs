@@ -8,7 +8,7 @@ You can choose between two data sources:
 1. SharePoint list
 2. User profiles
 
-If you choose ‘User profiles’ as a data source, no additional configuration of data source is needed, just go through the wizard until the end. 
+If you choose **User profiles** as a data source, no additional configuration of data source is needed, just go through the wizard until the end. 
 Unless you want to configure `dotted-line managers <../how-tos/display-different-types-of-employees/display-dotted-line-managers.html>`_ or configure `assistants <../how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart.html>`_.
 
 To understand how Org Chart communicates with User profiles service, read `the blog article <../how-tos/additional-resources/how-orgchart-pulls-data-from-ad-on-premises.html>`_.
@@ -35,7 +35,7 @@ will be used by the Organization Chart, for example you can specify mapping betw
 Once you configured it, you can go through the wizard and click the finish button.
 
 **Employee ID** and **Manager ID** are used to build hierarchy. **Display text** is used as display text for entities in the org chart. 
-For example you will see ‘Display text’ in the breadcrumb.
+For example you will see "Display text" in the breadcrumb.
 
 
 .. rubric:: Description of mappings

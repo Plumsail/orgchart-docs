@@ -17,7 +17,7 @@ It allows you to keep org chart view clear and to stay in context.
 Let me demonstrate how it works. Each person box of Org Chart contains hidden navigation buttons, 
 they will appear once you hover mouse cursor over the box. You can expand a few nodes, 
 then click drill down button and only the subtree with the selected person in the root will stay visible. 
-You can return to the parent or even to the root of the tree from any place of Org Chart by clicking ‘Go to parent’ and ‘Go to root’ buttons.
+You can return to the parent or even to the root of the tree from any place of Org Chart by clicking **Go to parent** and **Go to root** buttons.
 
 
 .. image:: /../_static/img/how-tos/other-examples/use-advanced-orgchart-navigation/DrillDown1.png

@@ -6,9 +6,7 @@ In this article I will show how to conditionally format Org Chart boxes and sear
 
 I divided this article into three main steps:
 
-1. :ref:`highlight-boxes-according-to-field-value-from-data-source`.
-2. :ref:`add-images-awards-or-any-other-html-into-boxes-dynamically-using-javascript`.
-3. :ref:`complete-guide-with-ready-to-copy-paste-code-for-both-steps-above`.
+.. contents:: :local:
 
 In the first step, I will show how to implement color codding for org chart. If you don’t need any additional functionality, you can read the first step only. If you need to implement more complex case and modify boxes dynamically, for example add images to boxes, please read the second and the third steps.
 
@@ -25,15 +23,15 @@ Highlight boxes according to field values
 
 I assume that you’ve already added the web part to your page and configured it with default settings.
 
-I want to change background of boxes according to custom field from the data source. In my case it is ‘Awards’ field, which has following possible values:
+I want to change background of boxes according to custom field from the data source. In my case it is :code:`Awards` field, which has following possible values:
 
 - Gold medal
 - Silver medal
 - Bronze model
 
-I want to set light goldenrod background for boxes, where ‘Awards’ field has value ‘Gold medal’, to set lavender background for boxes with ‘Silver medal’ field value and to set maize background for boxes with ‘Bronze medal’ field value.
+I want to set light goldenrod background for boxes, where :code:`Awards` field has value :code:`Gold medal`, to set lavender background for boxes with :code:`Silver medal` field value and to set maize background for boxes with :code:`Bronze medal` field value.
 
-First of all I added ‘Awards’ field to my data source. I used SharePoint list as a data source, but you can use User Profile Service as well. If you don’t know how to add new field to your data source, read official Microsoft documentation:
+First of all I added :code:`Awards` field to my data source. I used SharePoint list as a data source, but you can use User Profile Service as well. If you don’t know how to add new field to your data source, read official Microsoft documentation:
 
 - `Add new field to SharePoint list <http://office.microsoft.com/en-001/sharepoint-server-help/create-change-or-delete-a-column-in-a-list-or-library-HA102771913.aspx>`_
 - `Add new property to User Profile Service <http://office.microsoft.com/en-001/office365-sharepoint-online-enterprise-help/add-and-edit-user-profile-properties-HA102772741.aspx>`_
@@ -53,9 +51,9 @@ Then I opened Org Chart web part properties, by clicking in right top corner of 
     :alt: Edit page
 
 
-Then I switched to the ‘General settings’ wizard step and changed org chart skin to ‘Modern’. I would prefer to use this skin because it fits modern UI of SharePoint Online more than other skins.
+Then I switched to the **General settings* wizard step and changed org chart skin to "Modern". I would prefer to use this skin because it fits modern UI of SharePoint Online more than other skins.
 
-Then I switched to the ‘Custom JavaScript’ wizard step:
+Then I switched to the **Custom JavaScript** wizard step:
 
 .. image:: /../_static/img/how-tos/customize-boxes-and-styles/display-awards-and-conditionally-format-orgchart/CustomJSStep.png
     :alt: Custom javascript
@@ -63,25 +61,25 @@ Then I switched to the ‘Custom JavaScript’ wizard step:
 As you can see on the picture above, there is ready to use JavaScript handler with three functions, which allow to subscribe for box, tooltip or search result rendering event. In this article I used only box and search result rendering events to highlight boxes and search results with color. 
 You can find description of JavaScript framework in `the documentation <../javascript-framework/introduction.html>`_.
 
-It is possible to use such code to highlight boxes with ‘Gold medal’ field values:
+It is possible to use such code to highlight boxes with :code:`Gold medal` field values:
 
-..code::
+..code-block:: JavaScript
 
-   //subscribe for box rendering event
-   renderer.onBoxRendered(function(event, box, itemData){  
-   //If employee has gold award show medal and add CSS classes
-   if(itemData.Awards == 'Gold medal'){
-     box.$elem.css({
-       'background-color': '#ffec8b' /*light goldenrod*/
-     });
-   }  
+  //subscribe for box rendering event
+  renderer.onBoxRendered(function(event, box, itemData){  
+    //If employee has gold award show medal and add CSS classes
+    if(itemData.Awards == 'Gold medal'){
+      box.$elem.css({
+        'background-color': '#ffec8b' /*light goldenrod*/
+      });
+    }  
   });
 
 
-As you can see from the script above I used **onBoxRendered** method to subscribe for event. 
-The method receives box and **itemData** parameters. I used **‘Awards’** property of the **‘itemData’** parameter to check if current employee has award. 
-The **itemData** parameter contains all field values from the data source mentioned in the configuration wizard. 
-Then I applied CSS style using jQuery css function to **‘$elem’** property of the box. The **box** parameter represents object of current box and **$elem** property stores jQuery object for the box element. 
+As you can see from the script above I used :code:`onBoxRendered` method to subscribe for event. 
+The method receives box and :code:`itemData` parameters. I used :code:`Awards` property of the :code:`itemData` parameter to check if current employee has award. 
+The :code:`itemData` parameter contains all field values from the data source mentioned in the configuration wizard. 
+Then I applied CSS style using jQuery css function to :code:`$elem` property of the box. The :code:`box` parameter represents object of current box and :code:`$elem` property stores jQuery object for the box element. 
 That is all required to modify color of the box according to the property of employee:
 
 .. image:: /../_static/img/how-tos/customize-boxes-and-styles/display-awards-and-conditionally-format-orgchart/GoldBox.png
@@ -94,23 +92,23 @@ but to keep code readable I would recommend to move CSS outside from JavaScript 
 
 That is why I created CSS class for box. You can see the CSS style for gold medal box below:
 
-.. code:: css
+.. code-block:: css
 
-   /*set background color for box with gold medal*/
-   .pl-item-template.gold-box {
-     background-color: #ffec8b !important;
-   }
+  /*set background color for box with gold medal*/
+  .pl-item-template.gold-box {
+    background-color: #ffec8b !important;
+  }
 
-To apply CSS style I switched to ‘General settings’ and copied style to ‘Custom CSS’ property. Then switched back to JavaScript and changed it to following:
+To apply CSS style I switched to **General settings** and copied style to **Custom CSS** property. Then switched back to JavaScript and changed it to following:
 
-.. code:: javascript
+.. code-block:: javascript
 
-    renderer.onBoxRendered(function(event, box, itemData){  
+  renderer.onBoxRendered(function(event, box, itemData){  
     //If employee has gold award show medal and add CSS classes
-     if(itemData.Awards == 'Gold medal'){                
-     box.$elem.addClass('gold-box');            
-     }
-    });
+    if(itemData.Awards == 'Gold medal'){                
+      box.$elem.addClass('gold-box');            
+    }
+  });
 
 As you see, I just added CSS class to **$elem** instead of adding CSS styles manually.
 
@@ -126,38 +124,38 @@ In this step I will show how to use JavaScript to modify org chart boxes dynamic
 
 You can see the JavaScript code I used below:
 
-.. code:: javascript
+.. code-block:: javascript
 
-    renderer.onBoxRendered(function(event, box, itemData){  
+  renderer.onBoxRendered(function(event, box, itemData){  
     //If employee has gold award show medal and add CSS classes
     if(itemData.Awards == 'Gold medal'){
       var medalSpan = $('<span class="medal gold-medal"></span>');    
       box.getInnerContent().append(medalSpan);  
     }  
-    });
+  });
 
-The code above checks if current item has ‘Gold medal’ and adds a span element into box. 
-I used ‘getInnerContent’ function of the box parameter to get jQuery object for the inner content of current box. 
-I added ‘medal’ and ‘gold-medal’ CSS classes to the span. 
-I used ‘medal’ class to configure position and size for all medals and ‘gold-medal’ class to set background image for gold medal. 
+The code above checks if current item has :code:`Gold medal:code:` and adds a span element into box. 
+I used :code:`getInnerContent` function of the box parameter to get jQuery object for the inner content of current box. 
+I added :code:`medal` and :code:`gold-medal` CSS classes to the span. 
+I used :code:`medal` class to configure position and size for all medals and :code:`gold-medal` class to set background image for gold medal. 
 You can see CSS style below:
 
-.. code:: css
+.. code-block:: css
 
-   /*set position for all medals*/
-   .medal {
-     display: block;  
-     position: absolute;
-     width: 32px;
-     height: 32px;
-     top: 60px;
-     left: 0px;
-   }
- 
-   /*set image URL for gold medal*/
-   .gold-medal {
-   background-image: url(../SiteAssets/OrgChart/gold-medal32x32.png);
-   }
+  /*set position for all medals*/
+  .medal {
+    display: block;  
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 60px;
+    left: 0px;
+  }
+
+  /*set image URL for gold medal*/
+  .gold-medal {
+    background-image: url(../SiteAssets/OrgChart/gold-medal32x32.png);
+  }
 
 .. note:: I uploaded images for medals to OrgChart folder of SiteAssets document library, but you can use any other location. Do not forget to update the path to image in the CSS style according to your location.
 
@@ -176,7 +174,7 @@ In this step I showed how to add HTML elements to boxes dynamically. In my case 
 Step by step guide with ready to copy paste code
 ------------------------------------------------
 
-Add new ‘Awards’ field to your data source, SharePoint list or User Profile Service. If you don’t know how to do it, read official documentation from Microsoft:
+Add new :code:`Awards` field to your data source, SharePoint list or User Profile Service. If you don’t know how to do it, read official documentation from Microsoft:
 
 - `Add new field to SharePoint list <http://office.microsoft.com/en-001/sharepoint-server-help/create-change-or-delete-a-column-in-a-list-or-library-HA102771913.aspx>`_
 - `Add new property to User Profile Service <http://office.microsoft.com/en-001/office365-sharepoint-online-enterprise-help/add-and-edit-user-profile-properties-HA102772741.aspx>`_
@@ -184,102 +182,101 @@ Add new ‘Awards’ field to your data source, SharePoint list or User Profile 
 
 Open the configuration wizard using the context menu in the top right corner of the web part.
 
-Switch to ‘General settings’ wizard step and choose ‘Light gray’ skin.
+Switch to :code:`General settings` wizard step and choose :code:`Light gray` skin.
 
-Copy CSS style and paste it to ‘Custom CSS’ property:
+Copy CSS style and paste it to :code:`Custom CSS` property:
 
-.. code:: css
+.. code-block:: css
 
-   /*set position for all medals*/
-   .medal {
-     display: block;
-     width: 32px;
-     height: 32px;
-     position: absolute;
-     top: 60px;
-     left: 0px;
-   }
- 
-   /*set image URL for gold medal*/
-   .gold-medal {
-     background-image: url(../SiteAssets/OrgChart/gold-medal32x32.png);
-   }
- 
-   /*set image URL for silver medal*/
-   .silver-medal {
-     background-image: url(../SiteAssets/OrgChart/silver-medal32x32.png);
-   }
- 
-   /*set image URL for bronze medal*/
-   .bronze-medal {
-   background-image: url(../SiteAssets/OrgChart/bronze-medal32x32.png);
-   }
- 
-   /*set background color for box with gold medal*/
-   .pl-item-template.gold-box, .gold-search-result{
-   background-color: #ffec8b !important;
-   }
- 
-   /*set background color for box with silver medal*/
-   .pl-item-template.silver-box, .silver-search-result{
-   background-color: #e6e6fa !important;
-   }
- 
-   /*set background color for box with bronze medal*/
-   .pl-item-template.bronze-box, .bronze-search-result{ 
-     background-color: #edd19c !important;  
-   }
+  /*set position for all medals*/
+  .medal {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+  }
+
+  /*set image URL for gold medal*/
+  .gold-medal {
+    background-image: url(../SiteAssets/OrgChart/gold-medal32x32.png);
+  }
+
+  /*set image URL for silver medal*/
+  .silver-medal {
+    background-image: url(../SiteAssets/OrgChart/silver-medal32x32.png);
+  }
+
+  /*set image URL for bronze medal*/
+  .bronze-medal {
+    background-image: url(../SiteAssets/OrgChart/bronze-medal32x32.png);
+  }
+
+  /*set background color for box with gold medal*/
+  .pl-item-template.gold-box, .gold-search-result{
+    background-color: #ffec8b !important;
+  }
+
+  /*set background color for box with silver medal*/
+  .pl-item-template.silver-box, .silver-search-result{
+    background-color: #e6e6fa !important;
+  }
+
+  /*set background color for box with bronze medal*/
+  .pl-item-template.bronze-box, .bronze-search-result{ 
+    background-color: #edd19c !important;  
+  }
 
 
-Switch to ‘Custom JavaScript’ wizard step and add ‘Awards’ field to fields included to org chart data object.
+Switch to **Custom JavaScript** wizard step and add :code:`Awards` field to fields included to org chart data object.
 
 Then copy JavaScript code and paste it to the code editor:
 
+.. code-block:: JavaScript
 
-.. code:: javascript
+  //subscribe for box rendering event
+  renderer.onBoxRendered(function(event, box, itemData){
 
-   //subscribe for box rendering event
-   renderer.onBoxRendered(function(event, box, itemData){
-  
-   //If employee has gold award show medal and add CSS classes
-   if(itemData.Awards == 'Gold medal'){
-     var medalSpan = $('<span class="medal gold-medal"></span>');         
-     box.getInnerContent().append(medalSpan);
-     box.$elem.addClass('gold-box');            
-   }
-  
-   //If employee has silver award show medal and add CSS classes
-   if(itemData.Awards == 'Silver medal'){    
-     var medalSpan = $('<span class="medal gold-medal"></span>');      
-     box.getInnerContent().append(medalSpan);
-     box.$elem.addClass('silver-box'); 
-   }
-  
-   //If employee has bronze award show medal and add CSS classes
-   if(itemData.Awards == 'Bronze medal'){        
+    //If employee has gold award show medal and add CSS classes
+    if(itemData.Awards == 'Gold medal'){
+      var medalSpan = $('<span class="medal gold-medal"></span>');         
+      box.getInnerContent().append(medalSpan);
+      box.$elem.addClass('gold-box');            
+    }
+
+    //If employee has silver award show medal and add CSS classes
+    if(itemData.Awards == 'Silver medal'){    
+      var medalSpan = $('<span class="medal gold-medal"></span>');      
+      box.getInnerContent().append(medalSpan);
+      box.$elem.addClass('silver-box'); 
+    }
+
+    //If employee has bronze award show medal and add CSS classes
+    if(itemData.Awards == 'Bronze medal'){        
       var medalSpan = $('<span class="medal gold-medal"></span>');  
       box.getInnerContent().append(medalSpan);
       box.$elem.addClass('bronze-box'); 
     }
-   });
- 
-   //subscribe for search result rendering event
-   renderer.onSearchResultRendered(function(event, searchResult, itemData){  
-  
-   //add class to search result of employee with gold medal
-   if(itemData.Awards == 'Gold medal'){    
-    searchResult.$elem.addClass('gold-search-result');            
-   }
+  });
+
+  //subscribe for search result rendering event
+  renderer.onSearchResultRendered(function(event, searchResult, itemData){  
+
+    //add class to search result of employee with gold medal
+    if(itemData.Awards == 'Gold medal'){    
+      searchResult.$elem.addClass('gold-search-result');            
+    }
     
-   //add class to search result of employee with silver medal  
-   if(itemData.Awards == 'Silver medal'){        
-     searchResult.$elem.addClass('silver-search-result'); 
-   }
+    //add class to search result of employee with silver medal  
+    if(itemData.Awards == 'Silver medal'){        
+      searchResult.$elem.addClass('silver-search-result'); 
+    }
     
-   //add class to search result of employee with bronze medal
-   if(itemData.Awards == 'Bronze medal'){            
-     searchResult.$elem.addClass('bronze-search-result'); 
-   }
+    //add class to search result of employee with bronze medal
+    if(itemData.Awards == 'Bronze medal'){            
+      searchResult.$elem.addClass('bronze-search-result'); 
+    }
   });
 
 Finish the configuration wizard and you will see the org chart with conditional formatting and awards like on the picture in the beginning of this article.
@@ -287,10 +284,6 @@ Finish the configuration wizard and you will see the org chart with conditional 
 
 .. image:: /../_static/img/how-tos/customize-boxes-and-styles/display-awards-and-conditionally-format-orgchart/GoldBoxWithMedal.png
     :alt: Gold box with medal
-
-
-Conclusion
-----------
 
 In this article I showed how to add conditional formatting to SharePoint org chart. Now you know how to change background of boxes according to field values from data source in six lines of code. The same logic is applicable to tooltips and search results of org chart. If you need to implement more complex scenario, you can add HTML elements to boxes dynamically using jQuery framework.
 

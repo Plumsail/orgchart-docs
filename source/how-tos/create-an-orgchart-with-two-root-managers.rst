@@ -20,15 +20,15 @@ To do that you need to add a fake manager at the top of your chart and then hide
 
 Add the following script to the Custom JavaScipt tab to hide the fake manager:
 
-.. code:: javascript
+.. code-block:: javascript
 
-    renderer.onBoxRendered(function(event, box, itemData){
+  renderer.onBoxRendered(function(event, box, itemData){
     if (itemData["Title"].contains("David Navarro")) {
       box.$elem.hide();
       $("div.poch-group").addClass("hiddenElements");
       $("div.poch-node").prepend('<div class="maskingBlock"></div>');
     }
-   });
+  });
 
 
 .. image:: /../_static/img/how-tos/customize-boxes-and-styles/create-an-orgchart-with-two-root-managers/fake-manager-hide.png
@@ -43,14 +43,14 @@ Then, add the following styles to the Custom CSS tab for covering the lines left
 
 .. rubric:: Top to bottom (any)
 
-.. code:: css
+.. code-block:: css
 
-   .hiddenElements {
+  .hiddenElements {
     overflow: hidden;
     margin: 0 !important
-   }
- 
-   .maskingBlock {
+  }
+
+  .maskingBlock {
     display: block;
     width: 100%;
     height: 50px;
@@ -58,47 +58,47 @@ Then, add the following styles to the Custom CSS tab for covering the lines left
     position: absolute;
     left: 0;
     top: 0
-   }
+  }
 
 
 .. rubric:: Left to right
 
-.. code:: css
+.. code-block:: css
 
-   .hiddenElements {
-   overflow: hidden;
-   margin: 0 !important
+  .hiddenElements {
+    overflow: hidden;
+    margin: 0 !important
   }		
  
-   .maskingBlock {
-   display: block;
-   width: 100%;
-   height: 70px;
-   background-color: white;
-   position: absolute;
-   left: 0;
-   top: 0
+  .maskingBlock {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0
   }
 
 
 .. rubric:: Bottom to top
 
-.. code:: css
+.. code-block:: css
 
-   .hiddenElements {
-   overflow: hidden;
-   margin: 0 !important
+  .hiddenElements {
+    overflow: hidden;
+    margin: 0 !important
   }
  
-   .maskingBlock {
-   display: block;
-   width: 100%;
-   height: 60px;
-   background-color: white;
-   position: absolute;
-   left: 0;
-   bottom: 0;
-   z-index: 20
+  .maskingBlock {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 20
   }
 
 

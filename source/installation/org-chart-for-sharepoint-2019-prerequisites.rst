@@ -44,7 +44,7 @@ Navigate to Apps -> Manage App Catalog
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/createAppCatalog.png
     :alt: Create app catalog
 
-Just fill in ‘Title’, ‘Web Site Address’, ‘Primary Site Collection Administrator’ and click ‘OK’. For example:
+Just fill in **Title**, **Web Site Address**, **Primary Site Collection Administrator** and click **OK**. For example:
 
 - Title – App Catalog Site
 - Web Site address – AppCatalog

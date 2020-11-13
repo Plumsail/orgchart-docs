@@ -69,7 +69,7 @@ you need to create `a new custom user profile property <https://docs.microsoft.c
 Once you have a new property for assistants, you can fill it with **semicolon separated** list of assistants. 
 Also, you may need to `clear Org Chart cache <../how-tos/data-caching.html>`_ to load fresh data.
 
-Example: assist1@contoso.com; assist2@contoso.com; assist3@contoso.com
+Example: :code:`assist1@contoso.com; assist2@contoso.com; assist3@contoso.com`
 
 .. image:: /../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/field-values.png
     :alt: Field values
@@ -100,9 +100,9 @@ If you want to add support for multiple assistants per an employee you have two 
 
 Examples:
 
-- 1; 2; 14; 18 if you use numbers as employee IDs.
+- :code:`1; 2; 14; 18` if you use numbers as employee IDs.
 
-- assist1@contoso.com; assist2@contoso.com; assist3@contoso.com if you use email addresses (account names) as employee IDs.
+- :code:`assist1@contoso.com; assist2@contoso.com; assist3@contoso.com` if you use email addresses (account names) as employee IDs.
 
 3. Map Assistant ID in OrgChart settings to the newly created column.
 4. `Clear Org Chart cache <../how-tos/data-caching.html>`_ to load fresh data.

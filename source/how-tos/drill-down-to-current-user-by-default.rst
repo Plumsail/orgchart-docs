@@ -22,7 +22,7 @@ Drill down to current user on Org Chart load for User Profiles
 If you have SharePoint Online (Office 365) or SharePoint 2019, 2016, 2013 it is quite simple to implement such drill down for User Profiles data source using `JavaScript framework <../javascript-framework/introduction.html>`_ . 
 Just open the configuration wizard and paste the code below to JavaScript editor on **Custom JavaScript** step.
 
-.. code:: javascript
+.. code-block:: javascript
 
   renderer.onInitialLoadingFinished(function () {
 
@@ -36,7 +36,7 @@ Just open the configuration wizard and paste the code below to JavaScript editor
 If you have SharePoint 2010 use the code below. It is more complex than the code above.
 
 
-.. code:: javascript
+.. code-block:: javascript
 
   var currentUserLogin;
   var isInitialLoad = true;

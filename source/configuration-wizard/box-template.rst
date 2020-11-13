@@ -39,7 +39,7 @@ You also can specify the URL manually:
 .. image:: /../_static/img/advanced-web-part-configuration/box-template/OrgChart-Configuration-Wizard-8.png
     :alt: Design mode
 
-Once you click to the ‘HTML mode’ button, all modifications from visual editor will be converted to HTML template.
+Once you click to the **HTML mode** button, all modifications from visual editor will be converted to HTML template.
 
 .. Note:: If you switch to HTML mode and finish the wizard you will not be able to go back to visual editor without resetting template to default.
 

@@ -29,9 +29,9 @@ Sets scale for entire Org Chart.
 
 The example below shows how to set 50% scale for Org Chart:
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.zoom(0.5)
+  renderer.zoom(0.5)
 
 
 .. _drillDown:
@@ -58,11 +58,11 @@ Drills down Org Chart to specified box.
 
 The example below shows how to drill down to box of employee with ID equals 3.
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.drillDown("3", function(){
-     console.log("Drill down executed.");
-   });
+  renderer.drillDown("3", function(){
+    console.log("Drill down executed.");
+  });
 
 
 .. _adjustCenterScroll():
@@ -74,9 +74,9 @@ Displays center of of structure in the middle of the web part.
 
 The example below shows how to call this method:
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.adjustCenterScroll();
+  renderer.adjustCenterScroll();
 
 
 .. _render():
@@ -88,9 +88,9 @@ Rerenders Org Chart from scratch.
 
 The example below shows how to call it
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.render();
+  renderer.render();
 
 
 .. _fixConnectionLines():
@@ -102,9 +102,9 @@ Sometime if you add content to Org Chart boxes dynamically by JavaScript, connec
 
 The example below shows how to use this method:
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.fixConnectionLines();
+  renderer.fixConnectionLines();
 
 
 .. _initTooltipBasedOnConfig:
@@ -112,7 +112,7 @@ The example below shows how to use this method:
 initTooltipBasedOnConfig(link, itemData)
 ----------------------------------------
 
-Initializes tooltips for specified link. If you have custom rendering logic you can use this method to initialize tooltip links. This method will show a tooltip with data from ‘itemData’ when somebody clicks on the ‘link’.
+Initializes tooltips for specified link. If you have custom rendering logic you can use this method to initialize tooltip links. This method will show a tooltip with data from :code:`itemData` when somebody clicks on the link.
 
 .. rubric:: Input parameters
 
@@ -126,7 +126,7 @@ Initializes tooltips for specified link. If you have custom rendering logic you 
        -  jQuery element for the link. Click on the link will show the tooltip.
      
     *  -  **itemData**
-       -  The object with properties from a data source. You can receive it from rendering events. Please find the description below at the beginning of the ‘Events’ section.
+       -  The object with properties from a data source. You can receive it from rendering events. Please find the description below at the beginning of the "Events" section.
 
 
 .. _expandNodeLevels:
@@ -150,15 +150,15 @@ Expands specified number of levels of Org Chart.
     *  -  **completed**
        -  callback function which is executed when all levels are expanded.
 
-You can use it together with ‘showLoadingPanel’ and ‘hideLoadingPanel’ functions. Show loading panel before calling this method and hide it inside completed callback.
+You can use it together with :code:`showLoadingPanel` and :code:`hideLoadingPanel` functions. Show loading panel before calling this method and hide it inside completed callback.
 
 Example:
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.expandNodeLevels(3, function(){
-     console.log("Nodes are expanded");
-   });
+  renderer.expandNodeLevels(3, function(){
+    console.log("Nodes are expanded");
+  });
 
 
 .. _expandNodeLevelsConditionally:
@@ -186,30 +186,30 @@ Conditionally expands specified number of levels of Org Chart.
        -  callback function which is executed when all levels are expanded.
 
 
-You can use it together with ‘showLoadingPanel’ and ‘hideLoadingPanel’ functions. Show loading panel before calling this method and hide it inside completed callback.
+You can use it together with :code:`showLoadingPanel` and :code:`hideLoadingPanel` functions. Show loading panel before calling this method and hide it inside completed callback.
 
 The example below shows how to use this function together with :code:`onInitialLoadingFinished` event and :code:`showLoadingPanel` method. It waits untill the web part is loaded in :code:`onInitialLoadingFinished` event. Then it shows loading panel by calling :code:`showLoadingPanel`. Then it validates condition for each box in :code:`conditionFunction`. Once all levels are expanded, it hides loading panel by calling :code:`hideLoadingPanel` method.
 
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.onInitialLoadingFinished(function () {
- 
-     //Show loading panel before expanding
-     renderer.showLoadingPanel();
- 
-    renderer.expandNodeLevelsConditionally(2, 
-	   function (itemData) {
- 
-        //Expand all employees except "Derek Clark"
-        return itemData["PreferredName"] != "Derek Clark";
- 
+  renderer.onInitialLoadingFinished(function () {
+
+    //Show loading panel before expanding
+    renderer.showLoadingPanel();
+
+  renderer.expandNodeLevelsConditionally(2, 
+    function (itemData) {
+
+      //Expand all employees except "Derek Clark"
+      return itemData["PreferredName"] != "Derek Clark";
+
     }, function () {
- 
-        //Hide loading panel after expanding
-        renderer.hideLoadingPanel();
-     });
-   });
+
+      //Hide loading panel after expanding
+      renderer.hideLoadingPanel();
+    });
+  });
 
 
 .. _collapseAllNodes:
@@ -231,23 +231,24 @@ Collapse all levels of Org Chart.
        -  callback function which is executed when all levels are expanded.
 
 
-You can show loading panel before calling this method and hide it inside completed callback with :code:`showLoadingPanel` and ‘hideLoadingPanel’ functions.
+You can show loading panel before calling this method and hide it inside completed callback with :code:`showLoadingPanel` and :code:`hideLoadingPanel` functions.
 
 The example below shows how to use this function together with :code:`onInitialLoadingFinished` event and :code:`showLoadingPanel` method. It waits untill the web part is loaded in :code:`onInitialLoadingFinished` event. Once all levels are collapsed, it hides loading panel by calling :code:`hideLoadingPanel` method.
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.onInitialLoadingFinished(function () {
- 
+  renderer.onInitialLoadingFinished(function () {
+
     //Show loading panel before collapsing
     renderer.showLoadingPanel();
- 
+
     renderer.collapseAllNodes(function () {
- 
-        //Hide loading panel after expanding
-        renderer.hideLoadingPanel();
+
+      //Hide loading panel after expanding
+      renderer.hideLoadingPanel();
+
     });
-   });
+  });
 
 
 .. _prerenderAction:
@@ -273,7 +274,7 @@ Be careful with this method because if you don’t call :code:`completed` functi
 
 Example:
 
-.. code::
+.. code-block:: javascript
 
   renderer.prerenderAction = function(completed){
   try {
@@ -297,7 +298,7 @@ It shows loading screen for the Org Chart web part.
 
 Example:
 
-.. code:: javascript
+.. code-block:: javascript
 
   renderer.showLoadingPanel();
 
@@ -310,7 +311,7 @@ It hides loading screen for the Org Chart web part.
 
 Example:
 
-.. code:: javascript
+.. code-block:: javascript
 
   renderer.hideLoadingPanel();
 
@@ -324,7 +325,7 @@ It toggles full screen mode for the Org Chart web part.
 
 In the example below I check if there is the URL parameter :code:`IsFullScreen` and show Org Chart enable full scheen if it is there.
 
-.. code::
+.. code-block:: javascript
 
   var isFullScreen = GetUrlKeyValue("IsFullScreen");
                       
@@ -342,7 +343,7 @@ Get org chart data item by id (usually account name or list id).
 
 Example: 
 
-.. code:: javascript
+.. code-block:: javascript
 
   renderer.dataProvider.getBoxGroupItemDataById("3", function(dataItem){
     console.log(dataItem)
@@ -358,7 +359,7 @@ Get account name of a current logged in user.
 
 Example: 
 
-.. code::
+.. code-block:: javascript
 
   renderer.dataProvider.getCurrentUserAccountName(function(accountName){
     console.log(accountName);
@@ -372,7 +373,7 @@ dataProvider.clearCache()
 
 Clears client side cache for current browser. Example:
 
-.. code:: javascript
+.. code-block:: javascript
 
   renderer.dataProvider.clearCache();
 
@@ -386,10 +387,9 @@ Scroll org chart to item by id (usually account name or list id).
 
 Example: 
 
-.. code::
+.. code-block:: javascript
 
   renderer.scrollToBox("domain\\username");
-
 
 .. _customFunctions.getNumberOfColumns:
 
@@ -397,6 +397,8 @@ customFunctions.getNumberOfColumns(rootItemData, defaultColumnsNumber)
 -----------------------------------------------------------------------
 
 You may use this method to perform some custom logic for setting the number of columns for the root item in the compact layout dynamically. For example, if you need to change the default value from the **Layout** step of the configuration wizard for one of the users. 
+
+**Note:** This method must return a number value. The default value will be taken otherwise.
 
 .. rubric:: Input parameters
 
@@ -407,16 +409,12 @@ You may use this method to perform some custom logic for setting the number of c
     *  -  Parameter
        -  Description       
     *  -  **rootItemData**
-       -  The business object from the data source. See description at the beginning of ‘Events’ section.     
+       -  The business object from the data source. See description at the beginning of "Events" section.     
     *  -  **defaultColumnsNumber**
        -  The default value from the configuration wizard.
 
 
-.. note:: This method must return a number value. The default value will be taken otherwise.
-
-
 Example: 
-
 
 .. code-block:: JavaScript
 

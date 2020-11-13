@@ -57,7 +57,7 @@ you need to create `a new custom user profile property <https://docs.microsoft.c
 Once you have a new property for dotted-line managers, you can fill it with **semicolon separated** list of managers.
 
 
-Example: manager1@contoso.com; manager2@contoso.com; manager3@contoso.com
+Example: :code:`manager1@contoso.com; manager2@contoso.com; manager3@contoso.com`
 
 
 Org Chart supports following types of user profile properties, consider it when creating a new user profile property:
@@ -100,7 +100,7 @@ Once your managed property is configured, you may need to `clear Org Chart cache
 Dotted-line managers for SharePoint List data source
 ----------------------------------------------------
 
-If you choose the SharePoint List data source, you need to specify mappings of list columns and Org Chart properties in the ‘Data source’ step of the configuration wizard:
+If you choose the SharePoint List data source, you need to specify mappings of list columns and Org Chart properties in the **Data source** step of the configuration wizard:
 
 .. image:: /../_static/img/how-tos/display-different-types-of-employees/display-dotted-line-managers/org-chart-list-dotted-managers-config.jpg
     :alt: Settings
@@ -131,8 +131,8 @@ If you want to add support for multiple dotted-line managers per an employee you
 
 Examples:
 
-- 1; 2; 14; 18 if you use numbers as employee IDs.
-- manager1@contoso.com; manager2@contoso.com; manager2@contoso.com if you use email addresses (account names) as employee IDs.
+- :code:`1; 2; 14; 18` if you use numbers as employee IDs.
+- :code:`manager1@contoso.com; manager2@contoso.com; manager2@contoso.com` if you use email addresses (account names) as employee IDs.
 
 Conclusion
 ----------

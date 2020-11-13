@@ -31,7 +31,7 @@ If you use SharePoint list as a data source it can be other field value.
 For example, list item ID. If you use SharePoint On-Premises it can be domain account name like **domain\accountname**. 
 Thus, :code:`accountname` is just identificator of employee.
 
-Open the configuration wizard of Org Chart, navigate to ‘Custom JavaScript’ step and paste this code into code editor:
+Open the configuration wizard of Org Chart, navigate to **Custom JavaScript** step and paste this code into code editor:
 
 .. code-block:: JavaScript
 
@@ -89,7 +89,7 @@ How it works
 
 When your web part is loaded, custom JavaScript code is executed. This code disables initial rendering of web part to make drill down instead of waiting for web part loading:
 
-.. code:: JavaScript
+.. code-block:: JavaScript
 
    renderer.config.renderInitialNode = false;
 

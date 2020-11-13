@@ -12,7 +12,7 @@ Firstly, verify User Profile Service for the current SharePoint Farm. Open Share
     :alt: Central Administration
 
 
-Navigate to ‘Manage service applications’:
+Navigate to **Manage service applications**:
 
 
 .. image:: /../_static/img/how-tos/additional-resources/make-sure-that-sharepoint-has-enough-data/ManageServiceApplications.png
@@ -38,7 +38,7 @@ Check number of user profiles in the top right corner of the page:
 
 If number of profiles is relatively small, check synchronization with Active Directory.
 
-If you have specific person, which will be the root of the hierarchy, navigate to ‘Manage User Profiles’:
+If you have specific person, which will be the root of the hierarchy, navigate to **Manage User Profiles**:
 
 
 .. image:: /../_static/img/how-tos/additional-resources/make-sure-that-sharepoint-has-enough-data/ManageUserProfiles.png

@@ -13,7 +13,7 @@ Each field has the same name as internal name of the field in the data source.
 
 The object has structure like this:
 
-.. code:: javascript
+.. code-block:: javascript
 
    {
      FieldInternalName1: "FieldValue1",
@@ -40,7 +40,7 @@ Adds handler on box rendered event. The :code:`handler` function has three input
     *  -  **box**
        -  It is the object of rendered box. You can change this box, for example change background.
 
-          The ‘box’ object has following properties:
+          The :code:`box` object has following properties:
 
           - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
           - **elem** – The DOM element of the box.
@@ -48,35 +48,35 @@ Adds handler on box rendered event. The :code:`handler` function has three input
           You can use this object to set width and height of the box.
           - **elemContainer** – The DOM element of the box container.
 
-          The ‘box’ object also provides :code:`getInnerContent` function. It gets jQuery object for the inner content of current box.
+          The :code:`box` object also provides :code:`getInnerContent` function. It gets jQuery object for the inner content of current box.
     *  -  **itemData**
-       -  It is the business object from the data source. See description at the beginning of ‘Events’ section.
+       -  It is the business object from the data source. See description at the beginning of "Events" section.
 
 .. rubric:: Example
 
-.. code:: javascript
+.. code-block:: javascript
 
   //Changes background of boxes for all employees
   //from marketing department
   renderer.onBoxRendered(function(event, box, itemData){
-      if(itemData["Department"].contains('Marketing')){
-          box.$elem.css({
-              'background-color': 'red',
-              'border-color': 'red'
-          });
-      }
+    if(itemData["Department"].contains('Marketing')){
+      box.$elem.css({
+        'background-color': 'red',
+        'border-color': 'red'
+      });
+    }
   });
 
 In this example :code:`Department` is an internal name of the field, you can get value from the business object using such syntax:
 
-.. code:: javascript
+.. code-block:: javascript
 
   itemData.Department  
 
 
 But if the internal name of your field contains :code:`−` like :code:`SPS–Responsibility` you need to use different syntax:
 
-.. code:: javascript
+.. code-block:: javascript
 
   itemData["SPS-Responsibility"]
 
@@ -101,26 +101,26 @@ Adds handler on tooltip rendered event. The handler has three input parameters:
     *  -  **tooltip**
        -  the object of rendered details tooltip. You can change this tooltip, for example change background.
 
-          The ‘tooltip’ object has following properties:
+          The :code:`tooltip` object has following properties:
 
           - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
           - **elem** – The DOM element of the details tooltip.
 
     *  -  **itemData**
-       -  the business object from the data source. See description at the beginning of ‘Events’ section.
+       -  the business object from the data source. See description at the beginning of "Events" section.
 
 
 Example:
 
-.. code:: javascript
+.. code-block:: javascript
 
-   //Changes background for all tooltips of employees
-   //from marketing department
-   renderer.onTooltipRendered(function(event, tooltip, itemData){
-     if(itemData["Department"]contains('Marketing')){
-         tooltip.$elem.css({ 'background-color': 'red' });
-     }
-   });
+  //Changes background for all tooltips of employees
+  //from marketing department
+  renderer.onTooltipRendered(function(event, tooltip, itemData){
+    if(itemData["Department"]contains('Marketing')){
+      tooltip.$elem.css({ 'background-color': 'red' });
+    }
+  });
 
 
 .. _onSearchResultRendered:
@@ -141,27 +141,27 @@ Adds handler on quick search result rendered event. The handler has three input 
     *  -  **tooltip**
        -  the object of rendered details tooltip. You can change this tooltip, for example change background.
 
-          The ‘searchResult’ object has following properties:
+          The :code:`searchResult` object has following properties:
 
           - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
           - **elem** – The DOM element of the search result.
 
     *  -  **itemData**
-       -  the business object from the data source. See description at the beginning of ‘Events’ section.
+       -  the business object from the data source. See description at the beginning of "Events" section.
 
 Example:
 
-.. code:: javascript
+.. code-block:: javascript
 
-   //Changes background for search results of employees
-   //from marketing department
-   renderer.onSearchResultRendered(
-     function(event, searchResult, itemData){
-         if(itemData["Department"].contains('Marketing')){
-             searchResult.$elem.css({ 'background-color': 'red' });
-         }
-     }
-   );
+  //Changes background for search results of employees
+  //from marketing department
+  renderer.onSearchResultRendered(
+    function(event, searchResult, itemData){
+      if(itemData["Department"].contains('Marketing')){
+        searchResult.$elem.css({ 'background-color': 'red' });
+      }
+    }
+  );
 
 
 .. _onInitialLoadingFinished:
@@ -173,13 +173,13 @@ Adds handler on org chart initial loading finished event. It is triggered when o
 
 Example: 
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.onInitialLoadingFinished(
-     function(){
-         console.log('Initial loading is finished');
-     }
-   );
+  renderer.onInitialLoadingFinished(
+    function(){
+      console.log('Initial loading is finished');
+    }
+  );
 
 
 .. _onLoadingStarted:
@@ -191,13 +191,13 @@ Adds handler on org chart loading started event. It is triggered when progress i
 
 Example: 
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.onLoadingStarted(
-     function(){
-         console.log('Loading is started');
-     }
-   );
+  renderer.onLoadingStarted(
+    function(){
+      console.log('Loading is started');
+    }
+  );
 
 
 .. _onLoadingFinished:
@@ -210,12 +210,12 @@ Adds handler on org chart loading finished event. It is triggered when progress 
 
 Example: 
 
-.. code:: javascript
+.. code-block:: javascript
 
-   renderer.onLoadingFinished(
-     function(){
-         console.log('Loading is finished');
-     }
-   );
+  renderer.onLoadingFinished(
+    function(){
+      console.log('Loading is finished');
+    }
+  );
 
 .. note:: Next review `Methods <methods.html>`_.

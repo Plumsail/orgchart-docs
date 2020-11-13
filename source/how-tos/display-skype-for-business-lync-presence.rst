@@ -14,7 +14,7 @@ See the documentation (link) for more information.
 
 You can use this code snippet even in box template. The article below describes how it works but you can use it as is without modificaitons, just copy paste to your HTML template.
 
-.. code::
+.. code-block:: html
 
   <div class="pl-item-photo">
    {{#if PictureURL}}
@@ -74,7 +74,7 @@ You can find the snippet which I provided earlier inside this template. This sni
 
 You may also need to add this code to **Custom CSS** step of the configuration wizard:
 
-.. code:: css
+.. code-block:: css
 
   .ms-hide{
     display: none!important;

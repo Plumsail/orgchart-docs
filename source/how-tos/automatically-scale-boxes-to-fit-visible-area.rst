@@ -22,41 +22,41 @@ As you can see some of the boxes are outside of visible area. I will show how to
 Just open the configuration wizard by clicking gears at the top right corner of the web part. Then click **Settings**. Switch to **Custom JavaScript** step and put the code below into code editor:
 
 
-.. code:: JavaScript
+.. code-block:: JavaScript
 
-   renderer.onInitialLoadingFinished(function(){ 
- 
-   renderer.showLoadingPanel();
- 
-   var $pochContent = renderer.querySelector(".poch-content")
-   var $viewPort = renderer.querySelector(".poch-control").children().first();
-   var viewPort = $viewPort[0];
-   var topOffset = 20;
-   var currentZoom = 1;
- 
-   function adjustWidth(){
- 
-     var realViewPortWidth = viewPort.scrollWidth * currentZoom;
-     var contentWidth = $pochContent.width(); 
- 
-     if(realViewPortWidth > contentWidth){
- 
-      currentZoom = currentZoom - 0.1;
-       if(currentZoom > 0){
-         renderer.zoom(currentZoom);
-         adjustWidth(); 
-       } 
-     } else {
-       renderer.hideLoadingPanel();
-       renderer.dataProvider.getRootItemId(function(rootId){
-         renderer.scrollToBox(rootId);
-       });
-     }
-   }
- 
-   setTimeout(adjustWidth, 50);
- 
-   });
+  renderer.onInitialLoadingFinished(function () {
+
+    renderer.showLoadingPanel();
+
+    var $pochContent = renderer.querySelector(".poch-content")
+    var $viewPort = renderer.querySelector(".poch-control").children().first();
+    var viewPort = $viewPort[0];
+    var topOffset = 20;
+    var currentZoom = 1;
+
+    function adjustWidth() {
+
+      var realViewPortWidth = viewPort.scrollWidth * currentZoom;
+      var contentWidth = $pochContent.width();
+
+      if (realViewPortWidth > contentWidth) {
+
+        currentZoom = currentZoom - 0.1;
+        if (currentZoom > 0) {
+          renderer.zoom(currentZoom);
+          adjustWidth();
+        }
+      } else {
+        renderer.hideLoadingPanel();
+        renderer.dataProvider.getRootItemId(function (rootId) {
+          renderer.scrollToBox(rootId);
+        });
+      }
+    }
+
+    setTimeout(adjustWidth, 50);
+
+  });
 
 
 Then finish the wizard. 

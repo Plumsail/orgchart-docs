@@ -42,7 +42,7 @@ Navigate to Apps -> Manage App Catalog
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/manageAppCatalog2019.png
     :alt: Manage app catalog 2019
 
-Navigate to ‘Apps for SharePoint’ and upload Add-in package that you downloaded at the beginning of this instruction:
+Navigate to **Apps for SharePoint** and upload Add-in package that you downloaded at the beginning of this instruction:
 
 .. image:: /../_static/img/getting-started/installation-sharepoint2019/UploadAppToCatalog2019.png
     :alt: Upload app to catalog 2019

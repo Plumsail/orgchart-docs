@@ -10,12 +10,12 @@ Quick configuration
 
 Once you added the web part to your page, you can see the message asking you to configure the web part.
 
-Open your page in edit mode. Then Click ‘pencil’ icon at the left side of your web part. It will open property pane:
+Open your page in edit mode. Then Click **pencil** icon at the left side of your web part. It will open property pane:
 
 .. image:: /../_static/img/getting-started/quick-configuration/pencil-icon.png
     :alt: Configuration
 
-Then click ‘Open config wizard’ in the property pane.
+Then click **Open config wizard** in the property pane.
 
 .. include:: initial-configuration-part.rst
 

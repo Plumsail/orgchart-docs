@@ -57,7 +57,7 @@ List of available skins:
 
 .. rubric:: Number of visible tree levels
 
-You can also control a number of levels visible by default. Use input ‘Number of visible tree levels’ to change it. 
+You can also control a number of levels visible by default. Use input **Number of visible tree levels** to change it. 
 You may expand all hierarchy tree by default, just set a value large enough in the input, for example 1000.
 
 .. Note:: this can affect performance of Org Chart on large structures.
@@ -99,7 +99,7 @@ Once you enabled vacancies **Manage vacancies** menu item will appear:
 
 
 This menu item redirects user to vacancies list. To create new vacancies, create new list item and specify **Manager**. 
-It can be account name for **User Profiles** data source and list item ID for ‘SharePoint list’ data source:
+It can be account name for **User Profiles** data source and list item ID for **SharePoint list** data source:
 
 .. image:: /../_static/img/advanced-web-part-configuration/general-settings/CreateVacancy.png
     :alt: Create vacancy

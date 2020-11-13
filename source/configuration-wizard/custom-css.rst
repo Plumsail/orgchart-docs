@@ -6,36 +6,36 @@ If you are familiar with `CSS <http://www.w3schools.com/css/>`_ , you can adjust
 
 For example you can change the background of the person’s box to black using such CSS:
 
-.. code:: css
+.. code-block:: css
 
-    .poch-web-part .pl-item .pl-item-template{
-     background-color: black;
-     border-color: black;
-     }
+  .poch-web-part .pl-item .pl-item-template{
+    background-color: black;
+    border-color: black;
+  }
 
 And this is another example which resizes Org Chart boxes to smaller size. 
 Thus, more boxes can be displayed in the single screen.
 
-.. code:: css
+.. code-block:: css
 
-   /*Width of the box*/
-   .poch-web-part .poch-control .pl-item {
+  /*Width of the box*/
+  .poch-web-part .poch-control .pl-item {
     width: 170px;
-    }
- 
-   /*Font size for the fields in the box*/
-   .pl-item-card .field-container {
-   font-size: 12px;
-   }
- 
-   /*Font size for the header field in the box (the first in the box)*/
-   .pl-item-card .field-container.header-field {
-   font-size: 12px;
-   }
- 
-   /*Width of the photo in the box*/
+  }
+
+  /*Font size for the fields in the box*/
+  .pl-item-card .field-container {
+    font-size: 12px;
+  }
+
+  /*Font size for the header field in the box (the first in the box)*/
+  .pl-item-card .field-container.header-field {
+    font-size: 12px;
+  }
+
+  /*Width of the photo in the box*/
   .pl-item-photo img {
-   max-width: 42px;
+    max-width: 42px;
   }
 
 On the picture below you can see example of CSS style which changes the background of boxes to black:
@@ -66,19 +66,18 @@ This way, you can handle styles in the **Custom CSS** tab that will be applied o
 
 To enlarge font-size for printing, the code used was:
 
-.. code:: css
+.. code-block:: css
 
-    .pl-print-mode .pl-item-card .field-container {
+  .pl-print-mode .pl-item-card .field-container {
     font-size: 16px;
-    }
+  }
 
 And to modify the background color of boxes the following code was added:
 
-.. code:: css
+.. code-block:: css
 
-    .pl-print-mode .pl-item .pl-item-template {
+  .pl-print-mode .pl-item .pl-item-template {
     background-color: #e6f4ff !important;
-    }
-
+  }
 
 .. Note:: Go to the next step of the advanced configuration wizard `Reset configuration <../configuration-wizard/reset-configuration.html>`_ .

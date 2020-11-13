@@ -38,7 +38,7 @@ Follow the instruction to `configure <../configuration-wizard/run-configuration-
 
 If you want Org Chart to occupy full screen by default, add the following code into the Custom JavaScript tab:
 
-.. code:: JavaScript
+.. code-block:: JavaScript
 
    renderer.fullSizeToggle();
 

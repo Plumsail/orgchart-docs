@@ -16,7 +16,7 @@ The picture below will help you to understand the structure of the localization 
 You need to open the configuration wizard and navigate to the `Custom JavaScript <../configuration-wizard/custom-javascript.html>`_ step. 
 Then you can override strings like this:
 
-.. code:: javascript
+.. code-block:: javascript
 
    Plumsail.OrgChart.LocalizationStrings.SearchInputWatermark = "Suche";
    Plumsail.OrgChart.LocalizationStrings.Settings.PrintOrgChart.Title = "Drucken"
@@ -34,110 +34,110 @@ Then you can override strings like this:
 
 This is the structure of the localization object. Read through the comments in the object to understand the purpose of each property.
 
-.. code:: javascript
+.. code-block:: javascript
 
-   {
-   SearchInputWatermark: "Search",              //This message appears inside search box
-    PeoplePickerWatermark: "Start typing...",   //This message appears inside people pickers
-    RightControlZone: {                         //Buttons section located at the right top corner
-        OriginalZoom: "",                       //Hint text for original zoom button
-        FullScreenMode: "",                     //Hint text for full screen button
-        Settings: ""                            //Hint text for settings button (gears icon)
+  {
+    SearchInputWatermark: "Search", //This message appears inside search box
+    PeoplePickerWatermark: "Start typing...", //This message appears inside people pickers
+    RightControlZone: { //Buttons section located at the right top corner
+      OriginalZoom: "", //Hint text for original zoom button
+      FullScreenMode: "", //Hint text for full screen button
+      Settings: "" //Hint text for settings button (gears icon)
     },
     Settings: {
-        Settings: {           //Settings menu which is opened when you click on gears icon
-        Settings: "",         //Configuration wizard menu item text
-        PrintOrgChart: {      //Strings related to printing
-            Title: "",        //Text for print menu item
-            PrintingIsNotSupported: "Printing in Firefox, Internet Explorer 9 and below is not supported. Please use Internet Explorer 10 and later, Chrome or Safari. If you use IE 10 and above and see this message, then your browser is in compatibility mode of IE 9 and below.",
-            ExportDialog: {
-                Title: "Print",
-                SubTitle: "Print currently visible employees.",
-                ExportAsLabel: "Output format",
-                PaperSizeLabel: "Paper size",
-                LandscapeLabel: "Landscape",
-                NoOptionsDescription: "Paper size and layout will be adjusted automatically.",
-                ExportButton: "Print",
-                CancelButton: "Cancel"
-            },
-            ProcessingPdfPanel: {
-                ProcessingMessage: "Generating PDF may take a few minutes.",
-                ReadyMessage: "Your PDF is ready!",
-                CancelConfirmMessage: "Are you sure you want to cancel the operation?",
-                ErrorMessage: "Error occurred during PDF generation. Please contact support@plumsail.com",
-                DownloadButton: "Download",
-                OkButton: "Ok",
-                CancelButton: "Cancel"
-            },
-            ProcessingPngPanel: {
-                ProcessingMessage: "Generating PNG may take a few minutes.",
-                ReadyMessage: "Your PNG is ready!",
-                CancelConfirmMessage: "Are you sure you want to cancel the operation?",
-                ErrorMessage: "Error occurred during PNG generation. Please contact support@plumsail.com",
-                DownloadButton: "Download",
-                OkButton: "Ok",
-                CancelButton: "Cancel"
-            }
+      Settings: { //Settings menu which is opened when you click on gears icon
+        Settings: "", //Configuration wizard menu item text
+        PrintOrgChart: { //Strings related to printing
+          Title: "", //Text for print menu item
+          PrintingIsNotSupported: "Printing in Firefox, Internet Explorer 9 and below is not supported. Please use Internet Explorer 10 and later, Chrome or Safari. If you use IE 10 and above and see this message, then your browser is in compatibility mode of IE 9 and below.",
+          ExportDialog: {
+            Title: "Print",
+            SubTitle: "Print currently visible employees.",
+            ExportAsLabel: "Output format",
+            PaperSizeLabel: "Paper size",
+            LandscapeLabel: "Landscape",
+            NoOptionsDescription: "Paper size and layout will be adjusted automatically.",
+            ExportButton: "Print",
+            CancelButton: "Cancel"
+          },
+          ProcessingPdfPanel: {
+            ProcessingMessage: "Generating PDF may take a few minutes.",
+            ReadyMessage: "Your PDF is ready!",
+            CancelConfirmMessage: "Are you sure you want to cancel the operation?",
+            ErrorMessage: "Error occurred during PDF generation. Please contact support@plumsail.com",
+            DownloadButton: "Download",
+            OkButton: "Ok",
+            CancelButton: "Cancel"
+          },
+          ProcessingPngPanel: {
+            ProcessingMessage: "Generating PNG may take a few minutes.",
+            ReadyMessage: "Your PNG is ready!",
+            CancelConfirmMessage: "Are you sure you want to cancel the operation?",
+            ErrorMessage: "Error occurred during PNG generation. Please contact support@plumsail.com",
+            DownloadButton: "Download",
+            OkButton: "Ok",
+            CancelButton: "Cancel"
+          }
         },
         GenerateReport: {
-            Title: "Generate report",
-            ReportDialog: {
-                Title: "Organization report",
-                SubTitle: "Generate multi-page report of your organization.",
-                StartPersonLabel: "Start report from this person",
-                LevelsToCollectLabel: "Levels to collect",
-                PaperSizeLabel: "Paper size",
-                LandscapeLabel: "Landscape",
-                StartPersonValidationMessage: "Specify starting person or keep it empty to start from the currently displayed employee.",
-                GenerateButton: "Generate",
-                CancelButton: "Cancel"
-            },
-            ProcessingPanel: {
-                ProcessingMessage: "Generating report may take a few minutes.",
-                ReadyMessage: "Your report is ready!",
-                CancelConfirmMessage: "Are you sure you want to cancel the operation?",
-                ErrorMessage: "Error occurred during report generation. Please contact support@plumsail.com",
-                DownloadButton: "Download",
-                OkButton: "Ok",
-                CancelButton: "Cancel"
-            }
+          Title: "Generate report",
+          ReportDialog: {
+            Title: "Organization report",
+            SubTitle: "Generate multi-page report of your organization.",
+            StartPersonLabel: "Start report from this person",
+            LevelsToCollectLabel: "Levels to collect",
+            PaperSizeLabel: "Paper size",
+            LandscapeLabel: "Landscape",
+            StartPersonValidationMessage: "Specify starting person or keep it empty to start from the currently displayed employee.",
+            GenerateButton: "Generate",
+            CancelButton: "Cancel"
+          },
+          ProcessingPanel: {
+            ProcessingMessage: "Generating report may take a few minutes.",
+            ReadyMessage: "Your report is ready!",
+            CancelConfirmMessage: "Are you sure you want to cancel the operation?",
+            ErrorMessage: "Error occurred during report generation. Please contact support@plumsail.com",
+            DownloadButton: "Download",
+            OkButton: "Ok",
+            CancelButton: "Cancel"
+          }
         },
         ExportCsv: {
+          Title: "Export to CSV",
+          ExportDialog: {
             Title: "Export to CSV",
-            ExportDialog: {
-                Title: "Export to CSV",
-                StartPersonLabel: "Start from this person",
-                LevelsToCollectLabel: "Levels to collect",
-                DelimiterLabel: "CSV delimiter",
-                CommaDelimiterLabel: "Comma",
-                SemicolonDelimiterLabel: "Semicolon",
-                StartPersonValidationMessage: "Specify starting person or keep it empty to start from the currently displayed employee.",
-                ExportButton: "Export",
-                CancelButton: "Cancel"
-            },
-            ProcessingPanel: {
-                ProcessingMessage: "Generating CSV may take a few minutes.",
-                ReadyMessage: "Your CSV is ready!",
-                CancelConfirmMessage: "Are you sure you want to cancel the operation?",
-                ErrorMessage: "Error occurred during CSV generation. Please contact support@plumsail.com",
-                DownloadButton: "Download",
-                OkButton: "Ok",
-                CancelButton: "Cancel"
-            }
+            StartPersonLabel: "Start from this person",
+            LevelsToCollectLabel: "Levels to collect",
+            DelimiterLabel: "CSV delimiter",
+            CommaDelimiterLabel: "Comma",
+            SemicolonDelimiterLabel: "Semicolon",
+            StartPersonValidationMessage: "Specify starting person or keep it empty to start from the currently displayed employee.",
+            ExportButton: "Export",
+            CancelButton: "Cancel"
+          },
+          ProcessingPanel: {
+            ProcessingMessage: "Generating CSV may take a few minutes.",
+            ReadyMessage: "Your CSV is ready!",
+            CancelConfirmMessage: "Are you sure you want to cancel the operation?",
+            ErrorMessage: "Error occurred during CSV generation. Please contact support@plumsail.com",
+            DownloadButton: "Download",
+            OkButton: "Ok",
+            CancelButton: "Cancel"
+          }
         },
-        ManageVacancies: "",                //Manage vacancies menu item text
-        ClearCache: {                       //Strings related to cache clearing
-            Title: "",                      //Text for clear cach menu item
-            ClearCacheConfirmMessage: ""    //Text for clear cache confirmation message box
+        ManageVacancies: "", //Manage vacancies menu item text
+        ClearCache: { //Strings related to cache clearing
+          Title: "", //Text for clear cach menu item
+          ClearCacheConfirmMessage: "" //Text for clear cache confirmation message box
         },
-        Help: ""                            //Help menu item text
-    },
-    DrillDownToolbar: {      //Toolbar which appears on hove over org chart boxes
-        GoToParent: "",      //Hint text for go to parent button
-        GoToRoot: "",        //Hint text for go to root button
-        DrillHere: "",       //Hint text for drill here button
-    },
-    UserProfilePropertyNames: {
+        Help: "" //Help menu item text
+      },
+      DrillDownToolbar: { //Toolbar which appears on hove over org chart boxes
+        GoToParent: "", //Hint text for go to parent button
+        GoToRoot: "", //Hint text for go to root button
+        DrillHere: "", //Hint text for drill here button
+      },
+      UserProfilePropertyNames: {
         "UserProfile_GUID": "Id",
         "SID": "SID",
         "ADGuid": "Active Directory Id",
@@ -200,22 +200,19 @@ This is the structure of the localization object. Read through the comments in t
         "SPS-StatusNotes": "Status Message",
         "SPS-Interests": "Interests",
         "SPS-EmailOptin": "Email Notifications"
-     }
-   };
-
-
+      }
+    }
+  };
 
 .. _instruction:
 
 Localization in Org Chart for SharePoint 2013/2016
 --------------------------------------------------
 
-
 Just find **Localization.js** file located in the Style Library of your site collection. 
 The URL to find it looks like this **http://YOUR_SITE_COLLECTION/Style Library/Plumsail/OrgChart**.
 
 Then change any string and save the file. Your changes will appear in the web part interface. 
 If you leave values blank, the web part will use default values.
-
 
 .. note:: Do not forget to check in and publish the file if publishing is enabled in your **Style Library**.

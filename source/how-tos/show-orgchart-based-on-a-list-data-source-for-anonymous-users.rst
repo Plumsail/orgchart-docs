@@ -44,11 +44,11 @@ We need to do just one more thing before the users will see Org Chart in anonymo
 
 For that you need to execute the following PowerShell commands on your SharePoint server:
 
-.. code:: javascript
+.. code-block:: javascript
 
-    $webApplication = Get-SPWebApplication -Identity "<YourWebApplicationAddress:port>"
-    $webApplication.ClientCallableSettings.AnonymousRestrictedTypes.Remove( [Microsoft.SharePoint.SPList],"GetItems")
-    $webApplication.Update()
+  $webApplication = Get-SPWebApplication -Identity "<YourWebApplicationAddress:port>"
+  $webApplication.ClientCallableSettings.AnonymousRestrictedTypes.Remove( [Microsoft.SharePoint.SPList],"GetItems")
+  $webApplication.Update()
 
 
 That is all! From this moment all users with the anonymous access will see you Org Chart that based on a list data source.

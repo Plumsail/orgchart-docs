@@ -11,15 +11,15 @@ To define the sorting rules, please, add a code like this to the Custom JavaScri
 .. image:: /../_static/img/how-tos/filter-and-order-boxes/order-employees-boxes-using-a-custom-field/sorting.png
     :alt: Sorting
 
-.. code:: JavaScript
+.. code-block:: JavaScript
   
-   1. renderer.config.nodesSortOrder = "ASC";
-   2. renderer.config.nodesSortFieldName = "SortingFieldName";
+  renderer.config.nodesSortOrder = "ASC";
+  renderer.config.nodesSortFieldName = "SortingFieldName";
 
 
-- **nodesSortOrder** – a sorting order, for example, :code:`ASC` or :code:`DESC`.
+- :code:`nodesSortOrder` – a sorting order, for example, :code:`ASC` or :code:`DESC`.
 
 
-- **nodesSortFieldName** – the internal name of a list field or a property from the User Profile service.
+- :code:`nodesSortFieldName` – the internal name of a list field or a property from the User Profile service.
 
 Currently, Org Chart handles all the properties as strings, so you should not use numbers for defining the sorting order.

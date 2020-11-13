@@ -16,14 +16,14 @@ This is our first thing to do.
 .. image:: /../_static/img/how-tos/other-examples/support-of-search-in-a-list-with-more-than-5k-items/IndexedColumns.png
     :alt: Indexed Columns
 
-3. Click on ‘Create a new Index’ and select a column you’d like to be indexed and used in OrgChart search
+3. Click on **Create a new Index** and select a column you’d like to be indexed and used in OrgChart search
 
 .. image:: /../_static/img/how-tos/other-examples/support-of-search-in-a-list-with-more-than-5k-items/CreateIndex.gif
     :alt: Create Index
 
 Once it’s done we’re heading to OrgChart settings.
 
-4. Open OrgChart settings, enable ‘Search only in indexed list columns’ option and specify the Root ID. Without Root ID the standart search algorithm won’t be able to work wth the List.
+4. Open OrgChart settings, enable **Search only in indexed list columns** option and specify the Root ID. Without Root ID the standart search algorithm won’t be able to work wth the List.
 
 .. image:: /../_static/img/how-tos/other-examples/support-of-search-in-a-list-with-more-than-5k-items/OrgChartSettings.png
     :alt: OrgChart Settings
