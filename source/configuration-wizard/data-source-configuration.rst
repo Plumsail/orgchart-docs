@@ -13,8 +13,8 @@ Unless you want to configure `dotted-line managers <../how-tos/display-different
 
 To understand how Org Chart communicates with User profiles service, read `the blog article <../how-tos/additional-resources/how-orgchart-pulls-data-from-ad-on-premises.html>`_.
 
-If you choose *SharePoint list* as a data source, it will be configured to create a new list with demo data by default. 
-You only need to fill *List name*.
+If you choose **SharePoint list** as a data source, it will be configured to create a new list with demo data by default. 
+You only need to fill **List name**.
 
 .. image:: /../_static/img/advanced-web-part-configuration/data-source-configuration/OrgChart-Configuration-Wizard-1.png
     :alt: OrgChart configuration wizard
@@ -29,12 +29,12 @@ The interface for mapping looks like this.
 
 
 Mapping defines the connection between Organization Chart field and List field. Data from the corresponding list field 
-will be used by the Organization Chart, for example you can specify mapping between **Item ID** and list item ID.
+will be used by the Organization Chart, for example you can specify mapping between **Employee ID** and list item ID.
 
-**Item ID**, **Manager ID** and **Display text** mappings are required, you can leave other mappings empty. 
+**Employee ID**, **Manager ID** and **Display text** mappings are required, you can leave other mappings empty. 
 Once you configured it, you can go through the wizard and click the finish button.
 
-**Item ID** and **Manager ID** are used to build hierarchy. **Display text** is used as display text for entities in the org chart. 
+**Employee ID** and **Manager ID** are used to build hierarchy. **Display text** is used as display text for entities in the org chart. 
 For example you will see ‘Display text’ in the breadcrumb.
 
 
