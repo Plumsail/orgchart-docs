@@ -4,13 +4,6 @@ How Org Chart pulls data from AD On-Premises
 
 In this article is described how `Plumsail Org Chart <https://plumsail.com/privacy-policy/>`_ communicates with SharePoint User Profile Service and Active Directory and what are prerequisites for Org Chart correct work.
 
-Before we dive in, here’s where we are in my Org Chart series:
-
-1. `Plumsail Org Chart for SharePoint 2013 <https://medium.com/plumsail/org-chart-for-sharepoint-online-in-office-365-and-on-premises-e2f241cae59b>`_
-2. How Org Chart communicates with SharePoint User Profile service [this article]
-3. `Org Chart Skins with touch support <../how-tos/change-orgchart-skin.html>`_
-4. `Advanced navigation for SharePoint organizational chart <../how-tos/use-advanced-orgchart-navigation.html>`_.
-
 
 Org Chart displays data directly from User Profile service, but if there are no user profiles, 
 Org Chart will simply empty. You can always create user profiles manually, 
