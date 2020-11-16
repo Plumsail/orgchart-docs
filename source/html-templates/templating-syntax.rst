@@ -16,7 +16,7 @@ You can specify custom HTML templates using Handlebars syntax to change look and
 You can customize templates using the configuration wizard. 
 Read `Advanced Web Part configuration <../configuration-wizard/run-configuration-wizard.html>`_ for more information.
 
-You can find a detailed description of Handlebars syntax on the `official site <http://handlebarsjs.com/>`_ . 
+You can find a detailed description of Handlebars syntax on the `official site <http://handlebarsjs.com/>`_. 
 In this instruction, we covered only frequently used blocks and our custom blocks, developed for the Org Chart especially.
 
 Handlebars template look like regular HTML, with embedded handlebars expressions.
@@ -159,7 +159,7 @@ Structure of the context object
 
 Handlebars template receives context object, the object which represents data to render. This context object is used to resolve values in the template. The context object is a plain object with multiple fields from a data source:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   {
     FieldInternalName1: "FieldValue1",

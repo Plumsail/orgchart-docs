@@ -7,11 +7,12 @@ Box template
 
 You can customize the template of the box inside the Org Chart web part. There are two options:
 
-1. To use visual editor (Design mode)
-2. To use HTML editor (HTML mode)
+.. contents::
+   :local:
+   :depth: 1
 
-Design mode
------------
+Use Design mode - Visual editor
+-------------------------------
 
 In the visual editor you need to specify photo URL field. 
 This property defines the field which will be used to get photo URLs for boxes. These photos will be displayed in the left side of the boxes. 
@@ -44,8 +45,8 @@ Once you click to the **HTML mode** button, all modifications from visual editor
 .. Note:: If you switch to HTML mode and finish the wizard you will not be able to go back to visual editor without resetting template to default.
 
 
-HTML mode
----------
+Use HTML mode - HMTL editor
+---------------------------
 
 .. image:: /../_static/img/advanced-web-part-configuration/box-template/OrgChart-Configuration-Wizard-9.png
     :alt: HTML mode
@@ -55,5 +56,5 @@ To get more information about the HTML templating syntax read HTML templating sy
 
 
 
-.. Note:: Go to the next step of the advanced configuration wizard `Tooltip template <../configuration-wizard/tooltip-template.html>`_ .
+.. Note:: Go to the next step of the advanced configuration wizard `Tooltip template <../configuration-wizard/tooltip-template.html>`_.
 

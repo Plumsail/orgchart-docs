@@ -14,14 +14,14 @@ In my case Org Chart web part is located here:
 
 
 
-https://plumsail.sharepoint.com/orgchart.aspx
+:code:`https://plumsail.sharepoint.com/orgchart.aspx`
 
 
 I want to be able to navigate to specific box using URL like this:
 
 
 
-https://plumsail.sharepoint.com/orgchart.aspx?**boxID=account@plumsail.com**
+:code:`https://plumsail.sharepoint.com/orgchart.aspx?boxID=account@plumsail.com`
 
 
 
@@ -34,14 +34,14 @@ Thus, boxID is just identificator of employee.
 
 Open the configuration wizard of Org Chart, navigate to **Custom JavaScript** step and paste this code into code editor:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   var boxId = GetUrlKeyValue("boxID");
 
   //if there is boxID in URL
   if(boxId) {
 
-    //Skip initiall node rendering
+    //Skip initiall rendering to speed up the process
     renderer.config.renderInitialNode = false;
 
     //Wait for web part loading

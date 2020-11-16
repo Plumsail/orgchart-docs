@@ -1,9 +1,9 @@
 Data source configuration
 =========================
 
-This is the first step of the wizard.
+This is the first step of `the configuration wizard <run-configuration-wizard.html>`_.
 
-You can choose between two data sources:
+Org Chart can pull employees information from two data sources:
 
 1. SharePoint list
 2. User profiles
@@ -70,5 +70,5 @@ To be able to use search in such list you need to index the columns on the list 
 You can find more information about it in `this article <../how-tos/other-examples/support-of-search-in-a-list-with-more-than-5k-items.html>`_.
 
 
-.. Note:: Go to the next step of the advanced configuration wizard `Filtration <../configuration-wizard/filtration.html>`_ .
+.. Note:: Go to the next step of the advanced configuration wizard `Filtration <../configuration-wizard/filtration.html>`_.
            

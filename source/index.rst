@@ -23,7 +23,7 @@
     :maxdepth: 1
     :titlesonly:
 
-    Run configuration wizard <configuration-wizard/run-configuration-wizard>   
+    Open configuration wizard <configuration-wizard/run-configuration-wizard>   
     Data source configuration <configuration-wizard/data-source-configuration>
     Layout <configuration-wizard/layout>  
     Filtration <configuration-wizard/filtration>  
@@ -92,7 +92,7 @@
     Printing organizational structure <how-tos/printing-organizational-structure>
     Generate multi-page PDF report <how-tos/generate-multi-page-pdf-report>
     Export to CSV and analyze in Excel <how-tos/export-to-csv-and-analyze-in-excel>
-    Custom styles for printed chart <https://ya.ru>
+    Custom styles for printed Org Chart <how-tos/custom-printing-css>
 
   .. toctree::
     :caption: Microsoft Teams 
@@ -128,11 +128,11 @@
     :titlesonly:
     
     Customize box HTML template and CSS styles <how-tos/customize-box-html-template-and-css-styles>
-    Display awards and conditionally format Org Chart <how-tos/display-awards-and-conditionally-format-orgchart>
-    Display Skype for Business (Lync) presence <how-tos/display-skype-for-business-lync-presence>
-    Create an Org Chart with two root managers <how-tos/create-an-orgchart-with-two-root-managers>
+    Display awards and conditionally format Org Chart <how-tos/display-awards-and-conditionally-format-orgchart>    
+    Create an Org Chart with two root managers <how-tos/create-an-orgchart-with-two-root-managers>    
     Change Org Chart skin <how-tos/change-orgchart-skin>
     Localize Org Chart <how-tos/localize-orgchart>
+    Display Skype for Business (Lync) presence <how-tos/display-skype-for-business-lync-presence>
 
   .. toctree::
     :caption: Show specific user on load
@@ -162,5 +162,5 @@
         
     Use advanced Org Chart navigation <how-tos/use-advanced-orgchart-navigation>    
     Include and use fields from an additional list <how-tos/include-and-use-fields-from-an-additional-list>
-    Org Chart based on a list data source for anonymous users <how-tos/show-orgchart-based-on-a-list-data-source-for-anonymous-users>
     Support of search in a list with more than 5000 items <how-tos/support-of-search-in-a-list-with-more-than-5k-items>    
+    Org Chart based on a list data source for anonymous users <how-tos/show-orgchart-based-on-a-list-data-source-for-anonymous-users>    

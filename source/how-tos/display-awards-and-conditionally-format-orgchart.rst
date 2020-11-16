@@ -63,16 +63,16 @@ You can find description of JavaScript framework in `the documentation <../javas
 
 It is possible to use such code to highlight boxes with :code:`Gold medal` field values:
 
-..code-block:: JavaScript
+.. code-block:: javascript
 
   //subscribe for box rendering event
-  renderer.onBoxRendered(function(event, box, itemData){  
+  renderer.onBoxRendered(function(event, box, itemData){
     //If employee has gold award show medal and add CSS classes
     if(itemData.Awards == 'Gold medal'){
       box.$elem.css({
         'background-color': '#ffec8b' /*light goldenrod*/
       });
-    }  
+    }
   });
 
 
@@ -177,7 +177,7 @@ Step by step guide with ready to copy paste code
 Add new :code:`Awards` field to your data source, SharePoint list or User Profile Service. If you don’t know how to do it, read official documentation from Microsoft:
 
 - `Add new field to SharePoint list <http://office.microsoft.com/en-001/sharepoint-server-help/create-change-or-delete-a-column-in-a-list-or-library-HA102771913.aspx>`_
-- `Add new property to User Profile Service <http://office.microsoft.com/en-001/office365-sharepoint-online-enterprise-help/add-and-edit-user-profile-properties-HA102772741.aspx>`_
+- `Add new property to User Profile Service <https://docs.microsoft.com/en-us/sharepoint/administration/add-edit-or-delete-custom-properties-for-a-user-profile>`_
 
 
 Open the configuration wizard using the context menu in the top right corner of the web part.
@@ -233,7 +233,7 @@ Switch to **Custom JavaScript** wizard step and add :code:`Awards` field to fiel
 
 Then copy JavaScript code and paste it to the code editor:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   //subscribe for box rendering event
   renderer.onBoxRendered(function(event, box, itemData){

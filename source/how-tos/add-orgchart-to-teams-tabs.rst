@@ -1,20 +1,20 @@
-Add Org Chart to Teams tabs
-===========================
+Add Org Chart to Microsoft Teams tabs
+=====================================
 
-
-Did you know that you can use the `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ in Teams? With an organizational chart in Teams, you can see who people you are communicating with report to and who reports to them. 
+Did you know that you can use the `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ in Teams? With an organizational chart in Microsoft Teams, you can see who people you are communicating with report to and who reports to them. 
 You can also search for other people while you are there and see their position in the organization.
 
 There are two simple steps to add Plumsail Org Chart to a Teams tab:
 
-- First, add Org Chart to a page in the team’s site
-- Then, create a Teams tab with this page in it.
+.. contents::
+   :local:
+   :depth: 1
 
 Let’s see how to do it.
 
 
-Adding Org Chart to the team’s site
------------------------------------
+Add Org Chart to a page in the team’s site
+------------------------------------------
 
 Navigate to the team’s site:
 
@@ -38,7 +38,7 @@ Follow the instruction to `configure <../configuration-wizard/run-configuration-
 
 If you want Org Chart to occupy full screen by default, add the following code into the Custom JavaScript tab:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
    renderer.fullSizeToggle();
 
@@ -47,8 +47,8 @@ If you want Org Chart to occupy full screen by default, add the following code i
     :alt: Full site toggle
 
 
-Adding Org Chart to a Teams tab
--------------------------------
+Create a Teams tab with this page in it
+---------------------------------------
 
 Create a new tab, choose SharePoint option in the popup, and then pick the page with the Org Chart web part in it:
 

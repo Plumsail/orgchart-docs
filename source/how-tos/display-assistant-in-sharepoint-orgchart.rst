@@ -1,17 +1,17 @@
-How to display assistants
-=========================
+How to display assistants in Org Chart for SharePoint and Microsoft Teams
+=========================================================================
 
 This article describes how to display assistants with the help of `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ for SharePoint 2019 / 2016 / 2013 and SharePoint Online in Office 365.
 
-This is how assistants look in "Classic top to bottom" layout. They may be positioned in a different way in other `layouts <../configuration-wizard/layout.html>`_ .
+This is how assistants look in "Classic top to bottom" layout. They may be positioned in a different way in other `layouts <../configuration-wizard/layout.html>`_.
 
-Single assistant
+Single assistant:
 
 .. image:: /../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/org-chart-assistants.png
     :alt: OrgChart assistants
 
 
-Multiple assistants
+Multiple assistants:
 
 .. image:: /../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/multiple-assistants.png
     :alt: Multiple assistants
@@ -19,18 +19,9 @@ Multiple assistants
 
 Org Chart supports two data sources: SharePoint list and User Profiles. Let’s see how to configure assistants for each data source.
 
-
-Display assistants for SharePoint user profiles data source
-
-- :ref:`user-profiles-single-assistant`
-- :ref:`user-profiles-multiple-assistants`
-
-
-Display assistants for SharePoint list data source
-
-- :ref:`sharePoint-list-single-assistant`
-- :ref:`sharePoint-list-multiple-assistants`
-
+.. contents::
+   :local:
+   :depth: 1
 
 Display assistants for SharePoint user profiles data source
 -----------------------------------------------------------
@@ -83,7 +74,7 @@ Display assistants for SharePoint user profiles data source
 .. rubric:: Single assistant
 
 First of all, you need to create a column in your SharePoint list that will store the ID of an assistant. 
-Type of this column has to be the same as `an employee id <../configuration-wizard/filtration.html>`_ . 
+Type of this column has to be the same as `an Employee ID <../configuration-wizard/filtration.html#what-is-item-id-root-employee>`_. 
 Then you need to `configure mappings <../configuration-wizard/data-source-configuration.html>`_ of Org Chart fields to columns in your list:
 
 .. image:: /../_static/img/how-tos/display-different-types-of-employees/display-assistant-in-sharepoint-orgchart/org-chart-list-assistant-mapping.jpg
@@ -98,16 +89,13 @@ If you want to add support for multiple assistants per an employee you have two 
 1. Create a multivalue lookup instead of regular lookup. This will allow you to pick multiple assistants using lookup filed.
 2. Or create a regular "Single line of text" list column. This will allow you to specify a semicolon separated list of assistants.
 
-Examples:
+   Examples:
 
-- :code:`1; 2; 14; 18` if you use numbers as employee IDs.
+   - :code:`1; 2; 14; 18` if you use numbers as employee IDs.
+   - :code:`assist1@contoso.com; assist2@contoso.com; assist3@contoso.com` if you use email addresses (account names) as employee IDs.
 
-- :code:`assist1@contoso.com; assist2@contoso.com; assist3@contoso.com` if you use email addresses (account names) as employee IDs.
+Once you created a column, map Assistant ID in OrgChart settings to the newly created column.
 
-3. Map Assistant ID in OrgChart settings to the newly created column.
-4. `Clear Org Chart cache <../how-tos/data-caching.html>`_ to load fresh data.
-
-Conclusion
-----------
+Then `Clear Org Chart cache <../how-tos/data-caching.html>`_ to load fresh data.
 
 That is all! Now you know how to display structure with single and multiple asistants in SharePoint Org Chart.

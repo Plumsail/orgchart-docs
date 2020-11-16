@@ -155,7 +155,7 @@ Version history – Office 365
 .. rubric:: 3.2.5
 
 - New feature for displaying dotted line manager on top of an employee with a solid line. It allows you to quickly navigate from solid box to a dotted-line manager.
-- Added a new property to Org Chart JavaScript configuration that allows you to change the length of minimal search keyword (renderer.config.minSearchKeywordLenght).
+- Added a new property to Org Chart JavaScript configuration that allows you to change the length of minimal search keyword (:code:`renderer.config.minSearchKeywordLenght`).
 
 
 .. rubric:: 3.2.4
@@ -220,7 +220,7 @@ Version history – Office 365
 
 .. rubric:: 3.1.37
 
-- renderer.DrillDown JavaScript framework method has been migrated from version 2
+- :code:`renderer.DrillDown` JavaScript framework method has been migrated from version 2
 - Bugfix for zoom in Firefox
 - Bugfix for full-screen mode after recent Microsoft update in "Modern UI"
 

@@ -1,5 +1,5 @@
-Methods
-=========
+JavaScript Methods
+==================
 
 You can use methods inside events or directly in the JavaScript editor. If you put a method call directly in the editor it is executed when Org Chart web part is loaded. 
 
@@ -431,7 +431,7 @@ You may use this method to perform some custom logic for setting the number of c
 
 .. rubric:: Example
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   renderer.customFunctions.getNumberOfColumns = 
     function(rootItemData, defaultColumnsNumber){

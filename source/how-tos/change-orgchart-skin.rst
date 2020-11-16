@@ -59,6 +59,7 @@ Then choose skin you need and click Finish:
 
 List of all skins:
 
+- Modern
 - Black
 - Black metro touch
 - Light gray
@@ -69,7 +70,6 @@ List of all skins:
 - Hay
 - Metro
 - Metro touch
-- Modern
 - Office
 - Office black
 - Office blue

@@ -1,7 +1,7 @@
 Support of search in a list with more than 5000 items
 =====================================================
 
-In this article I will show how to add support of search in a list with more than 5000 items for `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ . 
+In this article I will show how to add support of search in a list with more than 5000 items for `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_. 
 By default, SharePoint prohibits tasks that cause excessive server load. 
 Therefore, we need to index the columns where OrgChart should be able to search elements. 
 This is our first thing to do.
@@ -36,5 +36,5 @@ Conclusion
 ----------
 
 That is all. Now OrgChart can search in the SharePoint list with more than 5000 items. 
-If you didn’t install it yet, `download <https://plumsail.com/sharepoint-orgchart/download/>`_ it and follow the installation instruction for your version of SharePoint in the `documentation <../configuration-wizard/run-configuration-wizard.html>`_. 
+If you didn’t install it yet, `download <https://plumsail.com/sharepoint-orgchart/download/>`_ it and follow the installation instruction for your version of SharePoint in the `documentation <https://plumsail.com/sharepoint-orgchart/docs/>`_. 
 It is quite easy to get started.

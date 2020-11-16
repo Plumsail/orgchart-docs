@@ -61,7 +61,7 @@ You need to select "Make this solution available to all sites in the organizatio
 .. image:: /../_static/img/getting-started/installation-office365/orgchart-trust.png
     :alt: OrgChart trust
 
-If you don’t want to make this app availalbe on all sites, you will need to `add app to each site manually <install-add-site-want-add-org-chart.html>`_ .
+If you don’t want to make this app availalbe on all sites, you will need to `add app to each site manually <install-add-site-want-add-org-chart.html>`_.
 
 Adding web part to a page
 -------------------------

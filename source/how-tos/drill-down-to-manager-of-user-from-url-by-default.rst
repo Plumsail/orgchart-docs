@@ -33,7 +33,7 @@ Thus, :code:`accountname` is just identificator of employee.
 
 Open the configuration wizard of Org Chart, navigate to **Custom JavaScript** step and paste this code into code editor:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   var accountNameFromUrl = GetUrlKeyValue("accountname");
 
@@ -89,14 +89,14 @@ How it works
 
 When your web part is loaded, custom JavaScript code is executed. This code disables initial rendering of web part to make drill down instead of waiting for web part loading:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
    renderer.config.renderInitialNode = false;
 
 
 Then it checks if there is URL parameter accountname. If the URL parameter is not specified, it gets current user account name and tries to drill down to a manager of a current user. If there is no manager, it drills down to a current user:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   //Drill down to current user's manager if exists
   renderer.dataProvider.getCurrentUserAccountName(function (accountName) {            
@@ -105,7 +105,7 @@ Then it checks if there is URL parameter accountname. If the URL parameter is no
 
 If the URL parameter is specified it tries to drill down to a manager of account name from the URL parameter:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   //Drill down to a manager of a user from URL if exists
   drillDownToManagerOfUser(accountNameFromUrl)
@@ -114,7 +114,7 @@ If the URL parameter is specified it tries to drill down to a manager of account
 Drill down logic is implemented in :code:`drillDownToManagerOfUser` JavaScript function:
 
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   function drillDownToManagerOfUser(accountName) {
 

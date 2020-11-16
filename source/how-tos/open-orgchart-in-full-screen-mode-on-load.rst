@@ -13,7 +13,7 @@ You just need to open the configuration wizard (click on gears at the top right 
 
 Add the code below into code editor: 
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   renderer.onInitialLoadingFinished(function(event){
     renderer.enableDisableFullScreen(); 

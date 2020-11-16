@@ -18,11 +18,11 @@ Look at the picture for better understanding of this article.
 Active Directory accounts import is a standard feature of SharePoint User Profile service. 
 There are a lot of guides describing in detail how to configure import. 
 I would recommend `this one <http://blog.sharedove.com/adisjugo/index.php/2012/07/23/setting-user-profile-synchronization-service-in-sharepoint-2013/>`_ written by Adis Jugo, 
-you can also use `guide from Microsoft <http://technet.microsoft.com/en-us/library/ee721049.aspx>`_ .
+you can also use `guide from Microsoft <http://technet.microsoft.com/en-us/library/ee721049.aspx>`_.
 
 
 Once you have configured import, it is enough to get started with Plumsail Org Chart. 
-You can `add web part <../installation/office365.html>`_ to a page and choose User Profiles as a data source, your org structure can look like this:
+You can `add web part <../installation/sharepoint2019.html>`_ to a page and choose User Profiles as a data source, your org structure can look like this:
 
 
 .. image:: /../_static/img/how-tos/additional-resources/how-orgchart-pulls-data-from-ad-on-premises/main.png

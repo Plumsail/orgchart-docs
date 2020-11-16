@@ -41,4 +41,4 @@ Click **Save** at the page ribbon. Message with link to configuration wizard wil
 .. image:: /../_static/img/getting-started/installation-sharepoint2013-2016/NotConfiguredWebPart.png
     :alt: OrgChart web part
 
-Read `Quick Web Part configuration guide <../getting-started/quick-configuration.html>`_ .
+Read `Quick Web Part configuration guide <../getting-started/quick-configuration.html>`_.

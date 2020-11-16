@@ -11,7 +11,7 @@ To define the sorting rules, please, add a code like this to the Custom JavaScri
 .. image:: /../_static/img/how-tos/filter-and-order-boxes/order-employees-boxes-using-a-custom-field/sorting.png
     :alt: Sorting
 
-.. code-block:: JavaScript
+.. code-block:: javascript
   
   renderer.config.nodesSortOrder = "ASC";
   renderer.config.nodesSortFieldName = "SortingFieldName";

@@ -1,6 +1,5 @@
-Display dotted-line managers
-============================
-
+Display dotted-line managers in Org Chart for SharePoint and Microsoft Teams
+============================================================================
 
 In this article, I want to show you how to display dotted-line reports in `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_. 
 It is quite a common scenario for companies with a matrix organization structure when there are direct managers and dotted-line managers.
@@ -26,9 +25,9 @@ If a solid line employee has a dotted-line manager, there will be displayed a sm
 
 This article has two parts:
 
-- :ref:`dotted-line-managers-for-user-profiles`
-- :ref:`dotted-line-managers-for-sharepoint-list`
-
+.. contents::
+   :local:
+   :depth: 1
 
 .. _dotted-line-managers-for-user-profiles:
 
@@ -46,7 +45,7 @@ If you want to disable dotted line managers, just select **None** for the **Dott
 
 
 How to add support for multiple dotted-line managers for User Profiles data source
-----------------------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 By default, Org Chart uses standard "Dotted-line Manager" property from SharePoint user profiles. 
 It allows you to specify only one dotted line manager per employee. 
@@ -69,13 +68,13 @@ Org Chart supports following types of user profile properties, consider it when 
 
 
 Configuration for SharePoint 2019 / 2016/ 2013 (On-Premises)
-------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you use SharePoint 2019 / 2016 / 2013 On-Premises, then, no additional configuration required.
 
 
 Configuration for SharePoint Online in Office 365
--------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 If you use Org Chart for Office 365, additional configuration of SharePoint search service is required. Otherwise, Org Chart will not be able to find subordinates for dotted line managers.
@@ -84,7 +83,7 @@ You need to add a managed search property for the user profile property that con
 
 **Important**: The name for the search metadata property has to be **DottedLineManager**.
 
-We prepared an article for you `describing how to create a new search metadata property <https://medium.com/plumsail/how-to-create-managed-search-property-for-user-profiles-in-office-365-as-fast-as-possible-ac4a95cd7afb>`_ . 
+We prepared an article for you `describing how to create a new search metadata property <https://medium.com/plumsail/how-to-create-managed-search-property-for-user-profiles-in-office-365-as-fast-as-possible-ac4a95cd7afb>`_. 
 Please follow it step by step and create a new property called "DottedLineManager". 
 If you specify another name, Org Chart will not be able to find dotted-line subordinates. 
 Be patient, SharePoint search takes time to crawl data and update configuration. 
@@ -121,7 +120,7 @@ You would use another type of column, for example, string, but I decided to use 
 
 
 How to add support for multiple dotted-line managers per employee for SharePoint list data source
--------------------------------------------------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want to add support for multiple dotted-line managers per an employee you have two options:
 
@@ -133,8 +132,5 @@ Examples:
 
 - :code:`1; 2; 14; 18` if you use numbers as employee IDs.
 - :code:`manager1@contoso.com; manager2@contoso.com; manager2@contoso.com` if you use email addresses (account names) as employee IDs.
-
-Conclusion
-----------
 
 That is all! Now you know how to display structure with dotted-line managers in SharePoint Org Chart.

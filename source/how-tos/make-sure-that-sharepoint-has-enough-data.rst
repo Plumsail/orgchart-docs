@@ -51,7 +51,7 @@ Then find the profile for the root person:
     :alt: Find Specific Profile
 
 
-If the profile of the root person found you can use information about this person `for filtration in the configuration wizard <../configuration-wizard/filtration.html>`_ . 
+If the profile of the root person found you can use information about this person `for filtration in the configuration wizard <../configuration-wizard/filtration.html>`_. 
 If the profile not found, please choose another user profile as root or check synchronization with Active Directory.
 
 

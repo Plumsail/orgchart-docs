@@ -15,7 +15,7 @@ So, when you resize your browser window, Org Chart occupies whole page content. 
 Just open the Org Chart configuration wizard using **gears** icon at the top right corner of the web part. 
 Then paste following JavaScript code to **Custom JavaScript** step:
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   function isEditMode() {
     try {

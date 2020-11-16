@@ -43,4 +43,4 @@ Click **Save** at the page ribbon. Message with link to configuration wizard wil
     :alt: Not Configured WebPart
 
 
-Read `Quick Web Part configuration guide <../getting-started/quick-configuration.html>`_ .
+Read `Quick Web Part configuration guide <../getting-started/quick-configuration.html>`_.

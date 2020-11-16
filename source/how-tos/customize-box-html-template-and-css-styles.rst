@@ -1,7 +1,7 @@
 Customize box HTML template and CSS styles for SharePoint Org Chart in Office 365
 ==================================================================================
 
-In this article I will show how to customize box template for `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ . 
+In this article I will show how to customize box template for `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_. 
 This works for all editions of SharePoint 2019 / 2016 / 2013 / 2010 including Foundation as well as for SharePoint Online in Office 365. Christmas and New Year are coming. 
 That is why I decided to implement such interactive behavior for org chart. 
 This is just a show case and you can use this approach to create your own box templates.
@@ -18,9 +18,9 @@ This is how it looked before customization:
 
 
 Starting from the version 1.7.1, `SharePoint OrgChart <https://plumsail.com/sharepoint-orgchart/>`_ allows to customize templates for boxes, 
-tooltips and search results using `Handlebars templating framework <http://handlebarsjs.com/>`_ . 
+tooltips and search results using `Handlebars templating framework <http://handlebarsjs.com/>`_. 
 It supports conditions, iterators and can be extended by own helpers. 
-You can play around with template in this `tester <http://tryhandlebarsjs.com/>`_ .
+You can play around with template in this `tester <http://tryhandlebarsjs.com/>`_.
 
 
 As you see I changed color schema and background of boxes as well as added Santa’s cap and beard.

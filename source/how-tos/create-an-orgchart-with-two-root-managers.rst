@@ -113,5 +113,5 @@ Conclusion
 
 Now you know how to use `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ to create org chart with two root managers. 
 If you didn’t install it yet, `download <https://plumsail.com/sharepoint-orgchart/download/>`_ it 
-and follow the installation instruction for your version of SharePoint in the `documentation <../getting-started/quick-configuration.html>`_ . 
+and follow the installation instruction for your version of SharePoint in the `documentation <https://plumsail.com/sharepoint-orgchart/docs>`_. 
 It is quite easy to get started.

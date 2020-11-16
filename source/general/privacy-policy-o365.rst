@@ -1,8 +1,8 @@
-Licensing details
-===============
+Org Chart for Office 365 Privacy Policy
+=======================================
 
 
-This privacy policy is additional to `the general one <https://plumsail.com/privacy-policy/>`_ and covering some specific practices in `Plumsail Org Chart <https://plumsail.com/privacy-policy/>`_ .
+This privacy policy is additional to `the general one <https://plumsail.com/privacy-policy/>`_ and covering some specific practices in `Plumsail Org Chart <https://plumsail.com/privacy-policy/>`_.
 
 
 .. rubric:: Personal information: what we collect, when and how we use it

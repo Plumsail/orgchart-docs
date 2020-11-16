@@ -1,5 +1,5 @@
-Events
-=======
+JavaScript Events
+=================
 
 .. contents:: Contents
    :local:
@@ -42,7 +42,7 @@ Adds handler on box rendered event. The :code:`handler` function has three input
 
           The :code:`box` object has following properties:
 
-          - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
+          - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_.
           - **elem** – The DOM element of the box.
           - **$elemContainer** – The property stores jQuery object of the box container element. 
           You can use this object to set width and height of the box.
@@ -103,7 +103,7 @@ Adds handler on tooltip rendered event. The handler has three input parameters:
 
           The :code:`tooltip` object has following properties:
 
-          - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
+          - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_.
           - **elem** – The DOM element of the details tooltip.
 
     *  -  **itemData**
@@ -143,7 +143,7 @@ Adds handler on quick search result rendered event. The handler has three input 
 
           The :code:`searchResult` object has following properties:
 
-          - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_ .
+          - **$elem** – The property stores jQuery object of the box element. You can use all methods available in jQuery to customize the box, for example `css method <http://api.jquery.com/css/>`_.
           - **elem** – The DOM element of the search result.
 
     *  -  **itemData**

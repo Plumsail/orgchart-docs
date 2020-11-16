@@ -25,7 +25,7 @@ Type the name of the root employee and OrgChart automatically find the person.
 .. image:: /../_static/img/how-tos/filter-and-order-boxes/filter-orgchart-by-department/07-root-id-field.png
     :alt: Root id field
 
-.. note:: You can learn more about what is Root employee `here <../configuration-wizard/filtration.html>`_ .
+.. note:: You can learn more about what is Root employee `here <../configuration-wizard/filtration.html>`_.
 
 
 In this case, "Xue Li" will be the root employee of this tree so his account name will be in the root employee field. Here’s the result:
@@ -62,7 +62,7 @@ As stated before, you can use other properties and values to filter the items to
 You can also combine conditions using || and && operators. For example:
 
 
-.. code-block:: JavaScript
+.. code-block:: javascript
 
   function(itemData){
     return !(itemData["AccountName"].contains("gmail") || itemData["Department"].contains("Marketing"));

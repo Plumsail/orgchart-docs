@@ -4,22 +4,19 @@ Drill down to current user by default
 In this tip I want to cover such case as drilling down to current user by default on Org Chart load. 
 We see such questions frequently and decided to cover it in our blog.
 
-
 Org Chart supports two data sources: User Profiles and SharePoint list. 
 I will show how to implement drill down to current user for both.
 
-
-- :ref:`user-profiles`
-- :ref:`sharepoint-list`
-
+.. contents::
+   :local:
+   :depth: 1
 
 .. _user-profiles:
-
 
 Drill down to current user on Org Chart load for User Profiles
 --------------------------------------------------------------
 
-If you have SharePoint Online (Office 365) or SharePoint 2019, 2016, 2013 it is quite simple to implement such drill down for User Profiles data source using `JavaScript framework <../javascript-framework/introduction.html>`_ . 
+If you have SharePoint Online (Office 365) or SharePoint 2019, 2016, 2013 it is quite simple to implement such drill down for User Profiles data source using `JavaScript framework <../javascript-framework/introduction.html>`_. 
 Just open the configuration wizard and paste the code below to JavaScript editor on **Custom JavaScript** step.
 
 .. code-block:: javascript
@@ -32,9 +29,7 @@ Just open the configuration wizard and paste the code below to JavaScript editor
 
   });
 
-
 If you have SharePoint 2010 use the code below. It is more complex than the code above.
-
 
 .. code-block:: javascript
 
@@ -69,13 +64,10 @@ If you have SharePoint 2010 use the code below. It is more complex than the code
     }
   });
 
-
 See the screenshot below for example:
 
 .. image:: /../_static/img/how-tos/show-specific-user-on-load/drill-down-to-current-user-by-default/UserProfilesDrillDownScript-1.png
     :alt: Drill down to user
-
-
 
 .. _sharepoint-list:
 
@@ -94,11 +86,9 @@ Just replace :code:`AccountName` with your field internal name:
 
 .. code-block:: javascript
 
-   var loginFieldInternalName = "AccountName";
-
+  var loginFieldInternalName = "AccountName";
 
 And it is complete script to copy paste:
-
 
 .. code-block:: javascript
 

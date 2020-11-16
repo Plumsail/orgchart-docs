@@ -10,9 +10,9 @@ Installation
 
 `Download setup file <https://plumsail.com/sharepoint-orgchart/download/>`_ and run it on one of the servers in your SharePoint 2019 farm as Farm Administrator. Follow the wizard steps.
 
-You have to be a Farm Administrator to complete the installation. If you have any warning messages during installation check this article `this article <org-chart-for-sharepoint-2019-prerequisites.html>`_ .
+You have to be a Farm Administrator to complete the installation. If you have any warning messages during installation check this article `this article <org-chart-for-sharepoint-2019-prerequisites.html>`_.
 
-Alternatively, you can `install Org Chart using wsp-package <installation-2019-as-wsp.html>`_ .
+Alternatively, you can `install Org Chart using wsp-package <installation-2019-as-wsp.html>`_.
 
 Adding web part to a page
 -------------------------

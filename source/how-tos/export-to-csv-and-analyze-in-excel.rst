@@ -1,5 +1,5 @@
-How to export SharePoint Org Chart to CSV
-========================================================================
+How to export employees from Org Chart for SharePoint and Microsoft Teams
+=========================================================================
 
 You may wish to view all members of your Organization in a spreadsheet format. 
 The best way to achieve this is to have an orderly sequential list of members in **CSV** form usable in MS Excel, LibreOffice Calc, Google Sheets, Numbers for MacOS and similar software.
@@ -62,4 +62,4 @@ Or you can visualize your employees per level:
     :alt: Export to CSV
 
 
-Find more examples in `this article <../configuration-wizard/box-template.html>`_.
+Find more examples in `this article <https://medium.com/plumsail/export-organizational-structure-to-csv-and-build-reports-using-excel-and-power-bi-860411bcc859>`_.
