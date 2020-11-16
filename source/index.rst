@@ -1,5 +1,5 @@
-.. title:: Plumsail Org Chart Documentations
-      
+.. title:: Table of contents
+
 .. toctree::
   :hidden:
 
