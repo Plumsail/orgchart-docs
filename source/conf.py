@@ -303,7 +303,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sharepoint-orgchart', 'Plumsail Documents Documentation',
+    (master_doc, 'sharepoint-orgchart', 'Plumsail Org Chart Documentation',
      [author], 1)
 ]
 
@@ -317,8 +317,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'documents', 'Plumsail Org Chart Documentation',
-     author, 'documents', 'Oneline description of project.',
+    (master_doc, 'sharepoint-orgchart', 'Plumsail Org Chart Documentation',
+     author, 'sharepoint-orgchart', 'Oneline description of project.',
      'Miscellaneous'),
 ]
 
