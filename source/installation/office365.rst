@@ -81,7 +81,11 @@ Once you added the web part you can `configure it <../getting-started/quick-conf
 Update
 ------
 
-1. `Download <https://plumsail.com/sharepoint-orgchart/download/>`_ the new package of Org Chart for SPO.
-2. Go to your SharePoint app catalogue (apps for SharePoint).
-3. Delete the existing package.
-4. Upload the new package and make the solution available to all sites when deploying it.
+1. `Download the add-in <https://plumsail.com/sharepoint-orgchart/download/>`_  from our website.
+
+2. Navigate to **Apps for SharePoint** and upload Add-in package that you downloaded at the beginning of this      instruction (you need to upload to the App Catalog the whole :code:`.sppkg` file without unpacking it):
+
+.. image:: /../_static/img/getting-started/installation-office365/UploadAppToCatalog.png
+    :alt: Upload app to catalog
+
+3. The package version will be updated after that.
