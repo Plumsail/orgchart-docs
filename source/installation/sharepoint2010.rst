@@ -22,6 +22,7 @@ Activate Plumsail Org Chart feature if it is not activated.
 .. image:: /../_static/img/getting-started/installation-sharepoint2010/OrgChartFeature2010.png
     :alt: OrgChart feature 2010
 
+.. _add-web-part:
 
 Adding web part to a page
 -------------------------
