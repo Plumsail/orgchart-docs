@@ -1,5 +1,5 @@
-Drill down to current user by default
-=====================================
+How to drill down to current user by default for Org Chart in SharePoint and Microsoft Teams
+============================================================================================
 
 In this tip I want to cover such case as drilling down to current user by default on Org Chart load. 
 We see such questions frequently and decided to cover it in our blog.

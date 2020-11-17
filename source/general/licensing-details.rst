@@ -1,12 +1,12 @@
 Licensing details
-===============
+=================
 
 .. contents:: Contents
    :local:
    :depth: 1
 
 SharePoint Online in Office 365
----------------------------------------------
+-------------------------------
 
 By purchasing Org Chart for Office 365 you get a subscription. 
 You can choose your billing cycle — purchase for one year or pay month-to-month. 
@@ -15,7 +15,7 @@ You can use the product for any number of users, on any number of sites and site
 The subscription includes updates and `Standard Support Plan <https://plumsail.com/support-plans/>`_.
 
 SharePoint 2019/2016/2013/2010
---------------------------------------------
+------------------------------
 
 By purchasing Org Chart for SharePoint 2019/2016/2013/2010 you get a perpetual license. 
 One license allows installation to two Web Front End servers (WFE). You need to purchase separate license for each two WFE servers you have. 

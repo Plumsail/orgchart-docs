@@ -1,5 +1,5 @@
-Drill down to manager of user from URL by default
-=================================================
+How to drill down to manager of user from URL by default for Org Chart in SharePoint and Microsoft Teams
+========================================================================================================
 
 In this quick tip, I will describe how to drill down to a manager of a user based on a URL parameter on Org Chart load. 
 It may be useful if you want Org Chart to behave as standard SharePoint Org Chart. 

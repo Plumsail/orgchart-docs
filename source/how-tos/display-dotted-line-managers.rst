@@ -1,5 +1,5 @@
-Display dotted-line managers in Org Chart for SharePoint and Microsoft Teams
-============================================================================
+How to display dotted-line managers for Org Chart in SharePoint and Microsoft Teams
+===================================================================================
 
 In this article, I want to show you how to display dotted-line reports in `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_. 
 It is quite a common scenario for companies with a matrix organization structure when there are direct managers and dotted-line managers.

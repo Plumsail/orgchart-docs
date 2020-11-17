@@ -1,5 +1,5 @@
-Resize web part dynamically to fit a page
-=========================================
+How to resize web part dynamically to fit a page for Org Chart in SharePoint
+============================================================================
 
 In this quick tip I will show how to resize SharePoint Org Chart dynamically to fit page content. 
 So, when you resize your browser window, Org Chart occupies whole page content. It will look like this:

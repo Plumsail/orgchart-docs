@@ -1,5 +1,5 @@
-Localize Org Chart
-==================
+How to localize Org Chart in SharePoint and Microsoft Teams
+===========================================================
 
 Org Chart allows changing strings in the user interface since version 2.2.30. You can use this functionality to translate user interface to your language.
 

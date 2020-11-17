@@ -1,5 +1,5 @@
-Custom styles for printed Org Chart in SharePoint and Microsoft Teams
-=====================================================================
+How to use custom styles for printed Org Chart in SharePoint and Microsoft Teams
+================================================================================
 
 With `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ you can also create custom CSS styles that will be applied to the chart only when you print it. 
 That way, you can apply custom styles that will help reading the chart after printing it, 

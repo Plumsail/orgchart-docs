@@ -1,5 +1,5 @@
-Display awards and conditionally format SharePoint Org Chart
-============================================================
+How to display awards and conditionally format Org Chart in SharePoint and Microsoft Teams
+==========================================================================================
 
 In this article I will show how to conditionally format Org Chart boxes and search results according to field values from data source, for example User Profile Service or SharePoint list. 
 `SharePoint OrgChart <https://plumsail.com/sharepoint-orgchart/>`_ 1.7.1 and higher allows to add dynamics to boxes using JavaScript. Usually we need to highlight boxes according to some quite simple rule, but sometimes we need to implement more difficult logic. In this article, I will show how to simply highlight boxes with specific color as well as show more complex case with displaying awards and search result highlighting. As a result, I want to change background of boxes and search results according to field values from data source and add gold, silver or bronze medals to boxes of the best employees.

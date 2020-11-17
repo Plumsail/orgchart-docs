@@ -1,5 +1,5 @@
-Show Org Chart based on a list data source for anonymous users
-==============================================================
+How to show Org Chart based on a list data source for anonymous users in SharePoint
+===================================================================================
 
 .. note:: This article is only for `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ for SharePoint 2019 / 2016 / 2013.
 

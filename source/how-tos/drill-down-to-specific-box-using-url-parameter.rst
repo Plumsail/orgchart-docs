@@ -1,5 +1,5 @@
-Drill down to specific box using URL parameter
-==============================================
+How to drill down to specific box using URL parameter for Org Chart in SharePoint and Microsoft Teams
+=====================================================================================================
 
 In this quick tip I will describe how to navigate to specific box in your org chart using URL parameter. 
 It may be useful if you want to place link to specific box to other page. 

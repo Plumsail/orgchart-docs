@@ -1,5 +1,5 @@
-How Org Chart pulls data from AD On-Premises
-============================================
+How SharePoint Org Chart pulls data from Active Directory On-Premises
+=====================================================================
 
 
 In this article is described how `Plumsail Org Chart <https://plumsail.com/privacy-policy/>`_ communicates with SharePoint User Profile Service and Active Directory and what are prerequisites for Org Chart correct work.

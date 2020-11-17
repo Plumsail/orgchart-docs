@@ -1,5 +1,5 @@
-Filter SharePoint Org Chart by department
-=========================================
+How to filter Org Chart by department in SharePoint and Microsoft Teams
+=======================================================================
 
 This article will show you how to filter SharePoint Org Chart by department using filtration rules and root employee. This applies to SharePoint 2010, SharePoint 2013 / 2016 / 2019 and SharePoint Online. 
 

@@ -1,5 +1,5 @@
-Customize box HTML template and CSS styles for SharePoint Org Chart in Office 365
-==================================================================================
+How to customize box HTML template and CSS styles for Org Chart in SharePoint and Microsoft Teams
+==========================================================================================
 
 In this article I will show how to customize box template for `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_. 
 This works for all editions of SharePoint 2019 / 2016 / 2013 / 2010 including Foundation as well as for SharePoint Online in Office 365. Christmas and New Year are coming. 

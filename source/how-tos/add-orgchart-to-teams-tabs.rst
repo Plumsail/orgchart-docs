@@ -1,5 +1,5 @@
-Add Org Chart to Microsoft Teams tabs
-=====================================
+How to add Org Chart to Microsoft Teams tabs
+============================================
 
 Did you know that you can use the `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ in Teams? With an organizational chart in Microsoft Teams, you can see who people you are communicating with report to and who reports to them. 
 You can also search for other people while you are there and see their position in the organization.

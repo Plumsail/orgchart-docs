@@ -1,5 +1,5 @@
-Display vacancies in Org Chart for SharePoint and Microsoft Teams
-=================================================================
+How to display vacancies for Org Chart in SharePoint and Microsoft Teams
+========================================================================
 
 Did you know you can show vacancies beautifully inside your organization chart in SharePoint? If it’s either SharePoint 2013, SharePoint 2016, SharePoint 2019 or SharePoint Online in Office 365, 
 you can do this easily with `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_. In this article, I want to show you how to display vacancies in SharePoint Org Chart. It is very useful to organize vacancies inside of OrgChart and be able to visualize them within organization’s structure.

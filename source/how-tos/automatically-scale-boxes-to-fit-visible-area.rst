@@ -1,5 +1,5 @@
-Automatically scale boxes to fit visible area
-=============================================
+How to automatically scale boxes to fit visible area for Org Chart in SharePoint and Microsoft Teams
+====================================================================================================
 
 
 .. note:: This post is actual for Org Chart since version 2.2.24

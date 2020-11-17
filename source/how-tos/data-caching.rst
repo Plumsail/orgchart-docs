@@ -1,5 +1,5 @@
-Data caching
-============
+Org Chart data caching
+======================
 
 Plumsail Org Chart uses client-side caching to improve performance.
 

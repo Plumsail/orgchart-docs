@@ -1,5 +1,5 @@
-How to make sure that User Profile Service has enough data
-==========================================================
+How to make sure that User Profile Service has enough data for Org Chart in SharePoint
+======================================================================================
 
 Firstly, verify User Profile Service for the current SharePoint Farm. Open SharePoint Central Administration:
 

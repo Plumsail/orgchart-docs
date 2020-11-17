@@ -1,5 +1,5 @@
-Support of search in a list with more than 5000 items
-=====================================================
+How to add support of search in a list with more than 5000 items for Org Chart in SharePoint and Microsoft Teams
+================================================================================================================
 
 In this article I will show how to add support of search in a list with more than 5000 items for `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_. 
 By default, SharePoint prohibits tasks that cause excessive server load. 

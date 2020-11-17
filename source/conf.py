@@ -303,7 +303,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'documents', 'Plumsail Documents Documentation',
+    (master_doc, 'sharepoint-orgchart', 'Plumsail Documents Documentation',
      [author], 1)
 ]
 

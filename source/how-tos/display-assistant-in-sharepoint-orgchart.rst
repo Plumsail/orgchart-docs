@@ -1,4 +1,4 @@
-How to display assistants in Org Chart for SharePoint and Microsoft Teams
+How to display assistants for Org Chart in SharePoint and Microsoft Teams
 =========================================================================
 
 This article describes how to display assistants with the help of `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ for SharePoint 2019 / 2016 / 2013 and SharePoint Online in Office 365.

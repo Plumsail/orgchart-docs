@@ -1,5 +1,5 @@
-Open Org Chart in full-screen mode on load
-==========================================
+How to open Org Chart in full-screen mode on load for SharePoint and Microsoft Teams
+====================================================================================
 
 In this tip, I will describe how to open Org Chart in full-screen mode on load.
 

@@ -1,5 +1,5 @@
-Generate organization structure report in SharePoint and Microsoft Teams
-========================================================================
+How to generate organization structure report in SharePoint and Microsoft Teams
+===============================================================================
 
 You can create a simple and clear organizational report with the Org Chart. 
 Reports could be useful either for in-house informational purposes or as a part of your company’s compliance with ISO 9001 or other quality management standards.

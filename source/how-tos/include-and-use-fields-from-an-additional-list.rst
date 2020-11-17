@@ -1,5 +1,5 @@
-Include and use fields from an additional list
-==============================================
+How to include and use fields from an additional list for Org Chart in SharePoint and Microsoft Teams
+=====================================================================================================
 
 In this tip, I will show you how to include and use fields from another list in your Org Chart structure.
 

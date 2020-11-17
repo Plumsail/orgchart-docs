@@ -1,5 +1,5 @@
-Display Skype for Business (Lync) presence
-==========================================
+How to display Skype for Business (Lync) presence for Org Chart in SharePoint and Microsoft Teams
+=================================================================================================
 
 .. note:: thas currently the Skype for Business (Lync) status can be displayed on Classic pages only.
 The code below will not work for Modern UI pages.

@@ -1,5 +1,5 @@
-Change SharePoint Org Chart skin
-=================================
+How to change Org Chart skin in SharePoint and Microsoft Teams
+==============================================================
 
 `Plumsail Org Chart <https://plumsail.com/sharepoint-orgchart/>`_ can change skins. You can choose from 21 beautiful skins. 
 In this article I will describe some of them in more detail, then I will describe how to change Org Chart skin

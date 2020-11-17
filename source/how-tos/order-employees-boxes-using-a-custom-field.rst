@@ -1,5 +1,5 @@
-Order employees boxes using a custom field
-=========================================
+How to order employees boxes using a custom field for Org Chart in SharePoint and Microsoft Teams
+=================================================================================================
 
 You can choose a custom field for ordering the employees boxes in your chart. 
 It can be an existing field or a new one. 

@@ -1,5 +1,5 @@
 Box template
-====================
+============
 
 
 .. image:: /../_static/img/advanced-web-part-configuration/box-template/OrgChart-Configuration-Wizard-6.png
