@@ -66,7 +66,7 @@ Example: :code:`assist1@contoso.com; assist2@contoso.com; assist3@contoso.com`
     :alt: Field values
 
 
-Display assistants for SharePoint user profiles data source
+Display assistants for SharePoint list data source
 -----------------------------------------------------------
 
 .. _sharePoint-list-single-assistant:
