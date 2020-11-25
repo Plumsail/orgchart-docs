@@ -15,20 +15,15 @@ Org Chart is a `SharePoint Framework <https://docs.microsoft.com/en-us/sharepoin
 
 You have to be a SharePoint administrator to complete the installation. If you don’t see some menus from the instruction below, most likely you are not a SharePoint administrator. Please contact your administrator to assist with the installation.
 
-Open Office 365 admin center:
-
-.. image:: /../_static/img/getting-started/installation-office365/OpenAdminCenter.png
-    :alt: Admin center
-
 Navigate to SharePoint Admin Center:
 
 .. image:: /../_static/img/getting-started/installation-office365/OpenSharePointAdminCenter.png
     :alt: Admin center
 
-Go to **Apps** classic feature:
+Go to 'More features' - 'Apps'
 
-.. image:: /../_static/img/getting-started/installation-office365/OpenAppCatalog1.png
-    :alt: App catalog
+.. image:: /../_static/img/getting-started/installation-office365/OpenSharePointApps.png
+    :alt: SharePoint Apps
 
 Open **App catalog**:
 
