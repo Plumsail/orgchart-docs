@@ -39,6 +39,19 @@ Just start typing a name to get a list of suggestions:
 If you wish to export all the members of your organization, just select the maximum number levels. If you don’t know the precise number of levels in your organization, just type in a large number, for example, 1000.
 
 
+.. rubric:: How to export only specific fields to CSV
+
+You can export only specific fields to a CSV file and it's possible using a bit of Javascript.
+
+Specify a custom array of fields that will be used in the export to CSV. Fields with the item’s current level and the subordinate’s count will be included in the result file automatically.
+
+For example,
+
+.. code-block:: javascript
+          
+            renderer.config.CsvExportFields = ["ID", "Title", "Office", "JobTitle"];
+
+
 How to work with the data
 -------------------------
 
@@ -63,20 +76,6 @@ Or you can visualize your employees per level:
 
 .. image:: /../_static/img/how-tos/printing-and-reports/export-to-csv-and-analyze-in-excel/export_to_csv_graph2.png
     :alt: Export to CSV
-
-
-How to export only specific fields to CSV
-------------------------------------------
-
-You can export only specific fields to a CSV file and it's possible using a bit of Javascript.
-
-Specify a custom array of fields that will be used in the export to CSV. Fields with the item’s current level and the subordinate’s count will be included in the result file automatically.
-
-For example,
-
-.. code-block:: javascript
-          
-            renderer.config.CsvExportFields = ["ID", "Title", "Office", "JobTitle"];
 
 
 Find more examples in `this article <https://medium.com/plumsail/export-organizational-structure-to-csv-and-build-reports-using-excel-and-power-bi-860411bcc859>`_.
