@@ -41,7 +41,7 @@ If you wish to export all the members of your organization, just select the maxi
 
 .. rubric:: How to export only specific fields to CSV
 
-You can export only specific fields to a CSV file and it's possible using a bit of Javascript.
+You can export only specific fields to a CSV file and it's possible to do using a bit of Javascript.
 
 Specify a custom array of fields in the Custom Javascript section of Org Chart settings that will be used in the export to CSV. Fields with the item’s current level and the subordinate’s count will be included in the result file automatically.
 
