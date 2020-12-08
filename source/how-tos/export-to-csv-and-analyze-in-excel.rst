@@ -43,13 +43,18 @@ If you wish to export all the members of your organization, just select the maxi
 
 You can export only specific fields to a CSV file and it's possible using a bit of Javascript.
 
-Specify a custom array of fields that will be used in the export to CSV. Fields with the item’s current level and the subordinate’s count will be included in the result file automatically.
+Specify a custom array of fields in the Custom Javascript section of Org Chart settings that will be used in the export to CSV. Fields with the item’s current level and the subordinate’s count will be included in the result file automatically.
 
 For example,
 
 .. code-block:: javascript
           
             renderer.config.CsvExportFields = ["ID", "Title", "Office", "JobTitle"];
+
+
+
+.. image:: /../_static/img/how-tos/printing-and-reports/export-to-csv-and-analyze-in-excel/export-to-csv-custom-fields.png
+    :alt: CSV export fields
 
 
 How to work with the data
