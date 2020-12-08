@@ -72,6 +72,8 @@ You can export only specific fields to a CSV file and it's possible using a bit 
 
 Specify a custom array of fields that will be used in the export to CSV. Fields with the item’s current level and the subordinate’s count will be included in the result file automatically.
 
+For example,
+
 .. code-block:: javascript
           
             renderer.config.CsvExportFields = ["ID", "Title", "Office", "JobTitle"];
