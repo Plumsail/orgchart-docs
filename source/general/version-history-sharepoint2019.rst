@@ -1,6 +1,9 @@
 Version history – SharePoint 2019 version
 =========================================
 
+.. rubric:: 3.5.21
+
+- Support of publishing pages by the feature with changing box orientation.
 
 .. rubric:: 3.5.19
 
