@@ -57,6 +57,9 @@ For example,
     :alt: CSV export fields
 
 
+If you use **User Profiles** data source you need to specify the internal names of SharePoint user profile properties in the array; in case of **SharePoint list** data source specify the internal field names from the SharePoint list. 
+
+
 How to work with the data
 -------------------------
 
