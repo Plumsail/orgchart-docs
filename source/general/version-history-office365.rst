@@ -1,6 +1,11 @@
 Version history – Office 365
 ============================
 
+.. rubric:: 3.5.20
+
+- Ability to drill down to an assistant.
+- Bug fix for Org Chart layout applied globally.
+- Minor bugfixes.
 
 .. rubric:: 3.5.18
 
