@@ -207,7 +207,7 @@ Below are some useful properties from the configuration which you can override. 
     *  -  **CsvExportFields**
        -  .. _csv-export-fields: 
           
-          You can specify a custom array of fields that will be used in the export to CSV. Fields with the item’s current level and the subordinate’s count will be included to the result file automatically.
+          You can specify a custom array of fields that will be used in the export to CSV. Fields with the item’s current level and the subordinate’s count will be included to the result file automatically. If you use **User Profiles** data source you need to specify the internal names of SharePoint user profile properties in the array; in case of **SharePoint list** data source specify the internal field names from the SharePoint list. 
 
           Example:
           
