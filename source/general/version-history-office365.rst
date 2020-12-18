@@ -1,6 +1,12 @@
 Version history – Office 365
 ============================
 
+.. rubric:: 3.5.23
+
+- Fixes for lines rendefing in multi-page PDF reports.
+- Support of publishing pages by the feature with changing box orientation.
+- Minor bugfixes.
+
 .. rubric:: 3.5.20
 
 - Ability to drill down to an assistant.
