@@ -1,6 +1,11 @@
 Version history – SharePoint 2019 version
 =========================================
 
+.. rubric:: 3.5.25
+
+- Fixes for applying custom localization from JavaScript. 
+- Ability to set localization for layouts and orientation menus.
+
 .. rubric:: 3.5.21
 
 - Support of publishing pages by the feature with changing box orientation.
