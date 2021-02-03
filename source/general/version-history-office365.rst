@@ -1,6 +1,12 @@
 Version history – Office 365
 ============================
 
+.. rubric:: 3.5.25
+
+- Fixes for applying custom localization from JavaScript. 
+- Ability to set localization for layouts and orientation menus.
+- Consider the filtration rule when calculating the number of subordinates in a box.
+
 .. rubric:: 3.5.23
 
 - Fixes for lines rendefing in multi-page PDF reports.
