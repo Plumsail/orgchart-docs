@@ -19,10 +19,10 @@ Then you can override strings like this:
 .. code-block:: javascript
 
    Plumsail.OrgChart.LocalizationStrings.SearchInputWatermark = "Suche";
-   Plumsail.OrgChart.LocalizationStrings.Settings.PrintOrgChart.Title = "Drucken"
-   Plumsail.OrgChart.LocalizationStrings.Settings.ManageVacancies = "Stellenangebote"
-   Plumsail.OrgChart.LocalizationStrings.Settings.ClearCache = "Cache leeren"
-   Plumsail.OrgChart.LocalizationStrings.Settings.Help = "Über"
+   Plumsail.OrgChart.LocalizationStrings.Settings.PrintOrgChart.Title = "Drucken";
+   Plumsail.OrgChart.LocalizationStrings.Settings.ManageVacancies = "Stellenangebote";
+   Plumsail.OrgChart.LocalizationStrings.Settings.ClearCache = "Cache leeren";
+   Plumsail.OrgChart.LocalizationStrings.Settings.Help = "Über";
 
 
 .. image:: /../_static/img/how-tos/customize-boxes-and-styles/localize-orgchart/ChangeLocalizationStrings.png
@@ -42,7 +42,15 @@ This is the structure of the localization object. Read through the comments in t
     RightControlZone: { //Buttons section located at the right top corner
       OriginalZoom: "", //Hint text for original zoom button
       FullScreenMode: "", //Hint text for full screen button
-      Settings: "" //Hint text for settings button (gears icon)
+      Settings: "", //Hint text for settings button (gears icon)
+      Layouts: "" //Hint text for layouts button
+    },
+    LayoutsMenu: {
+        TopToBottomCompact: "Top to bottom compact",
+        TopToBottomClassic: "Top to bottom classic",
+        TopToBottomWithGroupingLeafBoxes: "Top to bottom with grouping of leaf boxes",
+        LeftToRight: "Left to right",
+        BottomToTop: "Bottom to top"
     },
     Settings: {
       Settings: { //Settings menu which is opened when you click on gears icon
@@ -132,11 +140,16 @@ This is the structure of the localization object. Read through the comments in t
         },
         Help: "" //Help menu item text
       },
+      BoxOrientationMenu: {
+        StackedOrientation: "Stacked orientation",
+        HorizontalOrientation: "Horizontal orientation"
+      },
       DrillDownToolbar: { //Toolbar which appears on hove over org chart boxes
         GoToParent: "", //Hint text for go to parent button
         GoToRoot: "", //Hint text for go to root button
         DrillHere: "", //Hint text for drill here button
       },
+      ChangeBoxOrientationConfirmMessage: "We are going to increase <a target='_blank' href='https://plumsail.com/sharepoint-orgchart/docs/the-maximum-number-of-columns-in-the-compact-layout'>the maximum number of columns</a> in your layout from {0} to {1}.",
       UserProfilePropertyNames: {
         "UserProfile_GUID": "Id",
         "SID": "SID",
