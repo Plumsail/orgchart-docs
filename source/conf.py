@@ -33,7 +33,7 @@ disqus_shortname = 'plumsail'  # Add this line to conf.py.
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx_sitemap']  # 'sphinxcontrib.disqus', 'rst2pdf.pdfbuilder']  # Add to this list.
-html_baseurl = 'https://plumsail.com/docs/documents/v1.x/' #for sitemap
+html_baseurl = 'https://plumsail.com/docs/orgchart/v1.x/' #for sitemap
 
 #pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
 
@@ -52,8 +52,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Plumsail Documents'
-copyright = '2020, Plumsail'
+project = 'Plumsail OrgChart'
+copyright = '2021, Plumsail'
 author = 'Plumsail'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -61,7 +61,7 @@ author = 'Plumsail'
 # built documents.
 #
 # The short X.Y version.
-version = '1.0'
+version = ''
 # The full version, including alpha/beta/rc tags.
 release = '1.0'
 
