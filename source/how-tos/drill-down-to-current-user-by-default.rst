@@ -21,6 +21,8 @@ Just open the configuration wizard and paste the code below to JavaScript editor
 
 .. code-block:: javascript
 
+  renderer.config.renderInitialNode = false;
+  
   renderer.onInitialLoadingFinished(function () {
 
     renderer.dataProvider.getCurrentUserAccountName(function (accountName) {
