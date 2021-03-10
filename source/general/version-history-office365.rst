@@ -3,7 +3,7 @@ Version history – Office 365
 
 .. rubric:: 3.5.26
 
-- Fix for CSS support in multi-page PDF reports
+- Fix for CSS support in multi-page PDF reports.
 
 .. rubric:: 3.5.25
 
