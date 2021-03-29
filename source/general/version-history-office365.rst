@@ -1,6 +1,11 @@
 Version history – Office 365
 ============================
 
+.. rubric:: 3.5.27
+
+- Fixed id's comparing for compact groups.
+- Fixed position of stacked nodes for skins.
+
 .. rubric:: 3.5.26
 
 - Fix for CSS support in multi-page PDF reports.
