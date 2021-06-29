@@ -1,6 +1,10 @@
 Version history – Office 365
 ============================
 
+.. rubric:: 3.5.28
+
+- Added support for the scenario when Display text is the same field as Employee ID.
+
 .. rubric:: 3.5.27
 
 - Fixed id's comparing for compact groups.
